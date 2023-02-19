@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=29&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ZzB7IXSMKbHsNvduXfoAKA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: +TfeEQ3SVBtAyhApv4+PjI1AsaY=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=29&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: MNnucS09ajyxIEW+9CG93w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: XukXMW14sbLXRyGxgojlMr5efdw=\r\n\r\n",
    "id": "3.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "187": 1,
       "13032": 1
    },
-   "started": "2023-02-11T07:38:21.065Z",
+   "started": "2023-02-19T10:22:05.715Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -164,14 +164,14 @@
          "RO",
          [
             6,
-            "818d2411f8ca"
+            "818d730153e0"
          ]
       ],
       [
          "RO",
          [
             13032,
-            "6c7494a64b3dd8bd4b6394ae05889b7377edcf708784a1051681a6175781aa121384a114578fa60704cdfe4346dd889b7ab22148794248260cd34d211e924d2d ..."
+            "3b643f8c1c2d73971c733f8452889bfc87b8fdff77d1938ae6d49498a7d4989de3d1939ba7da9488f498ccccb688889b3825552e3bd53c404e4439475c05394b ..."
          ]
       ],
       [
@@ -184,7 +184,7 @@
          true,
          0,
          true,
-         "2411f8ca"
+         "730153e0"
       ],
       [
          "RF",
@@ -196,7 +196,7 @@
          true,
          0,
          true,
-         "7377edcf"
+         "fc87b8fd"
       ],
       [
          "TF",

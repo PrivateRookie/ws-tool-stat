@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in per-frame chops.",
    "droppedByMe": true,
-   "duration": 59,
+   "duration": 49,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=54&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 2BmAIAfGxv291wv2V9KTLg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 27dWWa7h8QUccs9zYC7bcaYMnIQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=54&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 3TsWaH/lV2ebcNdZCh3+aw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: QJ0sCBaA41NFaUpAyWVm8fa3o0w=\r\n\r\n",
    "id": "5.10",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "50": 1,
       "187": 1
    },
-   "started": "2023-02-11T07:38:21.582Z",
+   "started": "2023-02-19T10:22:06.240Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -128,14 +128,14 @@
          "RO",
          [
             6,
-            "889f9fb5344d"
+            "889fe2318a29"
          ]
       ],
       [
          "RO",
          [
             50,
-            "9c5f5924ecc65d23f8955d23f6c1142bedd45320fadb4028fb95523ffed851818d91bee980d9db85ecfe92c9f7fecc85e4b0"
+            "e1dbe7409142e3478511e3478b45aa4f9050ed44875ffe4c8611ec5b835cef818dab97cb69e3f2a705c4bbeb1ec4e5a70d8a"
          ]
       ],
       [
@@ -148,7 +148,7 @@
          true,
          0,
          true,
-         "9fb5344d"
+         "e2318a29"
       ],
       [
          "TF",

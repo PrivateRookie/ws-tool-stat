@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xcebae1",
    "droppedByMe": true,
-   "duration": 48,
+   "duration": 58,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=85&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: s+O0vyupu1GCIcXaoVbQlg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: zh7BFvrkIfk2naMXNmCjnQZzxVQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=85&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: QxqvCFf49/a+4jl+m2ksyQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: u+uO00E3Pt0zUAGCm57FbUEvbts=\r\n\r\n",
    "id": "6.6.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -43,7 +43,7 @@
       "20": 1,
       "181": 1
    },
-   "started": "2023-02-11T07:29:46.254Z",
+   "started": "2023-02-19T10:13:29.230Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -105,14 +105,14 @@
          "RO",
          [
             6,
-            "8894036326d8"
+            "88941cca00e9"
          ]
       ],
       [
          "RO",
          [
             20,
-            "008c4fb675024ab1674353ac654e1ef877065eac"
+            "1f2569876aab6c8078ea759d7ae738c968af789d"
          ]
       ],
       [
@@ -125,7 +125,7 @@
          true,
          0,
          true,
-         "036326d8"
+         "1cca00e9"
       ],
       [
          "TF",

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved control <b>Opcode = 15</b> and non-empty payload, then send Ping.",
    "droppedByMe": false,
-   "duration": 1,
+   "duration": 3,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=44&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: xnLmWMQcDNheRaHOFhAisw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: qGg+7eFCmYpBsjlx3Agn+14a/AE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=44&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: P3kuKBCB/DMoFR65Meow6Q==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: jnt+0wUSyOs4PA2DJmr8sSliW2Y=\r\n\r\n",
    "id": "4.2.5",
    "isServer": true,
    "localCloseCode": null,
@@ -51,11 +51,11 @@
       "1": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "19": 1,
+      "6": 2,
+      "13": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:31.740Z",
+   "started": "2023-02-19T10:42:12.377Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -326,12 +326,38 @@
          true
       ],
       [
+         "RO",
+         [
+            6,
+            "818de3ea643d"
+         ]
+      ],
+      [
          "TO",
          [
             1,
             "77"
          ],
          true
+      ],
+      [
+         "RO",
+         [
+            13,
+            "ab8f08518cc6444a8c980859c2"
+         ]
+      ],
+      [
+         "RF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "e3ea643d"
       ],
       [
          "TO",
@@ -392,27 +418,8 @@
       [
          "RO",
          [
-            19,
-            "818dd780f5d39fe599bfb8acd5a4b8f299b7f6"
-         ]
-      ],
-      [
-         "RF",
-         [
-            13,
-            "Hello, world!"
-         ],
-         1,
-         true,
-         0,
-         true,
-         "d780f5d3"
-      ],
-      [
-         "RO",
-         [
             6,
-            "88820141e4c1"
+            "8882fc848551"
          ]
       ]
    ]

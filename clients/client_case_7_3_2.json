@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with payload length 1",
    "droppedByMe": true,
-   "duration": 47,
+   "duration": 61,
    "expectation": "Clean close with protocol error or drop TCP.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=217&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: i1iPDvfxk7CxGO28oR1DDw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: RSAknHFxLfyMs6pENhFqYptXfCY=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=217&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: /Vq1+LKF0Y9AD5x07bh65w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ECGeCqynZQ/WLLspABDyE95QOyM=\r\n\r\n",
    "id": "7.3.2",
    "isServer": true,
    "localCloseCode": null,
@@ -42,7 +42,7 @@
       "49": 1,
       "182": 1
    },
-   "started": "2023-02-11T07:29:52.874Z",
+   "started": "2023-02-19T10:13:35.818Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -102,14 +102,14 @@
          "RO",
          [
             6,
-            "88b101188185"
+            "88b10a2f0486"
          ]
       ],
       [
          "RO",
          [
             49,
-            "02f2e8eb7779edec6538e2e96e6be4a5676ae0e86438f1e47874eee46538ede06f34a1e07968e4e67538b1a92126bca533"
+            "09c56de87c4e68ef6e0f67ea655c61a66c5d65eb6f0f74e773436be76e0f68e3640324e3725f61e57e0f34aa2a1139a638"
          ]
       ],
       [
@@ -122,7 +122,7 @@
          true,
          0,
          true,
-         "01188185"
+         "0a2f0486"
       ]
    ]
 }

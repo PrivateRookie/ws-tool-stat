@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 1 * 2**20 (1M). Sent out data in chops of 256 octets.",
    "droppedByMe": true,
-   "duration": 54,
+   "duration": 56,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=285&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Do3xU8pgxoqBFB3b0RlCXA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 1JNyQUU3B4/T5BzABSPrHAd7Ifw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=285&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: EL17Qg7Ehi9DPNQxluetNQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Zzo4WLbfvJJwbRw8hzRcBqro3S0=\r\n\r\n",
    "id": "9.6.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,15 +40,14 @@
       "8": 1,
       "14": 1,
       "188": 1,
+      "8856": 1,
+      "11008": 1,
       "13032": 1,
-      "23672": 1,
-      "28960": 1,
       "32640": 1,
       "32768": 26,
-      "43776": 1,
-      "54528": 1
+      "65536": 2
    },
-   "started": "2023-02-11T07:38:40.306Z",
+   "started": "2023-02-19T10:22:25.015Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -111,7 +110,7 @@
          "RO",
          [
             8,
-            "88826dbdb8226e55"
+            "88827c5641d67fbe"
          ]
       ],
       [
@@ -124,7 +123,7 @@
          true,
          0,
          true,
-         "6dbdb822"
+         "7c5641d6"
       ]
    ]
 }

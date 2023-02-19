@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message with <b>RSV = 1</b>.",
    "droppedByMe": true,
-   "duration": 1006,
+   "duration": 1001,
    "expectation": "The connection is failed immediately (1002/protocol error), since RSV must be 0, when no extension defining RSV meaning has been negotiated.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": true,
-   "httpRequest": "GET /runCase?case=28&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: W7USQR2WSb6e7C88LkI0Jg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: UQ1SWSLemqEBKmw8RM+9g39PGX8=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=28&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 4YiaULb5WIS5GOL0E+D8lw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Zje60LDbWSkzEiu1mKcLtEdxeKY=\r\n\r\n",
    "id": "3.1",
    "isServer": true,
    "localCloseCode": 1001,
@@ -50,7 +50,7 @@
       "13": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:28.647Z",
+   "started": "2023-02-19T10:42:09.296Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -112,14 +112,14 @@
          "RO",
          [
             6,
-            "818d5f3fd6df"
+            "818d6aa098c2"
          ]
       ],
       [
          "RO",
          [
             13,
-            "175abab33013f6a8304dbabb7e"
+            "22c5f4ae058cb8b505d2f4a64b"
          ]
       ],
       [
@@ -132,7 +132,7 @@
          true,
          0,
          true,
-         "5f3fd6df"
+         "6aa098c2"
       ],
       [
          "KLE"
@@ -163,7 +163,7 @@
          "RO",
          [
             8,
-            "88824a3a099149d2"
+            "8882f3789af3f090"
          ]
       ],
       [
@@ -176,7 +176,7 @@
          true,
          0,
          true,
-         "4a3a0991"
+         "f3789af3"
       ]
    ]
 }

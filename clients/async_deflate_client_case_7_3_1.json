@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with payload length 0 (no close code, no close reason)",
    "droppedByMe": true,
-   "duration": 4,
+   "duration": 3,
    "expectation": "Clean close with normal code.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=216&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 9GnKpkWAe2MC8Tf5b7Z4KA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: GwCzP424tKooEFBhSyxVVPzTt3M=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=216&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: moU+cgkMSYJ0f3izGPFSmg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: JFJJBBsWGKUBwkXWRA8xMqNX/Qc=\r\n\r\n",
    "id": "7.3.1",
    "isServer": true,
    "localCloseCode": null,
@@ -41,7 +41,7 @@
       "8": 1,
       "292": 1
    },
-   "started": "2023-02-11T07:59:50.130Z",
+   "started": "2023-02-19T10:42:28.668Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,7 +101,7 @@
          "RO",
          [
             8,
-            "88824661a0804589"
+            "8882c86fc3c2cb87"
          ]
       ],
       [
@@ -114,7 +114,7 @@
          true,
          0,
          true,
-         "4661a080"
+         "c86fc3c2"
       ]
    ]
 }

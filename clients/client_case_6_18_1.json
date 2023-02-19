@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xc1bf",
    "droppedByMe": true,
-   "duration": 50,
+   "duration": 49,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=144&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 3L7xh1MzYJWmnDaEUqQzVA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Cq5fTGJ0px6ys9MmnkV6L0DhXd0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=144&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: NNWIA7S4X4PA4fJAYYUX9A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: jQ89kE05k1bG4XNOzfhMOF+a4qk=\r\n\r\n",
    "id": "6.18.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -43,7 +43,7 @@
       "20": 1,
       "182": 1
    },
-   "started": "2023-02-11T07:29:49.332Z",
+   "started": "2023-02-19T10:13:32.299Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -104,14 +104,14 @@
          "RO",
          [
             6,
-            "88945b61665e"
+            "889435cb0c44"
          ]
       ],
       [
          "RO",
          [
             20,
-            "588e0f302d000a373f41132a3d4c5e7e2f041e2a"
+            "3624652a43aa602d51eb793053e6346441ae7430"
          ]
       ],
       [
@@ -124,7 +124,7 @@
          true,
          0,
          true,
-         "5b61665e"
+         "35cb0c44"
       ],
       [
          "TF",

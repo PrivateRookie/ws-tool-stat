@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xfefeffff",
    "droppedByMe": true,
-   "duration": 62,
+   "duration": 48,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=138&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: DMwTTnr6hzgFmEBqxlEmAg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: cq14xgADDPKuxHOeQbKZR2pUx9k=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=138&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: cbnZxuOnoKNEleIImbrxkg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: UeTMBPpC7SlC0Ha7Z/6cm4M+sQA=\r\n\r\n",
    "id": "6.16.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -43,7 +43,7 @@
       "20": 1,
       "182": 1
    },
-   "started": "2023-02-11T07:29:49.009Z",
+   "started": "2023-02-19T10:13:31.984Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -105,14 +105,14 @@
          "RO",
          [
             6,
-            "8894b5cb18c0"
+            "889423445b2b"
          ]
       ],
       [
          "RO",
          [
             20,
-            "b62471aec3aa74a9d1eb6db4d3e620e0c1ae60b4"
+            "20ab32455525374247642e5f4569630b5721235f"
          ]
       ],
       [
@@ -125,7 +125,7 @@
          true,
          0,
          true,
-         "b5cb18c0"
+         "23445b2b"
       ],
       [
          "TF",

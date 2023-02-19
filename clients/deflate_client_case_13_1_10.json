@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 compressed messages each of payload size 131072, auto-fragment to 0 octets. Use permessage-deflate client offers (requestNoContextTakeover, requestMaxWindowBits): [(False, 0)]",
    "droppedByMe": true,
-   "duration": 57478,
+   "duration": 55719,
    "expectation": "Receive echo'ed messages (with payload as sent). Timeout case after 480 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=307&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ZviR4MyZwJ96kYXLrz1eGg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 8ySycWhjp75ltZ2no4HinAGdYmo=\r\nSec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=9\r\n\r\n",
+   "httpRequest": "GET /runCase?case=307&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 38SkbKtMzXTmOehPn7lohQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: gmMX+KghTmPpqs2TZo/NhN68svs=\r\nSec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=9\r\n\r\n",
    "id": "13.1.10",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,18 +37,12 @@
       "8": 1
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 1,
-      "8": 1000,
+      "8": 1001,
       "286": 1,
-      "1724": 1,
-      "1832": 1,
-      "1900": 1,
-      "1913": 1,
-      "1955": 1,
-      "2054": 1,
-      "2073": 1,
-      "2896": 7,
+      "1728": 1,
+      "2037": 1,
+      "2048": 1,
+      "2896": 3,
       "4599": 1,
       "4601": 1,
       "4602": 1,
@@ -61,11 +55,11 @@
       "4617": 1,
       "4618": 5,
       "4619": 3,
-      "4620": 7,
+      "4620": 8,
       "4621": 7,
       "4622": 7,
       "4623": 7,
-      "4624": 5,
+      "4624": 4,
       "4625": 4,
       "4626": 2,
       "4627": 1,
@@ -134,7 +128,7 @@
       "4725": 2,
       "4726": 2,
       "4727": 1,
-      "4728": 2,
+      "4728": 3,
       "4729": 3,
       "4730": 7,
       "4731": 5,
@@ -175,7 +169,7 @@
       "4792": 4,
       "4793": 3,
       "4795": 2,
-      "4796": 1,
+      "4796": 2,
       "4797": 2,
       "4798": 1,
       "4801": 2,
@@ -184,7 +178,7 @@
       "4806": 1,
       "4807": 2,
       "4808": 2,
-      "4809": 2,
+      "4809": 3,
       "4810": 2,
       "4811": 2,
       "4812": 1,
@@ -213,7 +207,7 @@
       "4848": 3,
       "4849": 4,
       "4850": 10,
-      "4851": 7,
+      "4851": 8,
       "4852": 12,
       "4853": 7,
       "4854": 8,
@@ -272,7 +266,7 @@
       "4930": 11,
       "4931": 5,
       "4932": 1,
-      "4933": 3,
+      "4933": 2,
       "4934": 3,
       "4935": 5,
       "4936": 6,
@@ -283,13 +277,13 @@
       "4941": 8,
       "4942": 11,
       "4943": 10,
-      "4944": 8,
+      "4944": 7,
       "4945": 11,
       "4946": 6,
       "4947": 6,
       "4948": 5,
       "4949": 12,
-      "4950": 6,
+      "4950": 7,
       "4951": 12,
       "4952": 13,
       "4953": 21,
@@ -307,7 +301,7 @@
       "4966": 8,
       "4967": 14,
       "4968": 7,
-      "4969": 9,
+      "4969": 10,
       "4970": 5,
       "4971": 20,
       "4972": 9,
@@ -328,7 +322,7 @@
       "5015": 1,
       "5016": 1
    },
-   "started": "2023-02-11T07:58:28.622Z",
+   "started": "2023-02-19T05:52:39.914Z",
    "trafficStats": {
       "incomingCompressionRatio": 0.03696820068359375,
       "incomingOctetsAppLevel": 131072000,
@@ -691,15 +685,8 @@
       [
          "RO",
          [
-            6,
-            "8882d17bdb72"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "d293"
+            8,
+            "8882ea0e849be9e6"
          ]
       ],
       [
@@ -712,7 +699,7 @@
          true,
          0,
          true,
-         "d17bdb72"
+         "ea0e849b"
       ]
    ]
 }

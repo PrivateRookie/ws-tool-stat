@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in one chop.",
    "droppedByMe": true,
-   "duration": 58,
+   "duration": 49,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=53&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: xjrl32ExFj7oXwRiui8o5A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Rfi7COnP5hys981b85ZWmJJgzU4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=53&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Jdcv3TZhXAjiT/+Rm58sHw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: /GGZgDbUX8c90eYB7OLE1cLC3vI=\r\n\r\n",
    "id": "5.9",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "50": 1,
       "181": 1
    },
-   "started": "2023-02-11T07:29:36.784Z",
+   "started": "2023-02-19T10:13:19.820Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -128,14 +128,14 @@
          "RO",
          [
             6,
-            "889f9ec625e1"
+            "889f9cafdeff"
          ]
       ],
       [
          "RO",
          [
             50,
-            "9d2c4888edb54c8ff9e64c8ff7b20587eca7428cfba85184fae64393ffab40818d187a6c31501f005d77564c467708005539"
+            "9f45b396efdcb791fb8fb791f5dbfe99eeceb992f9c1aa9af88fb88dfdc2bb818d54455ce71c20308b3b697c903b37308375"
          ]
       ],
       [
@@ -148,7 +148,7 @@
          true,
          0,
          true,
-         "9ec625e1"
+         "9cafdeff"
       ],
       [
          "TF",

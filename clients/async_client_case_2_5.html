@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="http://autobahn.ws/testsuite" title="Autobahn WebSocket Testsuite"><img src="http://autobahn.ws/static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="http://autobahn.ws"           title="Autobahn WebSocket">          <img src="http://autobahn.ws/static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">async-client - <span style="font-size: 1.3em;"><b>Case 2.5</b></span> : Pass - <span style="font-size: 0.9em;"><b>50</b> ms @ 2023-02-11T07:38:20.782Z</a></p>
+      <p class="case case_ok">async-client - <span style="font-size: 1.3em;"><b>Case 2.5</b></span> : Pass - <span style="font-size: 0.9em;"><b>50</b> ms @ 2023-02-19T10:22:05.441Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send ping with binary payload of 126 octets.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Connection is failed immediately (1002/Protocol Error), since control frames are only allowed to have payload up to and including 125 octets..</p>
 
@@ -218,14 +218,14 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
 Host: localhost:9002
 Upgrade: websocket
 Connection: Upgrade
-Sec-Websocket-Key: NHObx8R4xcYW46VxS+fjPw==
+Sec-Websocket-Key: TPU0kShyHA7jt9avv1ybgA==
 Sec-WebSocket-Version: 13</pre>
       <pre class="http_dump">HTTP/1.1 101 Switching Protocols
 Server: AutobahnTestSuite/0.8.2-0.10.9
 X-Powered-By: AutobahnPython/0.10.9
 Upgrade: WebSocket
 Connection: Upgrade
-Sec-WebSocket-Accept: oP3sS1D/5V7wnC2zVfHQvfGn1Wk=</pre>
+Sec-WebSocket-Accept: gHu4dpkvNssdO/cNQ1guaxX9Nww=</pre>
       <br/><hr/>
       <h2>Closing Behavior</h2>
       <table>
@@ -287,9 +287,9 @@ Sec-WebSocket-Accept: oP3sS1D/5V7wnC2zVfHQvfGn1Wk=</pre>
          <pre class="wirelog_tx_octets">003 TX OCTETS: 897e007efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefe</pre>
          <pre class="wirelog_tx_octets">               fefefefefefefefefefefefefefe ...</pre>
          <pre class="wirelog_kill_after">004 FAIL CONNECTION AFTER 1.000000 sec</pre>
-         <pre class="wirelog_rx_octets">005 RX OCTETS: 889ee6d9fb14</pre>
-         <pre class="wirelog_rx_octets">006 RX OCTETS: e533987b88ad897b8af99d6687b49e348faadb6089b6db768fbedb25d4ef</pre>
-         <pre class="wirelog_rx_frame">007 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=30, MASKED=True, MASK=6536643966623134</pre>
+         <pre class="wirelog_rx_octets">005 RX OCTETS: 889ee5a075ba</pre>
+         <pre class="wirelog_rx_octets">006 RX OCTETS: e64a16d58bd407d5898013c884cd109a8cd355ce8acf55d88cc7558bd796</pre>
+         <pre class="wirelog_rx_frame">007 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=30, MASKED=True, MASK=6535613037356261</pre>
          <pre class="wirelog_rx_frame">               0x03ea636f6e74726f6c206672616d6520697320746f6f2062696720313236</pre>
          <pre class="wirelog_tx_frame">008 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=None, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               0x03e8</pre>

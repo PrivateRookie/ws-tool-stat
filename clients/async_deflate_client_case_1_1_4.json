@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=4&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: K/cZe/Mc6ChWzjMC7+RRsw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: MQlijJ5uMn7JqbSGAvVTOSp1otE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=4&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 3K9fCNUBJdsCMMa3wYnl2A==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: VLYLV05bFReXV0uIw8IFaCQO4fk=\r\n\r\n",
    "id": "1.1.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -51,13 +51,11 @@
       "8": 1
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 1,
-      "8": 1,
+      "8": 2,
       "127": 1,
       "290": 1
    },
-   "started": "2023-02-11T07:59:27.877Z",
+   "started": "2023-02-19T10:42:08.516Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -119,14 +117,14 @@
          "RO",
          [
             8,
-            "81fe007fd67fe87d"
+            "81fe007f359e31a8"
          ]
       ],
       [
          "RO",
          [
             127,
-            "fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257fc55c257 ..."
+            "1fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b821fb41b82 ..."
          ]
       ],
       [
@@ -139,7 +137,7 @@
          true,
          0,
          true,
-         "d67fe87d"
+         "359e31a8"
       ],
       [
          "TF",
@@ -166,15 +164,8 @@
       [
          "RO",
          [
-            6,
-            "8882e8ca54bf"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "eb22"
+            8,
+            "88824412dcd447fa"
          ]
       ],
       [
@@ -187,7 +178,7 @@
          true,
          0,
          true,
-         "e8ca54bf"
+         "4412dcd4"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, then Continuation Frame with FIN = false where there is nothing to continue, then unfragmented Text Message, all sent in one chop.",
    "droppedByMe": true,
-   "duration": 45,
+   "duration": 47,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=59&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: VIWfI6JL/1dabmQykmGrDw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: FJRjrhURmnr0xHQYrD8NYayPPbE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=59&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: b08kQheTliqdlkPpvAEwwg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: mOkXluq6VjMOobLo3RE9OhPzv2I=\r\n\r\n",
    "id": "5.15",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "70": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:32.370Z",
+   "started": "2023-02-19T10:42:12.988Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 2,
@@ -185,14 +185,14 @@
          "RO",
          [
             6,
-            "81923657ee38"
+            "8192effec341"
          ]
       ],
       [
          "RO",
          [
             70,
-            "50258f5f5b32804c07319c59513a8b564265889f1de6bfcf1e0cd2a66e95d6a17ac6d6a174929fa96f87d8a27888cbaa79c6d9bd7c8bda818989b70972efc568 ..."
+            "898ca226829bad35de98b1208893a62f9bcc889f9350696190ba0408e023000ff470000ffa244907e1310e0cf63e1d04f7700f13f23d0c8189ace63220ca9453 ..."
          ]
       ],
       [
@@ -205,7 +205,7 @@
          true,
          0,
          true,
-         "3657ee38"
+         "effec341"
       ],
       [
          "RF",
@@ -217,7 +217,7 @@
          true,
          0,
          true,
-         "1de6bfcf"
+         "93506961"
       ],
       [
          "TF",

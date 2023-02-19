@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="http://autobahn.ws/testsuite" title="Autobahn WebSocket Testsuite"><img src="http://autobahn.ws/static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="http://autobahn.ws"           title="Autobahn WebSocket">          <img src="http://autobahn.ws/static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">client - <span style="font-size: 1.3em;"><b>Case 3.6</b></span> : Pass - <span style="font-size: 0.9em;"><b>1</b> ms @ 2023-02-11T07:29:36.326Z</a></p>
+      <p class="case case_ok">client - <span style="font-size: 1.3em;"><b>Case 3.6</b></span> : Pass - <span style="font-size: 0.9em;"><b>3</b> ms @ 2023-02-19T10:13:19.325Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send Ping with <b>RSV = 6</b>.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>The connection is failed immediately, since RSV must be 0.</p>
 
@@ -218,14 +218,14 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
 Host: localhost:9002
 Upgrade: websocket
 Connection: Upgrade
-Sec-Websocket-Key: Suo9SOOYI9csWaw+WNL59g==
+Sec-Websocket-Key: CEzo2X8iLt2BzfPjieddbQ==
 Sec-WebSocket-Version: 13</pre>
       <pre class="http_dump">HTTP/1.1 101 Switching Protocols
 Server: AutobahnTestSuite/0.8.2-0.10.9
 X-Powered-By: AutobahnPython/0.10.9
 Upgrade: WebSocket
 Connection: Upgrade
-Sec-WebSocket-Accept: 7GmvNr38+/gTzBSMW2iYJ0VHeJw=</pre>
+Sec-WebSocket-Accept: qeApOF23W/5TXV1xHOGBXT44Pds=</pre>
       <br/><hr/>
       <h2>Closing Behavior</h2>
       <table>
@@ -285,10 +285,10 @@ Sec-WebSocket-Accept: 7GmvNr38+/gTzBSMW2iYJ0VHeJw=</pre>
          <pre class="wirelog_tx_frame">               Hello, world!</pre>
          <pre class="wirelog_tx_octets">003 TX OCTETS: e20d48656c6c6f2c20776f726c6421</pre>
          <pre class="wirelog_kill_after">004 FAIL CONNECTION AFTER 1.000000 sec</pre>
-         <pre class="wirelog_rx_octets">005 RX OCTETS: 889b7eb57445</pre>
-         <pre class="wirelog_rx_octets">006 RX OCTETS: 7d451d2b08d4182c1a9518201fd11d2b1995162c0ac654744f8444889bfda91b08fe5972668bc877619989776d9ccd72669a</pre>
-         <pre class="wirelog_rx_octets">               89796189da3b39cc982b889b8328 ...</pre>
-         <pre class="wirelog_rx_frame">007 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=27, MASKED=True, MASK=3765623537343435</pre>
+         <pre class="wirelog_rx_octets">005 RX OCTETS: 889b3280f9d1</pre>
+         <pre class="wirelog_rx_octets">006 RX OCTETS: 317090bf44e195b856a095b453e490bf55a09bb846f3d9e003b1c9889bbc4d1e47bfbd7729ca2c722ed86d7222dd297729db</pre>
+         <pre class="wirelog_rx_octets">               6d7c2ec83e3e768d7c2e889bd53d ...</pre>
+         <pre class="wirelog_rx_frame">007 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=27, MASKED=True, MASK=3332383066396431</pre>
          <pre class="wirelog_rx_frame">               0x03f0696e76616c6964206c656164696e6720626974732031313130</pre>
          <pre class="wirelog_tx_frame">008 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=None, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               0x03e8</pre>

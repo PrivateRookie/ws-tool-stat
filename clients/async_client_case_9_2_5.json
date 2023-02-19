@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 8 * 2**20 (16M).",
    "droppedByMe": true,
-   "duration": 83,
+   "duration": 65,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=257&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Th4V1nmhthZiSM/egeJMuw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: AJ6S/HfCduQKgjioVvcpvvinrZg=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=257&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: E2uz8EirMWm9ZEhMw7DPLg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: kzddZSI+Bk7rvhk8fRfgBFAJEHw=\r\n\r\n",
    "id": "9.2.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,15 +40,17 @@
       "8": 1,
       "14": 1,
       "188": 1,
-      "12752": 1,
-      "14480": 1,
-      "28960": 1,
-      "32768": 211,
-      "42240": 1,
-      "65408": 1,
-      "65536": 20
+      "330": 1,
+      "13032": 1,
+      "21760": 1,
+      "24622": 1,
+      "27680": 1,
+      "32640": 1,
+      "32768": 189,
+      "43776": 1,
+      "65536": 31
    },
-   "started": "2023-02-11T07:38:38.600Z",
+   "started": "2023-02-19T10:22:23.263Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -110,7 +112,7 @@
          "RO",
          [
             8,
-            "88823d5f435b3eb7"
+            "88823b764bd6389e"
          ]
       ],
       [
@@ -123,7 +125,7 @@
          true,
          0,
          true,
-         "3d5f435b"
+         "3b764bd6"
       ]
    ]
 }

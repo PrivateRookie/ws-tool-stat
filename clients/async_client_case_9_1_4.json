@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 4 * 2**20 (4M).",
    "droppedByMe": true,
-   "duration": 39,
+   "duration": 95,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=250&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 1u1f4ODqpPg378JsJtjLRw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: r3jHiVcM5yG/QP0+wWnhCEAuI9I=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=250&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: dlN879mM6AF+8Cci73s1+A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: GX4knLuNv7vfCB17RYc4NGmMNfU=\r\n\r\n",
    "id": "9.1.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,12 +40,15 @@
       "8": 1,
       "14": 1,
       "188": 1,
-      "13032": 1,
-      "23544": 1,
+      "14480": 1,
+      "21632": 1,
+      "23760": 1,
       "28960": 1,
-      "65536": 63
+      "32768": 4,
+      "42240": 1,
+      "65536": 60
    },
-   "started": "2023-02-11T07:38:38.292Z",
+   "started": "2023-02-19T10:22:22.859Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -107,7 +110,7 @@
          "RO",
          [
             8,
-            "8882bb25c403b8cd"
+            "8882b999fb72ba71"
          ]
       ],
       [
@@ -120,7 +123,7 @@
          true,
          0,
          true,
-         "bb25c403"
+         "b999fb72"
       ]
    ]
 }

@@ -1,9 +1,9 @@
 {
    "agent": "deflate-client",
-   "behavior": "OK",
-   "behaviorClose": "OK",
+   "behavior": "FAILED",
+   "behaviorClose": "FAILED",
    "case": 71,
-   "closedByMe": true,
+   "closedByMe": false,
    "createStats": true,
    "createWirelog": true,
    "description": "Send a valid UTF-8 text message in fragments of 1 octet, resulting in frames ending on positions which are not code point ends.<br><br>MESSAGE:<br>\u03ba\u1f79\u03c3\u03bc\u03b5<br>cebae1bdb9cf83cebcceb5",
@@ -27,36 +27,28 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=71&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 1Rn3ANRukIFC2/5afcwC3w==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: bqUVAgrR+3yGIdiHelnG+JjqHq4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=71&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: UI/K7j+m351Ag8PzEUp1Jg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: VfoDA8kzi00sWazklGW69RDQdUU=\r\n\r\n",
    "id": "6.2.4",
    "isServer": true,
    "localCloseCode": 1000,
    "localCloseReason": null,
-   "received": [
-      [
-         "message",
-         "\u03ba\u1f79\u03c3\u03bc\u03b5",
-         false
-      ]
-   ],
-   "remoteCloseCode": 1000,
-   "remoteCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1007,
+   "remoteCloseReason": "invalid utf-8 text",
    "reportCompressionRatio": false,
    "reportTime": false,
-   "result": "Actual events match at least one expected.",
-   "resultClose": "Connection was properly closed",
+   "result": "Actual events differ from any expected.",
+   "resultClose": "The connection was failed by the wrong endpoint",
    "rxFrameStats": {
-      "1": 1,
       "8": 1
    },
    "rxOctetStats": {
       "6": 1,
-      "8": 1,
-      "11": 1,
+      "36": 1,
       "285": 1
    },
-   "started": "2023-02-11T07:47:11.301Z",
+   "started": "2023-02-19T10:30:56.757Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 11,
@@ -362,27 +354,27 @@
          "RO",
          [
             6,
-            "818be5104277"
+            "889417155a74"
          ]
       ],
       [
          "RO",
          [
-            11,
-            "2baaa3ca5cdfc1b959def7"
+            36,
+            "14fa331a6174361d73352f007138625463702200828afda41a254745a79c3227d4993311"
          ]
       ],
       [
          "RF",
          [
-            11,
-            "\u03ba\u1f79\u03c3\u03bc\u03b5"
+            20,
+            "0x03ef696e76616c6964207574662d382074657874"
          ],
-         1,
+         8,
          true,
          0,
          true,
-         "e5104277"
+         "17155a74"
       ],
       [
          "TF",
@@ -405,25 +397,6 @@
             "880203e8"
          ],
          false
-      ],
-      [
-         "RO",
-         [
-            8,
-            "8882f78bdf45f463"
-         ]
-      ],
-      [
-         "RF",
-         [
-            2,
-            "0x03e8"
-         ],
-         8,
-         true,
-         0,
-         true,
-         "f78bdf45"
       ]
    ]
 }

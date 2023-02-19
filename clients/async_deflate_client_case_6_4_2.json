@@ -1,14 +1,14 @@
 {
    "agent": "async-deflate-client",
    "behavior": "FAILED",
-   "behaviorClose": "FAILED",
+   "behaviorClose": "OK",
    "case": 75,
-   "closedByMe": true,
+   "closedByMe": false,
    "createStats": true,
    "createWirelog": true,
    "description": "Same as Case 6.4.1, but in 2nd frame, we send only up to and including the octet making the complete payload invalid.\n<br><br>MESSAGE PARTS:<br>\nPART1 = cebae1bdb9cf83cebcceb5f4<br>\nPART2 = 90<br>\nPART3 = 8080656469746564<br>\n",
    "droppedByMe": true,
-   "duration": 2052,
+   "duration": 49,
    "expectation": "The first frame is accepted, we expect to timeout on the first wait. The 2nd frame should be rejected immediately (fail fast on UTF-8). If we timeout, we expect the connection is failed at least then, since the complete message payload is not valid UTF-8.",
    "expected": {
       "NON-STRICT": [
@@ -36,52 +36,40 @@
       "closedByWrongEndpointIsFatal": true,
       "requireClean": false
    },
-   "failedByMe": true,
-   "httpRequest": "GET /runCase?case=75&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: pb53DffVnKwubZ5bKTSe8w==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: R+mcZuh3aRyQWJr5e+LSzW769RE=\r\n\r\n",
+   "failedByMe": false,
+   "httpRequest": "GET /runCase?case=75&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: I/FYieL9877uXB1+cYUvGA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: wEBDlWmeKg2CCrN0/DBlTkSCUuU=\r\n\r\n",
    "id": "6.4.2",
    "isServer": true,
-   "localCloseCode": 1007,
-   "localCloseReason": "encountered invalid UTF-8 while processing text message at payload octet index 12",
-   "received": [
-      [
-         "timeout",
-         "A"
-      ],
-      [
-         "timeout",
-         "B"
-      ]
-   ],
-   "remoteCloseCode": null,
-   "remoteCloseReason": null,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1007,
+   "remoteCloseReason": "invalid utf-8 text",
    "reportCompressionRatio": false,
    "reportTime": false,
-   "result": "Actual events match at least one expected.",
-   "resultClose": "The connection was failed by the wrong endpoint",
+   "result": "Actual events differ from any expected.",
+   "resultClose": "Connection was properly closed",
    "rxFrameStats": {
-      "1": 1
+      "8": 1
    },
    "rxOctetStats": {
       "6": 1,
-      "21": 1,
+      "20": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:37.003Z",
+   "started": "2023-02-19T10:42:17.616Z",
    "trafficStats": null,
    "txFrameStats": {
-      "0": 2,
       "1": 1,
       "8": 1
    },
    "txOctetStats": {
-      "3": 1,
-      "10": 1,
+      "4": 1,
       "14": 1,
-      "85": 1,
       "206": 1
    },
-   "wasClean": false,
+   "wasClean": true,
    "wasCloseHandshakeTimeout": false,
    "wasNotCleanReason": null,
    "wasOpenHandshakeTimeout": false,
@@ -130,85 +118,36 @@
          "A"
       ],
       [
-         "CTE",
-         "A"
-      ],
-      [
-         "TF",
-         [
-            1,
-            "0x90"
-         ],
-         0,
-         false,
-         0,
-         null,
-         null,
-         null,
-         false
-      ],
-      [
-         "TO",
-         [
-            3,
-            "000190"
-         ],
-         false
-      ],
-      [
-         "CT",
-         1,
-         "B"
-      ],
-      [
-         "CTE",
-         "B"
-      ],
-      [
-         "TF",
-         [
-            8,
-            "0x8080656469746564"
-         ],
-         0,
-         true,
-         0,
-         null,
-         null,
-         null,
-         false
-      ],
-      [
-         "TO",
-         [
-            10,
-            "80088080656469746564"
-         ],
-         false
-      ],
-      [
-         "KL",
-         1
-      ],
-      [
          "RO",
          [
             6,
-            "819529e5cb36"
+            "889476902284"
          ]
       ],
       [
          "RO",
          [
-            21,
-            "e75f2a8b902a48f8952b7ec2b9654b534d8cbf534d"
+            20,
+            "757f4bea00f14eed12b057f010bd1aa402f55af0"
          ]
+      ],
+      [
+         "RF",
+         [
+            20,
+            "0x03ef696e76616c6964207574662d382074657874"
+         ],
+         8,
+         true,
+         0,
+         true,
+         "76902284"
       ],
       [
          "TF",
          [
-            83,
-            "0x03ef656e636f756e746572656420696e76616c6964205554462d38207768696c652070726f63657373696e672074657874206d65737361676520617420706179 ..."
+            2,
+            "0x03e8"
          ],
          8,
          true,
@@ -221,22 +160,10 @@
       [
          "TO",
          [
-            85,
-            "885303ef656e636f756e746572656420696e76616c6964205554462d38207768696c652070726f63657373696e672074657874206d6573736167652061742070 ..."
+            4,
+            "880203e8"
          ],
          false
-      ],
-      [
-         "RF",
-         [
-            0,
-            ""
-         ],
-         1,
-         true,
-         0,
-         true,
-         "29e5cb36"
       ]
    ]
 }

@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=44&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 3zeTtw8g9S2PFnw+9DFp5A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: o4Tbq50Iq1G0i6E22RXWyi2bbio=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=44&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: XLui4Ic0lJdDZZrGqxzHog==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: RkMRdgE4frNl0nIvXqbdCbAnZg0=\r\n\r\n",
    "id": "4.2.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "19": 1,
       "181": 1
    },
-   "started": "2023-02-11T07:29:36.354Z",
+   "started": "2023-02-19T10:13:19.377Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -281,25 +281,6 @@
          true
       ],
       [
-         "RO",
-         [
-            19,
-            "818d7a0162e432640e88152d429315730e805b"
-         ]
-      ],
-      [
-         "RF",
-         [
-            13,
-            "Hello, world!"
-         ],
-         1,
-         true,
-         0,
-         true,
-         "7a0162e4"
-      ],
-      [
          "TO",
          [
             1,
@@ -314,6 +295,25 @@
             "6c"
          ],
          true
+      ],
+      [
+         "RO",
+         [
+            19,
+            "818de49f257cacfa49108bb3050b8bed4918c5"
+         ]
+      ],
+      [
+         "RF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "e49f257c"
       ],
       [
          "TO",
@@ -415,7 +415,7 @@
          "RO",
          [
             8,
-            "8882eb045ea0e8ec"
+            "88828b98d3238870"
          ]
       ],
       [
@@ -428,7 +428,7 @@
          true,
          0,
          true,
-         "eb045ea0"
+         "8b98d323"
       ],
       [
          "TF",

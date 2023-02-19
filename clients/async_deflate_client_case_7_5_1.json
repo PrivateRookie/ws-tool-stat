@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with invalid UTF8 payload",
    "droppedByMe": true,
-   "duration": 50,
+   "duration": 49,
    "expectation": "Clean close with protocol error or invalid utf8 code or dropped TCP.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=222&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wt/C0LHCNd37jw6I5jrG6A==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: na2w5bzjEquCBBbiFbrVb5fDqXs=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=222&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: c3QzvUMGjYZBTb+5mNukfQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ty8/ceFfXM48EgNUbDIDEVijZ/k=\r\n\r\n",
    "id": "7.5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -43,7 +43,7 @@
       "20": 1,
       "292": 1
    },
-   "started": "2023-02-11T07:59:50.246Z",
+   "started": "2023-02-19T10:42:28.765Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -103,14 +103,14 @@
          "RO",
          [
             6,
-            "889429ad0cfe"
+            "88949c05c710"
          ]
       ],
       [
          "RO",
          [
             20,
-            "2a4265905fcc60974d8d798a4f8034de5dc8748a"
+            "9feaae7eea64ab79f825b264fa28ff30e860bf64"
          ]
       ],
       [
@@ -123,7 +123,7 @@
          true,
          0,
          true,
-         "29ad0cfe"
+         "9c05c710"
       ]
    ]
 }

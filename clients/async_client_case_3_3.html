@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="http://autobahn.ws/testsuite" title="Autobahn WebSocket Testsuite"><img src="http://autobahn.ws/static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="http://autobahn.ws"           title="Autobahn WebSocket">          <img src="http://autobahn.ws/static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_ok">async-client - <span style="font-size: 1.3em;"><b>Case 3.3</b></span> : Pass - <span style="font-size: 0.9em;"><b>2</b> ms @ 2023-02-11T07:38:21.070Z</a></p>
+      <p class="case case_ok">async-client - <span style="font-size: 1.3em;"><b>Case 3.3</b></span> : Pass - <span style="font-size: 0.9em;"><b>3</b> ms @ 2023-02-19T10:22:05.721Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send small text message, then send again with <b>RSV = 3</b>, then send Ping. Octets are sent in frame-wise chops. Octets are sent in octet-wise chops.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.</p>
 
@@ -218,14 +218,14 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
 Host: localhost:9002
 Upgrade: websocket
 Connection: Upgrade
-Sec-Websocket-Key: IZBDOVMaY61x9CaOOrftXA==
+Sec-Websocket-Key: oB9Uq1J8oqqtRJMqcAIyAQ==
 Sec-WebSocket-Version: 13</pre>
       <pre class="http_dump">HTTP/1.1 101 Switching Protocols
 Server: AutobahnTestSuite/0.8.2-0.10.9
 X-Powered-By: AutobahnPython/0.10.9
 Upgrade: WebSocket
 Connection: Upgrade
-Sec-WebSocket-Accept: N8By9WSVYlSSuNoG96nEkomjFrc=</pre>
+Sec-WebSocket-Accept: pAWBJEqymgtcpVm+p7ZiA+vdCj8=</pre>
       <br/><hr/>
       <h2>Closing Behavior</h2>
       <table>
@@ -293,12 +293,12 @@ Sec-WebSocket-Accept: N8By9WSVYlSSuNoG96nEkomjFrc=</pre>
          <pre class="wirelog_kill_after">006 FAIL CONNECTION AFTER 1.000000 sec</pre>
          <pre class="wirelog_tx_octets_sync">007 TX OCTETS: b10d48656c6c6f2c20776f726c6421</pre>
          <pre class="wirelog_tx_octets_sync">008 TX OCTETS: 8900</pre>
-         <pre class="wirelog_rx_octets">009 RX OCTETS: 818d7d381e61</pre>
-         <pre class="wirelog_rx_octets">010 RX OCTETS: 355d720d12143e16124a72055c889bc2b394fdc143fd93b4d2f894a693f898a3d7fd93a593f694b6c0b4ccf282a5889b9158</pre>
-         <pre class="wirelog_rx_octets">               f35692a89a38e7399f3ff5789f33 ...</pre>
-         <pre class="wirelog_rx_frame">011 RX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASKED=True, MASK=3764333831653631</pre>
+         <pre class="wirelog_rx_octets">009 RX OCTETS: 818d10bb8f2f</pre>
+         <pre class="wirelog_rx_octets">010 RX OCTETS: 58dee3437f97af587fc9e34b31889b3b6e037c389e6a124d0f6f155f4e6f195a0a6a125c4e61154f1d234d0b5f32889bc53d</pre>
+         <pre class="wirelog_rx_octets">               88c1c6cde1afb35ce4a8a11de4a4 ...</pre>
+         <pre class="wirelog_rx_frame">011 RX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASKED=True, MASK=3130626238663266</pre>
          <pre class="wirelog_rx_frame">               Hello, world!</pre>
-         <pre class="wirelog_rx_frame">012 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=27, MASKED=True, MASK=6332623339346664</pre>
+         <pre class="wirelog_rx_frame">012 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=27, MASKED=True, MASK=3362366530333763</pre>
          <pre class="wirelog_rx_frame">               0x03f0696e76616c6964206c656164696e6720626974732031303131</pre>
          <pre class="wirelog_tx_frame">013 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASK=None, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               0x03e8</pre>

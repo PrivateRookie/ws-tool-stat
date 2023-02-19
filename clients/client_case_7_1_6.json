@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 256K message followed by close then a ping",
    "droppedByMe": true,
-   "duration": 14,
+   "duration": 15,
    "expectation": "Case outcome depends on implementation defined close behavior. Message and close frame are sent back to back. If the close frame is processed before the text message write is complete (as can happen in asynchronous processing models) the close frame is processed first and the text message may not be received or may only be partially recieved.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=215&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 9yRI68ktskO/594KrFrWeA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: uAR2FXNruSx9i8WEGWDxoTx+WTQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=215&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: aprEtZH5d/5df21troQkeQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: R6XwiTyaOdKlESAsiqZ0PiHTBzw=\r\n\r\n",
    "id": "7.1.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -60,11 +60,11 @@
       "14": 1,
       "182": 1,
       "13032": 1,
-      "24850": 1,
-      "27680": 1,
+      "23570": 1,
+      "28960": 1,
       "65536": 3
    },
-   "started": "2023-02-11T07:29:52.859Z",
+   "started": "2023-02-19T10:13:35.801Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -195,49 +195,49 @@
          "RO",
          [
             14,
-            "81ff0000000000040000706b9ebf"
+            "81ff0000000000040000c80e9872"
          ]
       ],
       [
          "RO",
          [
             13032,
-            "322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb ..."
+            "8a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16 ..."
          ]
       ],
       [
          "RO",
          [
-            27680,
-            "030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa999 ..."
-         ]
-      ],
-      [
-         "RO",
-         [
-            65536,
-            "030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa999 ..."
+            28960,
+            "bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54 ..."
          ]
       ],
       [
          "RO",
          [
             65536,
-            "4258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe ..."
+            "bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54 ..."
          ]
       ],
       [
          "RO",
          [
             65536,
-            "474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d7 ..."
+            "fa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33 ..."
          ]
       ],
       [
          "RO",
          [
-            24850,
-            "322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb474df4d74258dcfe030fa9991a03ac8c322aeddb ..."
+            65536,
+            "ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21a ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            23570,
+            "8a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16ff28f21afa3dda33bb6aaf54a266aa418a4feb16 ..."
          ]
       ],
       [
@@ -250,7 +250,7 @@
          true,
          0,
          true,
-         "706b9ebf"
+         "c80e9872"
       ],
       [
          "RF",
@@ -262,7 +262,7 @@
          true,
          0,
          true,
-         "cdf80a1d"
+         "8afd23e8"
       ],
       [
          "RF",
@@ -274,7 +274,7 @@
          true,
          0,
          true,
-         "8a67da6f"
+         "d1ece8d2"
       ]
    ]
 }

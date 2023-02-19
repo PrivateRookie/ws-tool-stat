@@ -35,8 +35,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=64&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: CNhOHzW692AdiL0amHp/7A==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: KMVNYGqc3hplGVFUnWq7+569abw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=64&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Wg8cRg5SHwWXLgJ/tOJodQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: g6yOSqb2fCGn/pYrm9mYfxyYz5U=\r\n\r\n",
    "id": "5.20",
    "isServer": true,
    "localCloseCode": 1000,
@@ -68,13 +68,13 @@
       "10": 2
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 2,
+      "6": 1,
+      "8": 1,
       "9": 1,
       "66": 1,
       "285": 1
    },
-   "started": "2023-02-11T07:47:10.082Z",
+   "started": "2023-02-19T10:30:55.554Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -183,14 +183,14 @@
          "RO",
          [
             6,
-            "8a89d9091c5e"
+            "8a897bda25cd"
          ]
       ],
       [
          "RO",
          [
             9,
-            "a9667239b46c3c6ff8"
+            "0bb54baa16bf05fc5a"
          ]
       ],
       [
@@ -203,7 +203,7 @@
          true,
          0,
          true,
-         "d9091c5e"
+         "7bda25cd"
       ],
       [
          "CTE",
@@ -305,7 +305,7 @@
          "RO",
          [
             66,
-            "8a894dfe39c53d9157a2209b19f76c81ad4bef60eb2d9d018c268a0e9f7a89128a2c8205853fdd06992a880d8e259b538d398e07862e8114df2d9d018c268a0e ..."
+            "8a89d4b38e51a4dce036b9d6ae63f581ad24cf512242bd304549aa3f5615a9234343a2344c50fd375045a83c474abb624456ae364f41a1251642bd304549aa3f ..."
          ]
       ],
       [
@@ -318,7 +318,7 @@
          true,
          0,
          true,
-         "4dfe39c5"
+         "d4b38e51"
       ],
       [
          "RF",
@@ -330,7 +330,7 @@
          true,
          0,
          true,
-         "4bef60eb"
+         "24cf5122"
       ],
       [
          "TF",
@@ -357,15 +357,8 @@
       [
          "RO",
          [
-            6,
-            "8882303bd45e"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "33d3"
+            8,
+            "8882c3b84b3fc050"
          ]
       ],
       [
@@ -378,7 +371,7 @@
          true,
          0,
          true,
-         "303bd45e"
+         "c3b84b3f"
       ]
    ]
 }

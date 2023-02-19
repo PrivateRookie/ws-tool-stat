@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 4 * 2**20 (4M).",
    "droppedByMe": true,
-   "duration": 61,
+   "duration": 40,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=256&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: HHpf2XngI++OHs8PxKBI/A==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: vwmLmRHYknHKiCTsXC/ZDEL6UdI=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=256&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: W3RjlJMqK5IBfe9iKRNebw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 0ghLZmuLS746FTeI1+DIxwdsJmI=\r\n\r\n",
    "id": "9.2.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,20 +37,17 @@
       "8": 1
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 1,
+      "8": 1,
+      "14": 1,
       "286": 1,
-      "428": 1,
-      "11008": 1,
-      "14480": 1,
-      "21760": 1,
-      "23076": 1,
-      "27694": 1,
+      "13032": 1,
+      "28960": 1,
       "32640": 1,
-      "32768": 92,
-      "65536": 16
+      "32768": 78,
+      "56440": 1,
+      "65536": 23
    },
-   "started": "2023-02-11T07:47:27.659Z",
+   "started": "2023-02-19T10:31:11.211Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -111,15 +108,8 @@
       [
          "RO",
          [
-            6,
-            "8882cd56c959"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "cebe"
+            8,
+            "88824f77b6874c9f"
          ]
       ],
       [
@@ -132,7 +122,7 @@
          true,
          0,
          true,
-         "cd56c959"
+         "4f77b687"
       ]
    ]
 }

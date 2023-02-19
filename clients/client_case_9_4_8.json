@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 1M.",
    "droppedByMe": true,
-   "duration": 31,
+   "duration": 47,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=275&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: D1t4+rNTFExKToCE6xUZSw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: VxyW5+tAeEc7x0xPZRG2ytzuyGE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=275&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: npgnk1bX2jmbM4xq1CPcrg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: yi1Yp0uDVv4Fmp8RyYBnENa0/lc=\r\n\r\n",
    "id": "9.4.8",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,14 +41,13 @@
       "14": 1,
       "182": 1,
       "13032": 1,
+      "23672": 1,
       "28960": 1,
       "32640": 1,
-      "32768": 103,
-      "36576": 1,
-      "52632": 1,
-      "65536": 10
+      "32768": 93,
+      "65536": 16
    },
-   "started": "2023-02-11T07:29:54.885Z",
+   "started": "2023-02-19T10:13:38.141Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -112,7 +111,7 @@
          "RO",
          [
             8,
-            "8882607918776391"
+            "8882fbe4cafcf80c"
          ]
       ],
       [
@@ -125,7 +124,7 @@
          true,
          0,
          true,
-         "60791877"
+         "fbe4cafc"
       ]
    ]
 }

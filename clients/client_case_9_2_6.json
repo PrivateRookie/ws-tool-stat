@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 16 * 2**20 (16M).",
    "droppedByMe": true,
-   "duration": 129,
+   "duration": 179,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=258&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: q1M+Fhm6iD2SgeFd1UrDfg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: AejjC2xWn5ENYtxufwphtA51zjM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=258&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: xJB9zGk5Ryxs0zKfLP+xqw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 9d7maqssrrNZXB5ZlCYY1SejjgE=\r\n\r\n",
    "id": "9.2.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,17 +39,17 @@
    "rxOctetStats": {
       "8": 1,
       "14": 1,
+      "128": 1,
       "182": 1,
-      "2080": 1,
       "14480": 1,
+      "21900": 1,
       "28960": 1,
-      "32640": 1,
-      "32768": 299,
-      "42240": 1,
-      "43440": 1,
-      "65536": 104
+      "32768": 311,
+      "32964": 1,
+      "65408": 1,
+      "65536": 98
    },
-   "started": "2023-02-11T07:29:54.064Z",
+   "started": "2023-02-19T10:13:37.220Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -111,7 +111,7 @@
          "RO",
          [
             8,
-            "8882280590152bed"
+            "88828c8689e28f6e"
          ]
       ],
       [
@@ -124,7 +124,7 @@
          true,
          0,
          true,
-         "28059015"
+         "8c8689e2"
       ]
    ]
 }

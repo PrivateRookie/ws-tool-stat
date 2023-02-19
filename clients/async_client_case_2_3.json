@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send ping with small binary (non UTF-8) payload.",
    "droppedByMe": true,
-   "duration": 58,
+   "duration": 50,
    "expectation": "Pong with payload echo'ed is sent in reply to Ping. Clean close with normal code.",
    "expected": {
       "OK": [
@@ -26,8 +26,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=19&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: NZmM8M5u99Y85m9Prh3saw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: lC8RiMJxWGp2/pmOMbJG/IfM2b8=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=19&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 34v8jmQhYPa52+ye3qf3VA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: CVADQBrVICpoj/wx2sAWXzldCuo=\r\n\r\n",
    "id": "2.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -53,7 +53,7 @@
       "8": 2,
       "187": 1
    },
-   "started": "2023-02-11T07:38:20.672Z",
+   "started": "2023-02-19T10:22:05.341Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -115,14 +115,14 @@
          "RO",
          [
             6,
-            "8a880309e617"
+            "8a88ece596c4"
          ]
       ],
       [
          "RO",
          [
             8,
-            "03f618eafff2e6e8"
+            "ec1a6839101e963b"
          ]
       ],
       [
@@ -135,7 +135,7 @@
          true,
          0,
          true,
-         "0309e617"
+         "ece596c4"
       ],
       [
          "TF",
@@ -163,7 +163,7 @@
          "RO",
          [
             8,
-            "8882413db25c42d5"
+            "88823abd0be93955"
          ]
       ],
       [
@@ -176,7 +176,7 @@
          true,
          0,
          true,
-         "413db25c"
+         "3abd0be9"
       ]
    ]
 }

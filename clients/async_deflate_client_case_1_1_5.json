@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=5&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: QMk4QjgBeuVZ8N9zpwFLlA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: c3zKu9K0gw1LhqZccU+P0lk7+mk=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=5&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: sk2NzTjz7lA5t5rQQZkxqQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: p/23kjEWlPCCKWTd5BdcAhUywWc=\r\n\r\n",
    "id": "1.1.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -51,13 +51,11 @@
       "8": 1
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 1,
-      "8": 1,
+      "8": 2,
       "128": 1,
       "290": 1
    },
-   "started": "2023-02-11T07:59:27.927Z",
+   "started": "2023-02-19T10:42:08.565Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -119,14 +117,14 @@
          "RO",
          [
             8,
-            "81fe008036483f4f"
+            "81fe0080ac397546"
          ]
       ],
       [
          "RO",
          [
             128,
-            "1c6215651c6215651c6215651c6215651c6215651c6215651c6215651c6215651c6215651c6215651c6215651c6215651c6215651c6215651c6215651c621565 ..."
+            "86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c86135f6c ..."
          ]
       ],
       [
@@ -139,7 +137,7 @@
          true,
          0,
          true,
-         "36483f4f"
+         "ac397546"
       ],
       [
          "TF",
@@ -166,15 +164,8 @@
       [
          "RO",
          [
-            6,
-            "88828f53b9e1"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "8cbb"
+            8,
+            "8882758903fd7661"
          ]
       ],
       [
@@ -187,7 +178,7 @@
          true,
          0,
          true,
-         "8f53b9e1"
+         "758903fd"
       ]
    ]
 }

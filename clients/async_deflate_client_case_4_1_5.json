@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=39&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: vFeqy9+sENCXf+1KF7rbIA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: da+YGMp4VXw+2Msh6D63ZUv+xiU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=39&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: hCFGu46S/Sak+ke+Tu5oaw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: RkhOlXFEKE/s+Y16cqN/T/J6y/g=\r\n\r\n",
    "id": "4.1.5",
    "isServer": true,
    "localCloseCode": null,
@@ -51,11 +51,11 @@
       "1": 1
    },
    "rxOctetStats": {
-      "6": 2,
-      "13": 1,
+      "6": 1,
+      "19": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:31.732Z",
+   "started": "2023-02-19T10:42:12.366Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -318,38 +318,12 @@
          true
       ],
       [
-         "RO",
-         [
-            6,
-            "818d84b63d0f"
-         ]
-      ],
-      [
          "TO",
          [
             1,
             "20"
          ],
          true
-      ],
-      [
-         "RO",
-         [
-            13,
-            "ccd35163eb9a1d78ebc4516ba5"
-         ]
-      ],
-      [
-         "RF",
-         [
-            13,
-            "Hello, world!"
-         ],
-         1,
-         true,
-         0,
-         true,
-         "84b63d0f"
       ],
       [
          "TO",
@@ -418,8 +392,27 @@
       [
          "RO",
          [
+            19,
+            "818de4d86986acbd05ea8bf449f18baa05e2c5"
+         ]
+      ],
+      [
+         "RF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "e4d86986"
+      ],
+      [
+         "RO",
+         [
             6,
-            "888296688d16"
+            "8882f067afc7"
          ]
       ]
    ]

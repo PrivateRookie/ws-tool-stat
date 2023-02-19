@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, then Continuation Frame with FIN = false where there is nothing to continue, then unfragmented Text Message, all sent in one chop.",
    "droppedByMe": true,
-   "duration": 52,
+   "duration": 43,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=59&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: o8b7U5KFYPdIQiNNsADpFQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: WuRfjutho+sEWsfyQsLhXVMsHUw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=59&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: W6kaBKSDRNTuTR/kqbwPuw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: zRHb9q5NH0cgQPP/2inEvjZn+U8=\r\n\r\n",
    "id": "5.15",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "70": 1,
       "181": 1
    },
-   "started": "2023-02-11T07:29:37.009Z",
+   "started": "2023-02-19T10:13:20.035Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 2,
@@ -185,14 +185,14 @@
          "RO",
          [
             6,
-            "819297837894"
+            "8192651fe634"
          ]
       ],
       [
          "RO",
          [
             70,
-            "f1f119f3fae616e0a6e50af5f0ee1dfae3b1889f64771f18679d727117047676035776760d033f7e1616787501196b7d0057796a051a7a818979166f751f640e ..."
+            "036d8753087a8840547994550272835a112d889fa692997ea578f417d5e1f010c1b2f010cfe6b918d4f3fe13c3fced1bc2b2ff0cc7fffc818983fbb898e589d9 ..."
          ]
       ],
       [
@@ -205,7 +205,7 @@
          true,
          0,
          true,
-         "97837894"
+         "651fe634"
       ],
       [
          "RF",
@@ -217,7 +217,7 @@
          true,
          0,
          true,
-         "64771f18"
+         "a692997e"
       ],
       [
          "TF",

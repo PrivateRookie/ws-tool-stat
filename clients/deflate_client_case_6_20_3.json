@@ -1,9 +1,9 @@
 {
    "agent": "deflate-client",
-   "behavior": "FAILED",
-   "behaviorClose": "FAILED",
+   "behavior": "OK",
+   "behaviorClose": "OK",
    "case": 156,
-   "closedByMe": true,
+   "closedByMe": false,
    "createStats": true,
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xedae80",
@@ -21,40 +21,40 @@
       "closedByWrongEndpointIsFatal": true,
       "requireClean": false
    },
-   "failedByMe": true,
-   "httpRequest": "GET /runCase?case=156&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: e1Vac2cwHuRxB0Dbi4n5fw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 2Fj/Jw2YasGpZJ+PmyjZBbVCz8g=\r\n\r\n",
+   "failedByMe": false,
+   "httpRequest": "GET /runCase?case=156&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: lcTDqxEaABT9HTTTxKj7OA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: hrCGcVSxMzc/eoVjvFEAHBben38=\r\n\r\n",
    "id": "6.20.3",
    "isServer": true,
-   "localCloseCode": 1007,
-   "localCloseReason": "encountered invalid UTF-8 while processing text message at payload octet index 1",
+   "localCloseCode": 1000,
+   "localCloseReason": null,
    "received": [],
-   "remoteCloseCode": null,
-   "remoteCloseReason": null,
+   "remoteCloseCode": 1007,
+   "remoteCloseReason": "invalid utf-8 text",
    "reportCompressionRatio": false,
    "reportTime": false,
    "result": "Actual events match at least one expected.",
-   "resultClose": "The connection was failed by the wrong endpoint",
+   "resultClose": "Connection was properly closed",
    "rxFrameStats": {
-      "1": 1
+      "8": 1
    },
    "rxOctetStats": {
-      "3": 1,
       "6": 1,
+      "20": 1,
       "286": 1
    },
-   "started": "2023-02-11T07:47:23.753Z",
+   "started": "2023-02-19T10:31:07.156Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
       "8": 1
    },
    "txOctetStats": {
+      "4": 1,
       "5": 1,
-      "84": 1,
       "206": 1
    },
-   "wasClean": false,
+   "wasClean": true,
    "wasCloseHandshakeTimeout": false,
    "wasNotCleanReason": null,
    "wasOpenHandshakeTimeout": false,
@@ -105,21 +105,33 @@
          "RO",
          [
             6,
-            "8183834572ef"
+            "8894f91b68e4"
          ]
       ],
       [
          "RO",
          [
-            3,
-            "6eebf2"
+            20,
+            "faf4018a8f7a048d9d3b1d909f3650c48d7e1090"
          ]
+      ],
+      [
+         "RF",
+         [
+            20,
+            "0x03ef696e76616c6964207574662d382074657874"
+         ],
+         8,
+         true,
+         0,
+         true,
+         "f91b68e4"
       ],
       [
          "TF",
          [
-            82,
-            "0x03ef656e636f756e746572656420696e76616c6964205554462d38207768696c652070726f63657373696e672074657874206d65737361676520617420706179 ..."
+            2,
+            "0x03e8"
          ],
          8,
          true,
@@ -132,22 +144,10 @@
       [
          "TO",
          [
-            84,
-            "885203ef656e636f756e746572656420696e76616c6964205554462d38207768696c652070726f63657373696e672074657874206d6573736167652061742070 ..."
+            4,
+            "880203e8"
          ],
          false
-      ],
-      [
-         "RF",
-         [
-            0,
-            ""
-         ],
-         1,
-         true,
-         0,
-         true,
-         "834572ef"
       ]
    ]
 }

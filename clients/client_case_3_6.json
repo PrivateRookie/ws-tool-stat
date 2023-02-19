@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Ping with <b>RSV = 6</b>.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 3,
    "expectation": "The connection is failed immediately, since RSV must be 0.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=33&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Suo9SOOYI9csWaw+WNL59g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7GmvNr38+/gTzBSMW2iYJ0VHeJw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=33&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: CEzo2X8iLt2BzfPjieddbQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: qeApOF23W/5TXV1xHOGBXT44Pds=\r\n\r\n",
    "id": "3.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "181": 1,
       "13032": 1
    },
-   "started": "2023-02-11T07:29:36.326Z",
+   "started": "2023-02-19T10:13:19.325Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -104,14 +104,14 @@
          "RO",
          [
             6,
-            "889b7eb57445"
+            "889b3280f9d1"
          ]
       ],
       [
          "RO",
          [
             13032,
-            "7d451d2b08d4182c1a9518201fd11d2b1995162c0ac654744f8444889bfda91b08fe5972668bc877619989776d9ccd72669a89796189da3b39cc982b889b8328 ..."
+            "317090bf44e195b856a095b453e490bf55a09bb846f3d9e003b1c9889bbc4d1e47bfbd7729ca2c722ed86d7222dd297729db6d7c2ec83e3e768d7c2e889bd53d ..."
          ]
       ],
       [
@@ -124,7 +124,7 @@
          true,
          0,
          true,
-         "7eb57445"
+         "3280f9d1"
       ],
       [
          "TF",

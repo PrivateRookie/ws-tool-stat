@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xc020c120c220c320c420c520c620c720c820c920ca20cb20cc20cd20ce20cf20d020d120d220d320d420d520d620d720d820d920da20db20dc20dd20de20",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 59,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=120&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: uYP3itExxoHmQ978IRj4Uw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: i02/NDyYQmlQh52sO6VUBlDbC4Y=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=120&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: z3ziILHJcxrkW+wDelONJA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7dZBXv1ul3NzwfI2+CqSYgKzpM4=\r\n\r\n",
    "id": "6.13.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -43,7 +43,7 @@
       "20": 1,
       "188": 1
    },
-   "started": "2023-02-11T07:38:32.721Z",
+   "started": "2023-02-19T10:22:17.370Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -105,14 +105,14 @@
          "RO",
          [
             6,
-            "88949b03da82"
+            "8894ec65e2d5"
          ]
       ],
       [
          "RO",
          [
             20,
-            "98ecb3eced62b6ebff23aff6fd2ee2a2ef66a2f6"
+            "ef8a8bbb9a048ebc884597a18a48daf598009aa1"
          ]
       ],
       [
@@ -125,7 +125,7 @@
          true,
          0,
          true,
-         "9b03da82"
+         "ec65e2d5"
       ],
       [
          "TF",

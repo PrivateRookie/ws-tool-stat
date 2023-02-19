@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented text message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 256.",
    "droppedByMe": true,
-   "duration": 38,
+   "duration": 73,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=260&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: nlAwX6lLzk64ir4c9KA/2Q==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7TBxStQzzqLfAimG4g1pvguS4sc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=260&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: WCYzJxKAhJ1CLkK55azalA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: MhXkw7a+Wnm8Y0IDSMKDsfVgyOM=\r\n\r\n",
    "id": "9.3.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,14 +37,17 @@
       "8": 1
    },
    "rxOctetStats": {
-      "8": 1,
+      "2": 1,
+      "6": 1,
+      "14": 1,
       "286": 1,
       "14480": 1,
-      "22110": 1,
       "28960": 1,
-      "65536": 63
+      "42240": 1,
+      "45392": 1,
+      "65536": 62
    },
-   "started": "2023-02-11T07:47:28.017Z",
+   "started": "2023-02-19T10:31:11.617Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 16384,
@@ -107,8 +110,15 @@
       [
          "RO",
          [
-            8,
-            "8882a03f772ca3d7"
+            6,
+            "88827073eaf3"
+         ]
+      ],
+      [
+         "RO",
+         [
+            2,
+            "739b"
          ]
       ],
       [
@@ -121,7 +131,7 @@
          true,
          0,
          true,
-         "a03f772c"
+         "7073eaf3"
       ]
    ]
 }

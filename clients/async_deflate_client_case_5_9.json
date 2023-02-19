@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in one chop.",
    "droppedByMe": true,
-   "duration": 61,
+   "duration": 48,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=53&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: VV/gT8WeHeZW+IVX0ifhXA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Cv3mkq442DpUSDEe4hbq9/6cusU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=53&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: aItCUD0K8zoM5O1XEZkvrQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: EuCkyHWtS6VQzICMsNd71oDtxPI=\r\n\r\n",
    "id": "5.9",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "50": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:32.158Z",
+   "started": "2023-02-19T10:42:12.786Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -128,14 +128,14 @@
          "RO",
          [
             6,
-            "889fae138f73"
+            "889f5ea44245"
          ]
       ],
       [
          "RO",
          [
             50,
-            "adf9e21add60e61dc933e61dc767af15dc72e81ecb7dfb16ca33e901cf7eea818d4e7d9c160618f07a2151bc61210ff0726f"
+            "5d4e2f2c2dd72b2b39842b2b37d062232cc525283bca36203a8424373fc927818d334404b47b2168d85c6824c35c3668d012"
          ]
       ],
       [
@@ -148,7 +148,7 @@
          true,
          0,
          true,
-         "ae138f73"
+         "5ea44245"
       ],
       [
          "TF",

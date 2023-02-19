@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send ping with binary payload of 125 octets.",
    "droppedByMe": true,
-   "duration": 47,
+   "duration": 49,
    "expectation": "Pong with payload echo'ed is sent in reply to Ping. Clean close with normal code.",
    "expected": {
       "OK": [
@@ -26,8 +26,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=20&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: MJOS9axHFs0KFYtr3kxQnw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: k/H0D2aKwgkPcIjaGu3M7ypPcro=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=20&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: GCIrMlZVfKRpwCKRlPA+zQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: yFS9LMO5mF9rithutjIJAhT5KlU=\r\n\r\n",
    "id": "2.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -54,7 +54,7 @@
       "125": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:28.338Z",
+   "started": "2023-02-19T10:42:08.956Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -116,14 +116,14 @@
          "RO",
          [
             6,
-            "8afdfdf547cf"
+            "8afde3b79ecd"
          ]
       ],
       [
          "RO",
          [
             125,
-            "030bb931030bb931030bb931030bb931030bb931030bb931030bb931030bb931030bb931030bb931030bb931030bb931030bb931030bb931030bb931030bb931 ..."
+            "1d4960331d4960331d4960331d4960331d4960331d4960331d4960331d4960331d4960331d4960331d4960331d4960331d4960331d4960331d4960331d496033 ..."
          ]
       ],
       [
@@ -136,7 +136,7 @@
          true,
          0,
          true,
-         "fdf547cf"
+         "e3b79ecd"
       ],
       [
          "TF",
@@ -164,7 +164,7 @@
          "RO",
          [
             8,
-            "8882565856c555b0"
+            "888264641884678c"
          ]
       ],
       [
@@ -177,7 +177,7 @@
          true,
          0,
          true,
-         "565856c5"
+         "64641884"
       ]
    ]
 }

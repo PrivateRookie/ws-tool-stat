@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xf7bfbf",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 59,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=132&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wA69kOSulI4vSrKwatm18g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: NglsNsL2SXfw8M5UmL7gSXuQbmQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=132&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: CgD+3aet30m7PGX3gcRLZA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 4G/Tz7rSxaAbtF3m2DIq6gd3Ks8=\r\n\r\n",
    "id": "6.14.8",
    "isServer": true,
    "localCloseCode": 1000,
@@ -43,7 +43,7 @@
       "20": 1,
       "182": 1
    },
-   "started": "2023-02-11T07:29:48.695Z",
+   "started": "2023-02-19T10:13:31.660Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -105,14 +105,14 @@
          "RO",
          [
             6,
-            "8894d65d2da4"
+            "8894accd7252"
          ]
       ],
       [
          "RO",
          [
             20,
-            "d5b244caa03c41cdb27d58d0b0701584a23855d0"
+            "af221b3cdaac1e3bc8ed0726cae04a72d8a80a26"
          ]
       ],
       [
@@ -125,7 +125,7 @@
          true,
          0,
          true,
-         "d65d2da4"
+         "accd7252"
       ],
       [
          "TF",

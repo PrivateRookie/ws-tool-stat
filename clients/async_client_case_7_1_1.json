@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a message followed by a close frame",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 50,
    "expectation": "Echoed message followed by clean close with normal code.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=210&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 7CRkfGg6AAH4GCIwP1vvog==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: lPmuEhkKJ4qW/z+jHGQGUDzQl7Q=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=210&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 4zpXITng3oIBtToD8I0m4g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: +4j4+lSRzuYcMFFb7HDj9HSb10M=\r\n\r\n",
    "id": "7.1.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "12": 1,
       "188": 1
    },
-   "started": "2023-02-11T07:38:37.422Z",
+   "started": "2023-02-19T10:22:22.021Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -118,14 +118,14 @@
          "RO",
          [
             6,
-            "818c13d97c88"
+            "818cdcea3835"
          ]
       ],
       [
          "RO",
          [
             12,
-            "5bbc10e47cf92be761b518a9"
+            "948f5459b3ca6f5aae865c14"
          ]
       ],
       [
@@ -138,7 +138,7 @@
          true,
          0,
          true,
-         "13d97c88"
+         "dcea3835"
       ],
       [
          "TF",
@@ -166,7 +166,7 @@
          "RO",
          [
             8,
-            "8882877a35ce8492"
+            "88820ed600a30d3e"
          ]
       ],
       [
@@ -179,7 +179,7 @@
          true,
          0,
          true,
-         "877a35ce"
+         "0ed600a3"
       ]
    ]
 }

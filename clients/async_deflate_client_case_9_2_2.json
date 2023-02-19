@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 256 * 2**10 (256k).",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 5,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=254&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 8Wxk4+wj4kECncCFb1T9oQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: YR7k5bPWZTgawX6Gwz78wD1coBs=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=254&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 9dfQVBAWT4vvL3Pr/HLS4A==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: sDU1i7mRkPFF7g/zVKb/lXD1cwc=\r\n\r\n",
    "id": "9.2.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,15 +38,15 @@
    },
    "rxOctetStats": {
       "8": 1,
+      "14": 1,
       "292": 1,
-      "11230": 1,
-      "14480": 1,
-      "28960": 1,
-      "32768": 3,
-      "43648": 1,
-      "65536": 1
+      "10880": 1,
+      "13032": 1,
+      "27680": 1,
+      "32768": 5,
+      "46712": 1
    },
-   "started": "2023-02-11T07:59:51.194Z",
+   "started": "2023-02-19T10:42:29.758Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -108,7 +108,7 @@
          "RO",
          [
             8,
-            "8882f54380b4f6ab"
+            "8882055792c406bf"
          ]
       ],
       [
@@ -121,7 +121,7 @@
          true,
          0,
          true,
-         "f54380b4"
+         "055792c4"
       ]
    ]
 }

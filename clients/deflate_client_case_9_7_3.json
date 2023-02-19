@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 text messages of payload size 64 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": true,
-   "duration": 50340,
+   "duration": 50349,
    "expectation": "Receive echo'ed text messages (with payload as sent). Timeout case after 60 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=291&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: KtrU2Gy7trg+k1sm+6Z9xg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: J6uKEz4+AqUfPkqR8ATtBNv1U0Q=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=291&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ylWT8fThb69pm7l/z26ang==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: +Oxp1dHpDAyYHVHW83N8vSp+l74=\r\n\r\n",
    "id": "9.7.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "64": 1000,
       "286": 1
    },
-   "started": "2023-02-11T07:48:19.910Z",
+   "started": "2023-02-19T10:32:03.717Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1000,
@@ -112,7 +112,7 @@
          "RO",
          [
             8,
-            "88828ceb1e5f8f03"
+            "8882f762d032f48a"
          ]
       ],
       [
@@ -125,7 +125,7 @@
          true,
          0,
          true,
-         "8ceb1e5f"
+         "f762d032"
       ]
    ]
 }

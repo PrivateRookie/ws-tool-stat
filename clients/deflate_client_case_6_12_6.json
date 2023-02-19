@@ -1,14 +1,14 @@
 {
    "agent": "deflate-client",
-   "behavior": "FAILED",
-   "behaviorClose": "FAILED",
+   "behavior": "OK",
+   "behaviorClose": "OK",
    "case": 117,
-   "closedByMe": true,
+   "closedByMe": false,
    "createStats": true,
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0x80bf80bf80",
    "droppedByMe": true,
-   "duration": 50,
+   "duration": 49,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -21,40 +21,40 @@
       "closedByWrongEndpointIsFatal": true,
       "requireClean": false
    },
-   "failedByMe": true,
-   "httpRequest": "GET /runCase?case=117&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: j2tZrr5hf6Ya8yn7S31bwQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: AKs0nt/BJbhrMPWIA1pZxSRJL2k=\r\n\r\n",
+   "failedByMe": false,
+   "httpRequest": "GET /runCase?case=117&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: i9rZDbPvMDpOo+7P7tXULg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 5hUhTT4DV2TqLG/TAp/3Qp39lXk=\r\n\r\n",
    "id": "6.12.6",
    "isServer": true,
-   "localCloseCode": 1007,
-   "localCloseReason": "encountered invalid UTF-8 while processing text message at payload octet index 0",
+   "localCloseCode": 1000,
+   "localCloseReason": null,
    "received": [],
-   "remoteCloseCode": null,
-   "remoteCloseReason": null,
+   "remoteCloseCode": 1007,
+   "remoteCloseReason": "invalid utf-8 text",
    "reportCompressionRatio": false,
    "reportTime": false,
    "result": "Actual events match at least one expected.",
-   "resultClose": "The connection was failed by the wrong endpoint",
+   "resultClose": "Connection was properly closed",
    "rxFrameStats": {
-      "1": 1
+      "8": 1
    },
    "rxOctetStats": {
-      "5": 1,
       "6": 1,
+      "20": 1,
       "286": 1
    },
-   "started": "2023-02-11T07:47:21.721Z",
+   "started": "2023-02-19T10:31:05.157Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
       "8": 1
    },
    "txOctetStats": {
+      "4": 1,
       "7": 1,
-      "84": 1,
       "206": 1
    },
-   "wasClean": false,
+   "wasClean": true,
    "wasCloseHandshakeTimeout": false,
    "wasNotCleanReason": null,
    "wasOpenHandshakeTimeout": false,
@@ -105,21 +105,33 @@
          "RO",
          [
             6,
-            "81854ef8f30c"
+            "88946a09b460"
          ]
       ],
       [
          "RO",
          [
-            5,
-            "ce4773b3ce"
+            20,
+            "69e6dd0e1c68d8090e29c1140c248c401e6ccc14"
          ]
+      ],
+      [
+         "RF",
+         [
+            20,
+            "0x03ef696e76616c6964207574662d382074657874"
+         ],
+         8,
+         true,
+         0,
+         true,
+         "6a09b460"
       ],
       [
          "TF",
          [
-            82,
-            "0x03ef656e636f756e746572656420696e76616c6964205554462d38207768696c652070726f63657373696e672074657874206d65737361676520617420706179 ..."
+            2,
+            "0x03e8"
          ],
          8,
          true,
@@ -132,22 +144,10 @@
       [
          "TO",
          [
-            84,
-            "885203ef656e636f756e746572656420696e76616c6964205554462d38207768696c652070726f63657373696e672074657874206d6573736167652061742070 ..."
+            4,
+            "880203e8"
          ],
          false
-      ],
-      [
-         "RF",
-         [
-            0,
-            ""
-         ],
-         1,
-         true,
-         0,
-         true,
-         "4ef8f30c"
       ]
    ]
 }

@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=65&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: aSBotTxIqOJ/0DNjW0iU1Q==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: JFFxlAz1S9QcUkRZqFKsjYzbckU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=65&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: iLSbp0TlgvIWjLnOzY0gSA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: DlDCxqe89Y/OzkyUUCjD9wEtRxg=\r\n\r\n",
    "id": "6.1.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -51,11 +51,11 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "8": 1,
+      "2": 1,
+      "6": 2,
       "291": 1
    },
-   "started": "2023-02-11T07:59:34.591Z",
+   "started": "2023-02-19T10:42:15.191Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -117,7 +117,7 @@
          "RO",
          [
             6,
-            "81808a4ca236"
+            "81804995de99"
          ]
       ],
       [
@@ -130,7 +130,7 @@
          true,
          0,
          true,
-         "8a4ca236"
+         "4995de99"
       ],
       [
          "TF",
@@ -157,8 +157,15 @@
       [
          "RO",
          [
-            8,
-            "8882ba1a35d1b9f2"
+            6,
+            "88823444f5a5"
+         ]
+      ],
+      [
+         "RO",
+         [
+            2,
+            "37ac"
          ]
       ],
       [
@@ -171,7 +178,7 @@
          true,
          0,
          true,
-         "ba1a35d1"
+         "3444f5a5"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Pong fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 58,
+   "duration": 59,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=46&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ghfkmhTwOY46oB24QWdTfA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7mB/h9GDGzY5dGtOJ/hPT1uvZSk=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=46&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: /D1Te9epVyxJfXGDBv8n0g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ePs+u1ib34EnafgK8G52pfpzcfM=\r\n\r\n",
    "id": "5.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "64": 1,
       "181": 1
    },
-   "started": "2023-02-11T07:29:36.413Z",
+   "started": "2023-02-19T10:13:19.439Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -127,14 +127,14 @@
          "RO",
          [
             6,
-            "889b62d67a1c"
+            "889b24165750"
          ]
       ],
       [
          "RO",
          [
             64,
-            "613c1c6e03b117790ca21f7842b5157216a4157042b0087d0fb35a889ff856e7a2fbbc8acb8b258ecc9f768ecc9122c7c48a3780cf9d3893c79c7681d0993b82 ..."
+            "27fc312245713a354a6232340475383e5064383c04702531497377889f3db763b43e5d0edd4ec40ada5a970ada54c343d24fd604d958d917d1599705c65cda06 ..."
          ]
       ],
       [
@@ -147,7 +147,7 @@
          true,
          0,
          true,
-         "62d67a1c"
+         "24165750"
       ],
       [
          "TF",

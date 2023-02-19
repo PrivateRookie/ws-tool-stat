@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 10 Pings with payload.",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 59,
    "expectation": "Pongs for our Pings with all the payloads. Note: This is not required by the Spec .. but we check for this behaviour anyway. Clean close with normal code.",
    "expected": {
       "OK": [
@@ -62,8 +62,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=26&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 1W1rFXWowfVvHqdsQvvWYQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ilGJ1A58sA3tFL19q1Lthwezq5M=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=26&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: QpVeRlrknw4Ko8Hz8xshTA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: bXL01pjzn20id/TLNYDftL9GMLg=\r\n\r\n",
    "id": "2.10",
    "isServer": true,
    "localCloseCode": 1000,
@@ -126,7 +126,7 @@
       "144": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:28.546Z",
+   "started": "2023-02-19T10:42:09.176Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -386,14 +386,14 @@
          "RO",
          [
             6,
-            "8a8941fca203"
+            "8a894f5938a5"
          ]
       ],
       [
          "RO",
          [
             144,
-            "319ddb6f2e9dc62e718a89c2a0e8f7b2c1919badc18cdaf38a897bc6c36d0ba7ba0114a7a740498a893d95f61a4df48f7652f492370e8a89247f1eca541e67a6 ..."
+            "3f3841c920385c887f8a89e01095f79071ec9b8f71f1dad18a894d05a07a3d64d9162264c4577f8a896e6b66761e0a1f1a010a025b5d8a89c070abdeb011d2b2 ..."
          ]
       ],
       [
@@ -406,7 +406,7 @@
          true,
          0,
          true,
-         "41fca203"
+         "4f5938a5"
       ],
       [
          "RF",
@@ -418,7 +418,7 @@
          true,
          0,
          true,
-         "c2a0e8f7"
+         "e01095f7"
       ],
       [
          "RF",
@@ -430,7 +430,7 @@
          true,
          0,
          true,
-         "7bc6c36d"
+         "4d05a07a"
       ],
       [
          "RF",
@@ -442,7 +442,7 @@
          true,
          0,
          true,
-         "3d95f61a"
+         "6e6b6676"
       ],
       [
          "RF",
@@ -454,7 +454,7 @@
          true,
          0,
          true,
-         "247f1eca"
+         "c070abde"
       ],
       [
          "RF",
@@ -466,7 +466,7 @@
          true,
          0,
          true,
-         "832e523d"
+         "46e623bd"
       ],
       [
          "RF",
@@ -478,7 +478,7 @@
          true,
          0,
          true,
-         "7aca446f"
+         "b9dee488"
       ],
       [
          "RF",
@@ -490,7 +490,7 @@
          true,
          0,
          true,
-         "f8f24263"
+         "4f7fab7d"
       ],
       [
          "RF",
@@ -502,7 +502,7 @@
          true,
          0,
          true,
-         "06602a18"
+         "f052fe21"
       ],
       [
          "RF",
@@ -514,7 +514,7 @@
          true,
          0,
          true,
-         "e7539a75"
+         "b924fcc5"
       ],
       [
          "TF",
@@ -542,7 +542,7 @@
          "RO",
          [
             8,
-            "88826f48d8da6ca0"
+            "8882d90d8bbbdae5"
          ]
       ],
       [
@@ -555,7 +555,7 @@
          true,
          0,
          true,
-         "6f48d8da"
+         "d90d8bbb"
       ]
    ]
 }

@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=70&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Z3a5XsUqits75niPItaYKw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: UcJxtdgOQXR01SLczJkeAq+N5Jk=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=70&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: HSg8CDLReKJGbQGi4CJmhw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 6JkmD6HdMg5BpnfSsDdF8smjrL4=\r\n\r\n",
    "id": "6.2.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "29": 1,
       "187": 1
    },
-   "started": "2023-02-11T07:38:24.112Z",
+   "started": "2023-02-19T10:22:08.780Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 29,
@@ -758,14 +758,14 @@
          "RO",
          [
             6,
-            "819db7ff1458"
+            "819d66f5805c"
          ]
       ],
       [
          "RO",
          [
             29,
-            "ff9a7834d8d2d6edf73c8b9b013cb09b0b3cb49b16d2410cf1d22c7996"
+            "2e90ec3009d842e926361f9fd036249fda36209fc7d8d50820d8b87d47"
          ]
       ],
       [
@@ -778,7 +778,7 @@
          true,
          0,
          true,
-         "b7ff1458"
+         "66f5805c"
       ],
       [
          "TF",
@@ -806,7 +806,7 @@
          "RO",
          [
             8,
-            "8882307176133399"
+            "8882bb7105cab899"
          ]
       ],
       [
@@ -819,7 +819,7 @@
          true,
          0,
          true,
-         "30717613"
+         "bb7105ca"
       ]
    ]
 }

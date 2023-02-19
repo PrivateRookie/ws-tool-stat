@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=43&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 3DMGFUHN8ud+U8LNEt4QTg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: i3qKzz3ppKy62xzI2eCIAzC9sss=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=43&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: yBN8WhZiHHuuyMp1Bpz6tg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ocWkt3HdttHikTNFrcYS6h3vj30=\r\n\r\n",
    "id": "4.2.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -52,10 +52,11 @@
       "8": 1
    },
    "rxOctetStats": {
-      "27": 1,
+      "6": 1,
+      "21": 1,
       "285": 1
    },
-   "started": "2023-02-11T07:47:08.216Z",
+   "started": "2023-02-19T10:30:53.701Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -163,8 +164,15 @@
       [
          "RO",
          [
-            27,
-            "818d72c808d13aad64bd1de428a61dba64b5538882edb31e2bee5b"
+            6,
+            "818dbf8cd1f7"
+         ]
+      ],
+      [
+         "RO",
+         [
+            21,
+            "f7e9bd9bd0a0f180d0febd939e8882b729a5a5b4c1"
          ]
       ],
       [
@@ -177,7 +185,7 @@
          true,
          0,
          true,
-         "72c808d1"
+         "bf8cd1f7"
       ],
       [
          "RF",
@@ -189,7 +197,7 @@
          true,
          0,
          true,
-         "edb31e2b"
+         "b729a5a5"
       ],
       [
          "TF",

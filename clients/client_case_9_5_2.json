@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 1 * 2**20 (1M). Sent out data in chops of 128 octets.",
    "droppedByMe": true,
-   "duration": 127,
+   "duration": 115,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=278&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: CWkDuh83Ku95Se7LwJIQhw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: KRzxLBga24jN16Bqm12j1rSkmUc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=278&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 6uvHsZSk4lRVbRb8f/a9Ng==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: o5ro2oAyBuhyNNPk/TQX8c6GKYc=\r\n\r\n",
    "id": "9.5.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,14 +40,16 @@
       "8": 1,
       "14": 1,
       "182": 1,
-      "13032": 1,
-      "23672": 1,
-      "28960": 1,
+      "7240": 1,
+      "14648": 1,
+      "18824": 1,
+      "24952": 1,
       "32640": 1,
-      "32768": 3,
+      "42240": 1,
+      "56064": 1,
       "65536": 13
    },
-   "started": "2023-02-11T07:29:55.210Z",
+   "started": "2023-02-19T10:13:38.529Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -110,7 +112,7 @@
          "RO",
          [
             8,
-            "8882d50894a5d6e0"
+            "888236b28a2f355a"
          ]
       ],
       [
@@ -123,7 +125,7 @@
          true,
          0,
          true,
-         "d50894a5"
+         "36b28a2f"
       ]
    ]
 }

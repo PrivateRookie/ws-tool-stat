@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=254&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: /Acm7emSUML3I7f1276K1g==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: /K+lrqbe3fgvdq2UDGYyfLRf5JU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=254&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: pjzFaA35RD+pJiHD0gwX5Q==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: GAK82/XmSzzTAHBc6IvvHAYfGa0=\r\n\r\n",
    "id": "9.2.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,14 +39,14 @@
    "rxOctetStats": {
       "2": 1,
       "6": 1,
+      "14": 1,
       "286": 1,
-      "14480": 1,
+      "13032": 1,
+      "23544": 1,
       "28960": 1,
-      "43648": 1,
-      "43998": 1,
-      "65536": 2
+      "65536": 3
    },
-   "started": "2023-02-11T07:47:27.642Z",
+   "started": "2023-02-19T10:31:11.190Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -108,14 +108,14 @@
          "RO",
          [
             6,
-            "8882f9743e91"
+            "8882f63d8487"
          ]
       ],
       [
          "RO",
          [
             2,
-            "fa9c"
+            "f5d5"
          ]
       ],
       [
@@ -128,7 +128,7 @@
          true,
          0,
          true,
-         "f9743e91"
+         "f63d8487"
       ]
    ]
 }

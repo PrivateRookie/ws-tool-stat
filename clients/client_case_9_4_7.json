@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 256k.",
    "droppedByMe": true,
-   "duration": 30,
+   "duration": 31,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=274&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: MFe7mAZ1EqdH7RePwZcY3w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: i7rTiAs6octky9PTfTd0BPCg45E=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=274&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: FBWC4HoMTvRdfa0QdzEckg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 026W7c7ocZiKfGgFqhsvlbDpu2M=\r\n\r\n",
    "id": "9.4.7",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,14 +40,15 @@
       "8": 1,
       "14": 1,
       "182": 1,
+      "11008": 1,
+      "12664": 1,
       "13032": 1,
-      "23672": 1,
       "28960": 1,
       "32640": 1,
-      "32768": 105,
-      "65536": 10
+      "32768": 85,
+      "65536": 20
    },
-   "started": "2023-02-11T07:29:54.854Z",
+   "started": "2023-02-19T10:13:38.109Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 16,
@@ -111,7 +112,7 @@
          "RO",
          [
             8,
-            "8882ffe74c97fc0f"
+            "8882b47adc5eb792"
          ]
       ],
       [
@@ -124,7 +125,7 @@
          true,
          0,
          true,
-         "ffe74c97"
+         "b47adc5e"
       ]
    ]
 }

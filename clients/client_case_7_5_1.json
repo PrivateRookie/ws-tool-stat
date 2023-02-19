@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with invalid UTF8 payload",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 58,
    "expectation": "Clean close with protocol error or invalid utf8 code or dropped TCP.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=222&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: TeTtzS0jjv19gyZakUVwNA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 8AsSgyg+3/mlDkYmMBVs5bgDyE8=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=222&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: LZqWaqHN+yNj3m06DTTcPA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: j+f961i4lQ1pB9PMVcTB5W88Wjk=\r\n\r\n",
    "id": "7.5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -43,7 +43,7 @@
       "20": 1,
       "182": 1
    },
-   "started": "2023-02-11T07:29:52.975Z",
+   "started": "2023-02-19T10:13:35.941Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -103,14 +103,14 @@
          "RO",
          [
             6,
-            "8894dfe5a45e"
+            "88949cce1904"
          ]
       ],
       [
          "RO",
          [
             20,
-            "dc0acd30a984c837bbc5d12ab9c89c7eab80dc2a"
+            "9f21706aeaaf756df8ee6c70fae32124e8ab6170"
          ]
       ],
       [
@@ -123,7 +123,7 @@
          true,
          0,
          true,
-         "dfe5a45e"
+         "9cce1904"
       ]
    ]
 }

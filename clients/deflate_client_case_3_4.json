@@ -1,13 +1,13 @@
 {
    "agent": "deflate-client",
    "behavior": "OK",
-   "behaviorClose": "OK",
+   "behaviorClose": "WRONG CODE",
    "case": 31,
    "closedByMe": false,
    "createStats": true,
    "createWirelog": true,
    "description": "Send small text message, then send again with <b>RSV = 4</b>, then send Ping. Octets are sent in octet-wise chops.",
-   "droppedByMe": false,
+   "droppedByMe": true,
    "duration": 2,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.",
    "expected": {
@@ -28,11 +28,11 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=31&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: XhoA0H9HSbbxJDm4TOK5Jg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ON0OQCnLsmCp0hvdbiCeV1/dCjU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=31&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 9OxE52Ja5jWEUwcNauVd9g==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: UcBg5HvLoa5rb9K71RbTERcoYI0=\r\n\r\n",
    "id": "3.4",
    "isServer": true,
-   "localCloseCode": null,
+   "localCloseCode": 1000,
    "localCloseReason": null,
    "received": [
       [
@@ -41,33 +41,36 @@
          false
       ]
    ],
-   "remoteCloseCode": null,
+   "remoteCloseCode": 1000,
    "remoteCloseReason": null,
    "reportCompressionRatio": false,
    "reportTime": false,
    "result": "Actual events match at least one expected.",
-   "resultClose": "Connection was properly closed",
+   "resultClose": "The close code should have been 1002 or empty",
    "rxFrameStats": {
-      "1": 1
+      "1": 1,
+      "8": 1
    },
    "rxOctetStats": {
-      "6": 2,
-      "13": 1,
+      "6": 1,
+      "21": 1,
       "285": 1
    },
-   "started": "2023-02-11T07:47:08.149Z",
+   "started": "2023-02-19T10:30:53.628Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
+      "8": 1,
       "9": 1
    },
    "txOctetStats": {
       "1": 32,
+      "4": 1,
       "206": 1
    },
-   "wasClean": false,
+   "wasClean": true,
    "wasCloseHandshakeTimeout": false,
-   "wasNotCleanReason": "peer dropped the TCP connection without previous WebSocket closing handshake",
+   "wasNotCleanReason": null,
    "wasOpenHandshakeTimeout": false,
    "wasServerConnectionDropTimeout": false,
    "wirelog": [
@@ -333,13 +336,6 @@
          true
       ],
       [
-         "RO",
-         [
-            6,
-            "818db7943ae9"
-         ]
-      ],
-      [
          "TO",
          [
             1,
@@ -372,25 +368,6 @@
          true
       ],
       [
-         "RO",
-         [
-            13,
-            "fff15685d8b81a9ed8e6568d96"
-         ]
-      ],
-      [
-         "RF",
-         [
-            13,
-            "Hello, world!"
-         ],
-         1,
-         true,
-         0,
-         true,
-         "b7943ae9"
-      ],
-      [
          "TO",
          [
             1,
@@ -407,6 +384,13 @@
          true
       ],
       [
+         "RO",
+         [
+            6,
+            "818ddbb35ac7"
+         ]
+      ],
+      [
          "TO",
          [
             1,
@@ -417,9 +401,55 @@
       [
          "RO",
          [
-            6,
-            "8882fdd86300"
+            21,
+            "93d636abb49f7ab0b4c136a3fa888282c86bba8120"
          ]
+      ],
+      [
+         "RF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "dbb35ac7"
+      ],
+      [
+         "RF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         true,
+         "82c86bba"
+      ],
+      [
+         "TF",
+         [
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         null,
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            4,
+            "880203e8"
+         ],
+         false
       ]
    ]
 }

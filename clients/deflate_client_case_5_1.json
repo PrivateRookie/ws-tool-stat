@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Ping fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 60,
+   "duration": 61,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=45&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: JN1HyUJEqGpn8ySdzhXvww==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Udb9NQulr8RAAko37WhI2GUdnB8=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=45&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 6FGd+6AU4Nu87EzPmIZfjw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Q4TM+Y0In8Oms913QJk2GlQZ8yk=\r\n\r\n",
    "id": "5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "64": 1,
       "285": 1
    },
-   "started": "2023-02-11T07:47:08.220Z",
+   "started": "2023-02-19T10:30:53.705Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -127,14 +127,14 @@
          "RO",
          [
             6,
-            "889bb2f3b52b"
+            "889b1fa495b9"
          ]
       ],
       [
          "RO",
          [
             64,
-            "b119d359d394d84edc87d04f9290da45c681da479295c74adf9695889f2836c9ce2bdca4a75b45a0a04f16a0a04142e9a85a57aea34d58bdab4c16afbc495bac ..."
+            "1c4ef3cb7ec3f8dc71d0f0dd3fc7fad76bd6fad53fc2e7d872c1b5889f1a606d38198a0051691304567d40045673144d5e68010a557f0e195d7e400b4a7b0d08 ..."
          ]
       ],
       [
@@ -147,7 +147,7 @@
          true,
          0,
          true,
-         "b2f3b52b"
+         "1fa495b9"
       ],
       [
          "TF",

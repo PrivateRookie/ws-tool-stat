@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with close code 5000",
    "droppedByMe": true,
-   "duration": 59,
+   "duration": 49,
    "expectation": "Actual events are undefined by the spec.",
    "expected": {
       "OK": []
@@ -23,8 +23,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=245&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: /wk9MF1cy8DXHtzRZWgTLQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: gf+vycTGeP6oJICTn5MfyPl6bZI=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=245&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ccBKua2UhB2q/2NNdQ1okA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 9t3XvoK7gl2AsZMxlNDmMlqDlDc=\r\n\r\n",
    "id": "7.13.1",
    "isServer": true,
    "localCloseCode": 5000,
@@ -44,7 +44,7 @@
       "25": 1,
       "292": 1
    },
-   "started": "2023-02-11T07:59:50.786Z",
+   "started": "2023-02-19T10:42:29.285Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -104,14 +104,14 @@
          "RO",
          [
             6,
-            "8899fda90670"
+            "8899b5cec5ab"
          ]
       ],
       [
          "RO",
          [
             25,
-            "fe436f1e8bc86a199989651c92da63509ec66215dd9c3640cd"
+            "b624acc5c3afa9c2d1eea6c7dabda08bd6a1a1ce95fbf59b85"
          ]
       ],
       [
@@ -124,7 +124,7 @@
          true,
          0,
          true,
-         "fda90670"
+         "b5cec5ab"
       ]
    ]
 }

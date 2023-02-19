@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 1 * 2**20 (1M). Sent out data in chops of 128 octets.",
    "droppedByMe": true,
-   "duration": 101,
+   "duration": 105,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=284&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ROU2zBxv2HL2GsdRr3LZWQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: cOBUpHbKH8D70pftfW4GAcfOv+4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=284&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: FWnMMCjqSWOle4tmIFf8cw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Z3ePncV/xEWZ/TElnZotI8pZSnc=\r\n\r\n",
    "id": "9.6.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,16 +40,15 @@
       "8": 1,
       "14": 1,
       "182": 1,
-      "11008": 1,
       "13032": 1,
-      "21760": 1,
       "24952": 1,
       "27680": 1,
       "32640": 1,
       "32768": 26,
-      "65536": 1
+      "43776": 1,
+      "54528": 1
    },
-   "started": "2023-02-11T07:29:55.686Z",
+   "started": "2023-02-19T10:13:39.002Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -112,7 +111,7 @@
          "RO",
          [
             8,
-            "8882d800b0d1dbe8"
+            "88826eab2ca96d43"
          ]
       ],
       [
@@ -125,7 +124,7 @@
          true,
          0,
          true,
-         "d800b0d1"
+         "6eab2ca9"
       ]
    ]
 }

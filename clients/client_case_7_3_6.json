@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with close code and close reason which is too long (124) - total frame payload 126 octets",
    "droppedByMe": true,
-   "duration": 46,
+   "duration": 54,
    "expectation": "Clean close with protocol error code or dropped TCP connection.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=221&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: sGqmUylH6nkkSrHk8QR3dg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: H5CBY93vgkkmEe66ya+Xek3Lv0g=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=221&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: HTKAMFGvLYM2XlImozQarw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: JdWyQKAeU2iBmsgdmrW1brpG+xU=\r\n\r\n",
    "id": "7.3.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "30": 1,
       "182": 1
    },
-   "started": "2023-02-11T07:29:52.927Z",
+   "started": "2023-02-19T10:13:35.885Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -102,14 +102,14 @@
          "RO",
          [
             6,
-            "889ecdbf629b"
+            "889e0b2e70de"
          ]
       ],
       [
          "RO",
          [
             30,
-            "ce5501f4a3cb10f4a19f04e9acd207bba4cc42efa2d042f9a4d842aaff89"
+            "08c413b1655a02b1670e16ac6a4315fe625d50aa644150bc624950ef3918"
          ]
       ],
       [
@@ -122,7 +122,7 @@
          true,
          0,
          true,
-         "cdbf629b"
+         "0b2e70de"
       ]
    ]
 }

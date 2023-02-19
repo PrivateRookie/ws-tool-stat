@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Pong fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 60,
+   "duration": 49,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=46&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: p0LcJCXJJfF+jm+dIxuuBg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: C6JeDjND6N89vyvtSfT7ZTdAxJE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=46&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: RR1GilWM24bzGzBhvqz+Sg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: pAVzgUCi8d2PvdE0iRxd6aeLW3E=\r\n\r\n",
    "id": "5.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "64": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:31.786Z",
+   "started": "2023-02-19T10:42:12.435Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -127,14 +127,14 @@
          "RO",
          [
             6,
-            "889b8569d31b"
+            "889b22454aac"
          ]
       ],
       [
          "RO",
          [
             64,
-            "8683b569e40ebe7eeb1db67fa50abc75f11bbc77a50fa17ae80cf3889fa4b4f06da75e9d04d7c79903c3949903cdc0d00bd6d59700c1da8408c094961fc5d995 ..."
+            "21af2cde432227c94c312fc8022625c2563725c0022338cd4f206a889fbdd65099be3c3df0cea539f7daf639f7d4a270ffcfb737f4d8b824fcd9f636ebdcbb35 ..."
          ]
       ],
       [
@@ -147,7 +147,7 @@
          true,
          0,
          true,
-         "8569d31b"
+         "22454aac"
       ],
       [
          "TF",

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 8 * 2**20 (16M).",
    "droppedByMe": true,
-   "duration": 72,
+   "duration": 97,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=257&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ko9zHlkgAHhJy46VOvY3SA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: sM3brxKKXKSMBY+Kzk8YOcclgS4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=257&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: V3PjHgxsQOCHfJ8qDjTDGg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: s7Q/jNXS80oGBe6m54+FInvBOdY=\r\n\r\n",
    "id": "9.2.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,14 +40,16 @@
       "8": 1,
       "14": 1,
       "182": 1,
+      "11008": 1,
       "13032": 1,
       "23672": 1,
       "28960": 1,
-      "32768": 42,
-      "65408": 1,
-      "65536": 105
+      "32640": 1,
+      "32768": 45,
+      "54528": 1,
+      "65536": 103
    },
-   "started": "2023-02-11T07:29:53.991Z",
+   "started": "2023-02-19T10:13:37.123Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -109,7 +111,7 @@
          "RO",
          [
             8,
-            "8882a8f50c9cab1d"
+            "88823ed7e4e03d3f"
          ]
       ],
       [
@@ -122,7 +124,7 @@
          true,
          0,
          true,
-         "a8f50c9c"
+         "3ed7e4e0"
       ]
    ]
 }

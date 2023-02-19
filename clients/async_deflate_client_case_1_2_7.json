@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 65536.",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 5,
    "expectation": "Receive echo'ed binary message (with payload as sent). Clean close with normal code.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=15&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: AAWFY9zf6sEdjmciqDnWtw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: UIaLxwBlJ06UjeOzWh4qp0xde7k=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=15&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: CTfSzIWVHtjuF2CRabkitQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: kD/E1vYrN5byJz1NW8AHcbVJyvQ=\r\n\r\n",
    "id": "1.2.7",
    "isServer": true,
    "localCloseCode": 1000,
@@ -52,13 +52,14 @@
    },
    "rxOctetStats": {
       "8": 1,
+      "14": 1,
       "291": 1,
       "305": 1,
-      "7422": 1,
-      "14480": 1,
-      "43343": 1
+      "13032": 1,
+      "24519": 1,
+      "27680": 1
    },
-   "started": "2023-02-11T07:59:28.228Z",
+   "started": "2023-02-19T10:42:08.841Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -119,29 +120,36 @@
       [
          "RO",
          [
-            14480,
-            "82ff00000000000100005e9ca71ba06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a062 ..."
+            14,
+            "82ff00000000000100006ae45bf4"
          ]
       ],
       [
          "RO",
          [
-            7422,
-            "59e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a062 ..."
+            13032,
+            "941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a ..."
          ]
       ],
       [
          "RO",
          [
-            43343,
-            "a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5 ..."
+            27680,
+            "941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            24519,
+            "941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a ..."
          ]
       ],
       [
          "RO",
          [
             305,
-            "e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259e5a06259 ..."
+            "0a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa50a941aa5 ..."
          ]
       ],
       [
@@ -154,7 +162,7 @@
          true,
          0,
          true,
-         "5e9ca71b"
+         "6ae45bf4"
       ],
       [
          "TF",
@@ -182,7 +190,7 @@
          "RO",
          [
             8,
-            "888202ed73210105"
+            "888244fb0cdb4713"
          ]
       ],
       [
@@ -195,7 +203,7 @@
          true,
          0,
          true,
-         "02ed7321"
+         "44fb0cdb"
       ]
    ]
 }

@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=183&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 7z34tMMcQqOzsjrvQ8ZpWA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: EwPk/uDkOzrkf+Jm6flKGFSsRfc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=183&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: PJZCYwBXQ1G80Wd9+71Ykw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: TCseqlS+3U8huDsNDGxuExlDlNM=\r\n\r\n",
    "id": "6.22.15",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "8": 1,
       "286": 1
    },
-   "started": "2023-02-11T07:47:25.163Z",
+   "started": "2023-02-19T10:31:08.558Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -118,14 +118,14 @@
          "RO",
          [
             6,
-            "81841eef14f3"
+            "8184661daaaf"
          ]
       ],
       [
          "RO",
          [
             4,
-            "ef50ab4d"
+            "97a21511"
          ]
       ],
       [
@@ -138,7 +138,7 @@
          true,
          0,
          true,
-         "1eef14f3"
+         "661daaaf"
       ],
       [
          "TF",
@@ -166,7 +166,7 @@
          "RO",
          [
             8,
-            "88820f94ff230c7c"
+            "88826fde38306c36"
          ]
       ],
       [
@@ -179,7 +179,7 @@
          true,
          0,
          true,
-         "0f94ff23"
+         "6fde3830"
       ]
    ]
 }

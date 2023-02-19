@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented text message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 4k.",
    "droppedByMe": true,
-   "duration": 31,
+   "duration": 37,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=262&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: krs1TQQ6Vg/aIFL2h7mJDQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: PSdma8Fckd36hmxFJKKNzM6WgK8=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=262&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: jRZsyair0h8op5U9JpaWUA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: YgwlH3PHZ2eIthZ9niqQz0vwE3A=\r\n\r\n",
    "id": "9.3.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,13 +38,16 @@
    },
    "rxOctetStats": {
       "8": 1,
+      "14": 1,
       "286": 1,
-      "14480": 1,
-      "22110": 1,
+      "13032": 1,
       "28960": 1,
-      "65536": 63
+      "32640": 1,
+      "32768": 8,
+      "56440": 1,
+      "65536": 58
    },
-   "started": "2023-02-11T07:47:28.090Z",
+   "started": "2023-02-19T10:31:11.743Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1024,
@@ -108,7 +111,7 @@
          "RO",
          [
             8,
-            "888282ca318d8122"
+            "888251cfc89d5227"
          ]
       ],
       [
@@ -121,7 +124,7 @@
          true,
          0,
          true,
-         "82ca318d"
+         "51cfc89d"
       ]
    ]
 }

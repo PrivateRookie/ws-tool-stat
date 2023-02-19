@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented text message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 4k.",
    "droppedByMe": true,
-   "duration": 37,
+   "duration": 34,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=262&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: VZMgwGpF0PYMDHIBhypFvA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ccIeTsWMYpT3S1cyJziTABx7IJc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=262&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 8krOMlZcd3n0uFfqFRARWA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: I5lDLwUJ/vMibpg/J+6tJoYVXw0=\r\n\r\n",
    "id": "9.3.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,14 +41,12 @@
       "14": 1,
       "188": 1,
       "13032": 1,
-      "24952": 1,
-      "27680": 1,
+      "28960": 1,
       "32640": 1,
-      "43776": 1,
-      "54528": 1,
-      "65536": 61
+      "56440": 1,
+      "65536": 62
    },
-   "started": "2023-02-11T07:38:39.003Z",
+   "started": "2023-02-19T10:22:23.672Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1024,
@@ -112,7 +110,7 @@
          "RO",
          [
             8,
-            "8882c34e70ffc0a6"
+            "888209915a250a79"
          ]
       ],
       [
@@ -125,7 +123,7 @@
          true,
          0,
          true,
-         "c34e70ff"
+         "09915a25"
       ]
    ]
 }

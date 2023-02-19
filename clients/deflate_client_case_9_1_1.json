@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=247&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: N8+ISheiPHxmTd7PseZwNg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: /mR/5rdKdjLkQUMVQFgnTH4DlCw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=247&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 7URu4y4SmvmZhxTK+f7VFA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: HCziEJHMUZNrCGfoUCj1Eu/XUvs=\r\n\r\n",
    "id": "9.1.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,13 +37,15 @@
       "8": 1
    },
    "rxOctetStats": {
-      "8": 1,
+      "2": 1,
+      "6": 1,
+      "14": 1,
       "286": 1,
-      "14480": 1,
-      "22110": 1,
+      "13032": 1,
+      "23544": 1,
       "28960": 1
    },
-   "started": "2023-02-11T07:47:27.360Z",
+   "started": "2023-02-19T10:31:10.777Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -104,8 +106,15 @@
       [
          "RO",
          [
-            8,
-            "8882bd7d561ebe95"
+            6,
+            "8882941aed54"
+         ]
+      ],
+      [
+         "RO",
+         [
+            2,
+            "97f2"
          ]
       ],
       [
@@ -118,7 +127,7 @@
          true,
          0,
          true,
-         "bd7d561e"
+         "941aed54"
       ]
    ]
 }

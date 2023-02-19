@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": true,
-   "httpRequest": "GET /runCase?case=30&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: oaS57Rfbx9PfeyYBXeqTMg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: FN6aMpt6bktan+qGFfU1/4HV5j0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=30&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: J2IqDI7MrnOYZYH1gwsk3g==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 2FC9Pt68awvCetCMxu45FUPen6Q=\r\n\r\n",
    "id": "3.3",
    "isServer": true,
    "localCloseCode": 1001,
@@ -67,7 +67,7 @@
       "38": 1,
       "285": 1
    },
-   "started": "2023-02-11T07:47:07.147Z",
+   "started": "2023-02-19T10:30:52.625Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -175,14 +175,14 @@
          "RO",
          [
             6,
-            "818da955c89e"
+            "818d84f75b62"
          ]
       ],
       [
          "RO",
          [
             38,
-            "e130a4f2c679e8e9c627a4fa88818d276be7616f0e8b0d4847c71648198b05068a804f04440f"
+            "cc92370eebdb7b15eb853706a5818d5d3cf8171559947b3210d860324e94737c8a80cc02ea01"
          ]
       ],
       [
@@ -195,7 +195,7 @@
          true,
          0,
          true,
-         "a955c89e"
+         "84f75b62"
       ],
       [
          "RF",
@@ -207,7 +207,7 @@
          true,
          0,
          true,
-         "276be761"
+         "5d3cf817"
       ],
       [
          "RF",
@@ -219,7 +219,7 @@
          true,
          0,
          true,
-         "4f04440f"
+         "cc02ea01"
       ],
       [
          "KLE"
@@ -250,7 +250,7 @@
          "RO",
          [
             8,
-            "8882d40f2012d7e7"
+            "88820e200f860dc8"
          ]
       ],
       [
@@ -263,7 +263,7 @@
          true,
          0,
          true,
-         "d40f2012"
+         "0e200f86"
       ]
    ]
 }

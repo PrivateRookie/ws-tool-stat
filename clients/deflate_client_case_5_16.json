@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=60&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Ogehx1SHhhueJnfgy7salQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 4vak5SRhRR7+jBgLV0V7vJ9M7L4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=60&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Z9gPKt/538XYbj1mZJpBiQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: h2XIlX5bUu+Aww4z3Yc/Xp4CeTQ=\r\n\r\n",
    "id": "5.16",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "116": 1,
       "285": 1
    },
-   "started": "2023-02-11T07:47:08.912Z",
+   "started": "2023-02-19T10:30:54.387Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -215,14 +215,14 @@
          "RO",
          [
             6,
-            "889f2084ce53"
+            "889fa69e95a2"
          ]
       ],
       [
          "RO",
          [
             116,
-            "236ea33a53f7a73d47a4a73d49f0ee3552e5a93e45eaba3644a4a82141e9ab819201a16a0367d30b646cc4047733c7186266cc0f6d7592889f91eb4e4c920123 ..."
+            "a574f8cbd5edfcccc1befccccfeab5c4d4fff2cfc3f0e1c7c2bef3d0c7f3f08192856417e3e3167684e8017997b7026582e209728df157889f1791ef39147b82 ..."
          ]
       ],
       [
@@ -235,7 +235,7 @@
          true,
          0,
          true,
-         "2084ce53"
+         "a69e95a2"
       ],
       [
          "TF",

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 4 * 2**20 (4M).",
    "droppedByMe": true,
-   "duration": 62,
+   "duration": 83,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=250&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 4LCNJGYdOs2VK5VY2BuKOg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7E4DGllAWOXgb0BqfBNrUyooDEo=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=250&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 4/CDstZpACXpQr01as6kJw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: O1ZnJbkTeAHvEV7IUuISLs6k3U0=\r\n\r\n",
    "id": "9.1.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,15 +40,13 @@
       "8": 1,
       "14": 1,
       "182": 1,
-      "13032": 1,
-      "23672": 1,
+      "14480": 1,
       "28960": 1,
-      "32640": 1,
-      "43776": 1,
-      "54528": 1,
-      "65536": 61
+      "42240": 1,
+      "45392": 1,
+      "65536": 62
    },
-   "started": "2023-02-11T07:29:53.646Z",
+   "started": "2023-02-19T10:13:36.638Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -110,7 +108,7 @@
          "RO",
          [
             8,
-            "8882707313de739b"
+            "8882b5f39081b61b"
          ]
       ],
       [
@@ -123,7 +121,7 @@
          true,
          0,
          true,
-         "707313de"
+         "b5f39081"
       ]
    ]
 }

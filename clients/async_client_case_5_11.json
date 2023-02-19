@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in octet-wise chops.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 5,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=55&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 0FxOeKo8D9QhvPu9XTenWg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: YcSDWnoG3aT1ZYTM9erUaNqfF48=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=55&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: s1gquWoIT8XOtfbAhHbyRQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: juG66MMZxBvReEjokpoeH4gTfXU=\r\n\r\n",
    "id": "5.11",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "31": 1,
       "187": 1
    },
-   "started": "2023-02-11T07:38:21.641Z",
+   "started": "2023-02-19T10:22:06.290Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -50,7 +50,7 @@
       "8": 1
    },
    "txOctetStats": {
-      "1": 36,
+      "1": 39,
       "206": 1
    },
    "wasClean": true,
@@ -387,13 +387,6 @@
          true
       ],
       [
-         "RO",
-         [
-            6,
-            "889f307a53f9"
-         ]
-      ],
-      [
          "TO",
          [
             1,
@@ -402,10 +395,41 @@
          true
       ],
       [
+         "TO",
+         [
+            1,
+            "6f"
+         ],
+         true
+      ],
+      [
+         "TO",
+         [
+            1,
+            "72"
+         ],
+         true
+      ],
+      [
+         "RO",
+         [
+            6,
+            "889f47963390"
+         ]
+      ],
+      [
+         "TO",
+         [
+            1,
+            "6c"
+         ],
+         true
+      ],
+      [
          "RO",
          [
             31,
-            "33903e9043093a97575a3a97590e739f421b34945514279c545a358b511736"
+            "447c5ef934e55afe20b65afe2ee213f635f754fd22f847f523b655e226fb56"
          ]
       ],
       [
@@ -418,7 +442,7 @@
          true,
          0,
          true,
-         "307a53f9"
+         "47963390"
       ],
       [
          "TF",

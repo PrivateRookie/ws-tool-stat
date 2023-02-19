@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 1004",
    "droppedByMe": true,
-   "duration": 48,
+   "duration": 59,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=238&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Hr8w2YzkTkU+gNULNnMCEw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: r0Z10mzceyZ/kmJ+vVl9YbDOK9s=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=238&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 0vb7HRhf2ml7VowvdRqVXw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: b8S3UKLx1W9MEb1Kj92QHmLZhj4=\r\n\r\n",
    "id": "7.9.3",
    "isServer": true,
    "localCloseCode": 1004,
@@ -42,7 +42,7 @@
       "25": 1,
       "188": 1
    },
-   "started": "2023-02-11T07:38:37.792Z",
+   "started": "2023-02-19T10:22:22.380Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -102,14 +102,14 @@
          "RO",
          [
             6,
-            "88998a3a9e42"
+            "8899aff09e58"
          ]
       ],
       [
          "RO",
          [
             25,
-            "89d0f72cfc5bf22bee1afd2ee549fb62e955fa27aa0bae72be"
+            "ac1af736d991f231cbd0fd34c083fb78cc9ffa3d8fc1ae689b"
          ]
       ],
       [
@@ -122,7 +122,7 @@
          true,
          0,
          true,
-         "8a3a9e42"
+         "aff09e58"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is valid UTF-8 in one fragment.<br><br>Payload: 0xefbfbf",
    "droppedByMe": true,
-   "duration": 50,
+   "duration": 60,
    "expectation": "The message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=209&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 2aBhog9kQe/wI2c2k9JREw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: A4Bdp537U8cYO3BJs48bHv+oeyg=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=209&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: tttVbzIR4k6WQsiGn5M6Rw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Z2jxro9gstZK58eSo2iw8t+clIc=\r\n\r\n",
    "id": "6.23.7",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "8": 1,
       "182": 1
    },
-   "started": "2023-02-11T07:29:52.743Z",
+   "started": "2023-02-19T10:13:35.670Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -118,14 +118,14 @@
          "RO",
          [
             6,
-            "8183808dc612"
+            "81835c0a0f91"
          ]
       ],
       [
          "RO",
          [
             3,
-            "6f3279"
+            "b3b5b0"
          ]
       ],
       [
@@ -138,7 +138,7 @@
          true,
          0,
          true,
-         "808dc612"
+         "5c0a0f91"
       ],
       [
          "TF",
@@ -166,7 +166,7 @@
          "RO",
          [
             8,
-            "888277697e617481"
+            "888286d54de4853d"
          ]
       ],
       [
@@ -179,7 +179,7 @@
          true,
          0,
          true,
-         "77697e61"
+         "86d54de4"
       ]
    ]
 }

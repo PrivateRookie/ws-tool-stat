@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=44&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: LTH4k/8YmyQRJR0pbwon1w==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Yb9+pBgEgxkRoL3fSq1fpRMXm1E=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=44&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: POoMJU2V6XMkeF6lnFGmTg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ZBBf0a9vviUvWdHEK0zdHkf+OEs=\r\n\r\n",
    "id": "4.2.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -57,7 +57,7 @@
       "13": 1,
       "285": 1
    },
-   "started": "2023-02-11T07:47:08.217Z",
+   "started": "2023-02-19T10:30:53.703Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -306,6 +306,13 @@
          true
       ],
       [
+         "RO",
+         [
+            6,
+            "818d17d8e1a2"
+         ]
+      ],
+      [
          "TO",
          [
             1,
@@ -338,6 +345,25 @@
          true
       ],
       [
+         "RO",
+         [
+            13,
+            "5fbd8dce78f4c1d578aa8dc636"
+         ]
+      ],
+      [
+         "RF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "17d8e1a2"
+      ],
+      [
          "TO",
          [
             1,
@@ -354,13 +380,6 @@
          true
       ],
       [
-         "RO",
-         [
-            6,
-            "818ddb47e79b"
-         ]
-      ],
-      [
          "TO",
          [
             1,
@@ -375,25 +394,6 @@
             "64"
          ],
          true
-      ],
-      [
-         "RO",
-         [
-            13,
-            "93228bf7b46bc7ecb4358bfffa"
-         ]
-      ],
-      [
-         "RF",
-         [
-            13,
-            "Hello, world!"
-         ],
-         1,
-         true,
-         0,
-         true,
-         "db47e79b"
       ],
       [
          "TO",
@@ -423,7 +423,7 @@
          "RO",
          [
             8,
-            "88828940b0d08aa8"
+            "8882a5e2e119a60a"
          ]
       ],
       [
@@ -436,7 +436,7 @@
          true,
          0,
          true,
-         "8940b0d0"
+         "a5e2e119"
       ],
       [
          "TF",

@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=29&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: D4PgXvSdH9/qLph/6+6D0A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: FLLHb7atkumysILp7RmbunBE3Ks=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=29&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 6lybnPyzvfC8qoIU7JeavA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ExSEBkRRkpwdUqSLFkhuU+REXc0=\r\n\r\n",
    "id": "3.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -56,7 +56,7 @@
       "181": 1,
       "13032": 1
    },
-   "started": "2023-02-11T07:29:36.310Z",
+   "started": "2023-02-19T10:13:19.304Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -164,14 +164,14 @@
          "RO",
          [
             6,
-            "818d9109e8cb"
+            "818ddd582362"
          ]
       ],
       [
          "RO",
          [
             13032,
-            "d96c84a7fe25c8bcfe7b84afb0889b6569c0906699a9fe1308acf90149acf5040da9fe0249a2f9111ae0a15558f0889bed0f1787eeff7ee99b6e7bee892f7be2 ..."
+            "953d4f0eb2740315b22a4f06fc889b7345908670b5f9e80524fcef1765fce31221f9e81465f2ef0736b0b74374a0889bb571a6d3b681cfbdc310cabad151cab6 ..."
          ]
       ],
       [
@@ -184,7 +184,7 @@
          true,
          0,
          true,
-         "9109e8cb"
+         "dd582362"
       ],
       [
          "RF",
@@ -196,7 +196,7 @@
          true,
          0,
          true,
-         "6569c090"
+         "73459086"
       ],
       [
          "TF",

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented text message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 1M.",
    "droppedByMe": true,
-   "duration": 40,
+   "duration": 33,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=266&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: urmPq6KCplqvbg0Uot6yHQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 1yN480mLO7si3CgJnEMpKep5mFU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=266&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: b0a8eZMzdVogf6XWhlum/g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: tWTeHGP71jVjwqCA15ZggcYScuE=\r\n\r\n",
    "id": "9.3.8",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,18 +37,18 @@
       "8": 1
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 1,
+      "8": 1,
       "14": 1,
       "182": 1,
       "13032": 1,
-      "23672": 1,
-      "28960": 1,
+      "24952": 1,
+      "27680": 1,
       "32640": 1,
-      "32768": 3,
+      "43648": 1,
+      "54656": 1,
       "65536": 61
    },
-   "started": "2023-02-11T07:29:54.513Z",
+   "started": "2023-02-19T10:13:37.774Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -111,15 +111,8 @@
       [
          "RO",
          [
-            6,
-            "8882dda9ec9c"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "de41"
+            8,
+            "8882feea56d1fd02"
          ]
       ],
       [
@@ -132,7 +125,7 @@
          true,
          0,
          true,
-         "dda9ec9c"
+         "feea56d1"
       ]
    ]
 }

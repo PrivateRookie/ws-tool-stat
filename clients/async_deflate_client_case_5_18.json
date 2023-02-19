@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=62&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 1NyjebA1fAC52w7dYmRIpw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: uf9smwh14T0LE4pg8JXbBtQCivY=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=62&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: IZOhSwwSzsXIAYsqe8VCTw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: x7lzcJ7HWpQRP+2AYvjTKOG1q1A=\r\n\r\n",
    "id": "5.18",
    "isServer": true,
    "localCloseCode": 1000,
@@ -42,7 +42,7 @@
       "48": 1,
       "291": 1
    },
-   "started": "2023-02-11T07:59:32.526Z",
+   "started": "2023-02-19T10:42:13.135Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -126,14 +126,14 @@
          "RO",
          [
             6,
-            "88b0c6d54ab1"
+            "88b0bd816bd8"
          ]
       ],
       [
          "RO",
          [
             48,
-            "c53f24deb2f529dea8a123dfb3b06ad7b4b427d4e6b42cc5a3a76ad8a8bc3e91a0a72bd6abb024c5a3b16ad7b4b427d4"
+            "be6b05b7c9a108b7d3f502b6c8e44bbecfe006bd9de00dacd8f34bb1d3e81ff8dbf30abfd0e405acd8e54bbecfe006bd"
          ]
       ],
       [
@@ -146,7 +146,7 @@
          true,
          0,
          true,
-         "c6d54ab1"
+         "bd816bd8"
       ],
       [
          "TF",

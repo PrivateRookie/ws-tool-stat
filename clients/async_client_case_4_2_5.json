@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=44&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: O2cgG5GlGzW924HGuYLO+A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Cq5zx12F4FgULLOKr6oWG8YU8lM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=44&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 6jjlgBwLKXVUh+rZpIfUhA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Gn6yWE17Fxx6IWEKbSfHRTfvASY=\r\n\r\n",
    "id": "4.2.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -57,7 +57,7 @@
       "13": 1,
       "187": 1
    },
-   "started": "2023-02-11T07:38:21.119Z",
+   "started": "2023-02-19T10:22:05.777Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -338,38 +338,12 @@
          true
       ],
       [
-         "RO",
-         [
-            6,
-            "818d3440148a"
-         ]
-      ],
-      [
          "TO",
          [
             1,
             "6f"
          ],
          true
-      ],
-      [
-         "RO",
-         [
-            13,
-            "7c2578e65b6c34fd5b3278ee15"
-         ]
-      ],
-      [
-         "RF",
-         [
-            13,
-            "Hello, world!"
-         ],
-         1,
-         true,
-         0,
-         true,
-         "3440148a"
       ],
       [
          "TO",
@@ -412,6 +386,13 @@
          true
       ],
       [
+         "RO",
+         [
+            6,
+            "818d72668727"
+         ]
+      ],
+      [
          "TO",
          [
             1,
@@ -422,8 +403,27 @@
       [
          "RO",
          [
+            13,
+            "3a03eb4b1d4aa7501d14eb4353"
+         ]
+      ],
+      [
+         "RF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "72668727"
+      ],
+      [
+         "RO",
+         [
             8,
-            "8882b17971a0b291"
+            "8882a0f6252ba31e"
          ]
       ],
       [
@@ -436,7 +436,7 @@
          true,
          0,
          true,
-         "b17971a0"
+         "a0f6252b"
       ],
       [
          "TF",

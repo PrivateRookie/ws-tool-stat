@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send again with <b>RSV = 2</b>, then send Ping.",
    "droppedByMe": true,
-   "duration": 1001,
+   "duration": 1002,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": true,
-   "httpRequest": "GET /runCase?case=29&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 5ocot64/2F7BXzdPlVO2AQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: XruKmHSC6y5jxZBphvLuWRF7w+M=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=29&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: dDOs3e4IzPocHJTJDjuzBA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: FvWoF2wHDIpHrbgTiERBKG6BSCY=\r\n\r\n",
    "id": "3.2",
    "isServer": true,
    "localCloseCode": 1001,
@@ -67,7 +67,7 @@
       "38": 1,
       "285": 1
    },
-   "started": "2023-02-11T07:47:06.145Z",
+   "started": "2023-02-19T10:30:51.622Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -175,14 +175,14 @@
          "RO",
          [
             6,
-            "818d5772a934"
+            "818d5d8bc5c2"
          ]
       ],
       [
          "RO",
          [
             38,
-            "1f17c558385e89433800c55076818df634d870be51b41c9918f8079946b414d78a807cb2382e"
+            "15eea9ae32a7e5b532f9a9a67c818d1b39a272535cce1e74158205744bce163a8a80908a37d3"
          ]
       ],
       [
@@ -195,7 +195,7 @@
          true,
          0,
          true,
-         "5772a934"
+         "5d8bc5c2"
       ],
       [
          "RF",
@@ -207,7 +207,7 @@
          true,
          0,
          true,
-         "f634d870"
+         "1b39a272"
       ],
       [
          "RF",
@@ -219,7 +219,7 @@
          true,
          0,
          true,
-         "7cb2382e"
+         "908a37d3"
       ],
       [
          "KLE"
@@ -250,7 +250,7 @@
          "RO",
          [
             8,
-            "888251c5a51e522d"
+            "8882f4040b1ff7ec"
          ]
       ],
       [
@@ -263,7 +263,7 @@
          true,
          0,
          true,
-         "51c5a51e"
+         "f4040b1f"
       ]
    ]
 }

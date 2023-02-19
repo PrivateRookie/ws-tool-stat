@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=30&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: F8K1PQ7pyZJQTHjz3uiruQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: OQUvdZRFHSP3hPHA6BHAkoAJRvI=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=30&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wXa0Wd2HNWhLBAZvC/UtVw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Kg7ieaEIDcG8+uKkUwMWa2842lE=\r\n\r\n",
    "id": "3.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -52,11 +52,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "19": 1,
       "181": 1,
-      "13032": 1
+      "1873": 1
    },
-   "started": "2023-02-11T07:29:36.313Z",
+   "started": "2023-02-19T10:13:19.308Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -163,8 +162,8 @@
       [
          "RO",
          [
-            19,
-            "818dd9e084069185e86ab6cca471b692e862f8"
+            1873,
+            "818d91b8eb76d9dd871afe94cb01feca8712b0889b4f9fa43a4c6fcd5439fec8532bbfc85f2efbcd5428bfc6533bec840b7fae95889b7203e2c371f38bad0462 ..."
          ]
       ],
       [
@@ -177,14 +176,7 @@
          true,
          0,
          true,
-         "d9e08406"
-      ],
-      [
-         "RO",
-         [
-            13032,
-            "889bfce9b758ff19de368a88db3198c9db3d9d8dde369bc9d531889a9769ccd886889ba9ec9079aa1cf917df8dfc10cdccfc1cc888f917ceccf210dd9fb04899 ..."
-         ]
+         "91b8eb76"
       ],
       [
          "RF",
@@ -196,7 +188,7 @@
          true,
          0,
          true,
-         "fce9b758"
+         "4f9fa43a"
       ],
       [
          "TF",
