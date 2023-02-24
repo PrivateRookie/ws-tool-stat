@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with invalid UTF8 payload",
    "droppedByMe": true,
-   "duration": 58,
+   "duration": 5,
    "expectation": "Clean close with protocol error or invalid utf8 code or dropped TCP.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=222&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: LZqWaqHN+yNj3m06DTTcPA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: j+f961i4lQ1pB9PMVcTB5W88Wjk=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=222&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: PtqEazgO48AwPAeU4Z7+PQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: WH0q1l93fMgLP0RaKNW2Xs2EdU4=\r\n\r\n",
    "id": "7.5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,11 +39,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "20": 1,
+      "26": 1,
       "182": 1
    },
-   "started": "2023-02-19T10:13:35.941Z",
+   "started": "2023-02-24T01:25:19.075Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -102,15 +101,8 @@
       [
          "RO",
          [
-            6,
-            "88949cce1904"
-         ]
-      ],
-      [
-         "RO",
-         [
-            20,
-            "9f21706aeaaf756df8ee6c70fae32124e8ab6170"
+            26,
+            "88943a52f15f39bd98314c339d365e72842b5c7fc97f4e37892b"
          ]
       ],
       [
@@ -123,7 +115,7 @@
          true,
          0,
          true,
-         "9cce1904"
+         "3a52f15f"
       ]
    ]
 }

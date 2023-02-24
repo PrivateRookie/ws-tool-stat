@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved control <b>Opcode = 13</b>, then send Ping.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 7,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=42&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 2QgRX1GmUX1HQ1wGlLP82g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: yrwU0BPqG7Q07CSpSdZnEtZr8vE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=42&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: qMflZTh1N9f+Rr7zAx8beQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: mOzRB/Ka4e0T3PxntaAI4PTLdEU=\r\n\r\n",
    "id": "4.2.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "27": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:19.371Z",
+   "started": "2023-02-24T01:25:07.950Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -164,7 +164,7 @@
          "RO",
          [
             27,
-            "818db7357c43ff50102fd8195c34d84710279688821681e0601569"
+            "818d82dd02efcab86e83edf12298edaf6e8ba38882206ca5a92384"
          ]
       ],
       [
@@ -177,7 +177,7 @@
          true,
          0,
          true,
-         "b7357c43"
+         "82dd02ef"
       ],
       [
          "RF",
@@ -189,7 +189,7 @@
          true,
          0,
          true,
-         "1681e060"
+         "206ca5a9"
       ],
       [
          "TF",

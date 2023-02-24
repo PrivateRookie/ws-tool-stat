@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with invalid UTF8 payload",
    "droppedByMe": true,
-   "duration": 48,
+   "duration": 4,
    "expectation": "Clean close with protocol error or invalid utf8 code or dropped TCP.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=222&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: EbWtsy0LxaFKypF1hL+onQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: W1gKV8Z1+4gaFK3WYpYIBQWQSeg=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=222&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 5oizaEayHuXvQ4gGw8DPrg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: NQbMnY8q9JDa9Ja21cJBGrjHkpw=\r\n\r\n",
    "id": "7.5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,11 +39,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "20": 1,
+      "26": 1,
       "188": 1
    },
-   "started": "2023-02-19T10:22:22.190Z",
+   "started": "2023-02-24T01:34:15.712Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -102,15 +101,8 @@
       [
          "RO",
          [
-            6,
-            "8894af5e4127"
-         ]
-      ],
-      [
-         "RO",
-         [
-            20,
-            "acb12849d93f2d4ecb7e3453c9737907db3b3953"
+            26,
+            "889479ead9187a05b0760f8bb5711dcaac6c1fc7e1380d8fa16c"
          ]
       ],
       [
@@ -123,7 +115,7 @@
          true,
          0,
          true,
-         "af5e4127"
+         "79ead918"
       ]
    ]
 }

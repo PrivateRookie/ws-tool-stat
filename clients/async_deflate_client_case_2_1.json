@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send ping without payload.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 8,
    "expectation": "Pong (with empty payload) is sent in reply to Ping. Clean close with normal code.",
    "expected": {
       "OK": [
@@ -26,8 +26,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=17&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: zVBabdu4U+tpDlPVfKiCjg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: A1Wvblro1C+JNXWtBnmy15j5PZA=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=17&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: p58SeRSkjTGndOJtHEelMw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: QUlFUzh1KVXbTYL6B03pke9y3+0=\r\n\r\n",
    "id": "2.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -49,11 +49,11 @@
       "10": 1
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 2,
+      "6": 1,
+      "8": 1,
       "291": 1
    },
-   "started": "2023-02-19T10:42:08.856Z",
+   "started": "2023-02-24T01:34:49.189Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -115,7 +115,7 @@
          "RO",
          [
             6,
-            "8a80de5232b6"
+            "8a80f9610b4e"
          ]
       ],
       [
@@ -128,7 +128,7 @@
          true,
          0,
          true,
-         "de5232b6"
+         "f9610b4e"
       ],
       [
          "TF",
@@ -155,15 +155,8 @@
       [
          "RO",
          [
-            6,
-            "8882595ff6f2"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "5ab7"
+            8,
+            "888292a340c4914b"
          ]
       ],
       [
@@ -176,7 +169,7 @@
          true,
          0,
          true,
-         "595ff6f2"
+         "92a340c4"
       ]
    ]
 }

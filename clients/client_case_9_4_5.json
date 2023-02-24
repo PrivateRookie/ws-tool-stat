@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 16k.",
    "droppedByMe": true,
-   "duration": 31,
+   "duration": 120,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=272&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: zHJ0aHFUkMuPaJh8//KAcQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: jOSae5vemx4Kqb5N97Qq5Vhxy70=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=272&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 1ZfmX3tMqFRjC29cmayYvg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: VxR4cZ5+BqXKwzbQpDiP7GVnGTw=\r\n\r\n",
    "id": "9.4.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,14 +40,13 @@
       "8": 1,
       "14": 1,
       "182": 1,
-      "13032": 1,
-      "28960": 1,
-      "32640": 1,
-      "32768": 92,
-      "56440": 1,
-      "65536": 16
+      "14480": 1,
+      "28424": 1,
+      "30248": 1,
+      "57920": 1,
+      "65536": 62
    },
-   "started": "2023-02-19T10:13:38.042Z",
+   "started": "2023-02-24T01:25:26.398Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 256,
@@ -111,7 +110,7 @@
          "RO",
          [
             8,
-            "8882f708c9f5f4e0"
+            "8882947eedd39796"
          ]
       ],
       [
@@ -124,7 +123,7 @@
          true,
          0,
          true,
-         "f708c9f5"
+         "947eedd3"
       ]
    ]
 }

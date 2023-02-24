@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 16k.",
    "droppedByMe": true,
-   "duration": 41,
+   "duration": 103,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=272&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 0e/5dUS58xkLDbHM2dgd4g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: J9BWHsmIjGhJ3c3mlhlSz0OSu/0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=272&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 27Er58c4tOhBP8VQRuMDrA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: q7chONn1L6mjBvLedcrhBJTAL6U=\r\n\r\n",
    "id": "9.4.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,14 +40,14 @@
       "8": 1,
       "14": 1,
       "188": 1,
-      "13032": 1,
+      "14480": 1,
+      "21894": 1,
       "28960": 1,
-      "32640": 1,
-      "32768": 94,
-      "56440": 1,
-      "65536": 15
+      "32768": 1,
+      "32970": 1,
+      "65536": 62
    },
-   "started": "2023-02-19T10:22:24.060Z",
+   "started": "2023-02-24T01:34:21.915Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 256,
@@ -111,7 +111,7 @@
          "RO",
          [
             8,
-            "8882545b202557b3"
+            "8882adbbd1aeae53"
          ]
       ],
       [
@@ -124,7 +124,7 @@
          true,
          0,
          true,
-         "545b2025"
+         "adbbd1ae"
       ]
    ]
 }

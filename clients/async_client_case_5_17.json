@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Repeated 2x: Continuation Frame with FIN = true (where there is nothing to continue), then text Message fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 47,
+   "duration": 7,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=61&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: mnxnBdpv0JJ1cwEjpnWVzw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: W+wRDhFcjx8gkNkzCjDyuwBW24w=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=61&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: SBb2wvhoSGsofoeqdqCtbw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Z9sVBM+WDLX4eHaPmH/MPVb7M5s=\r\n\r\n",
    "id": "5.17",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "116": 1,
+      "122": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:06.500Z",
+   "started": "2023-02-24T01:34:05.590Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -214,15 +213,8 @@
       [
          "RO",
          [
-            6,
-            "889f6ee1e077"
-         ]
-      ],
-      [
-         "RO",
-         [
-            116,
-            "6d0b8d1e1d92891909c189190795c0111c80871a0b8f94120ac186050f8c858192c91021e8af62408fa4754f9cfb765389ae7d4486bd23889f2d7b015f2e916c ..."
+            122,
+            "889fb3d71d3eb03d7057c0a47450d4f77450daa33d58c1b67a53d6b9695bd7f77b4cd2ba7881922599bfc843ebdeaf48fcd1bc17ffcda942f4daa651aa889fbd ..."
          ]
       ],
       [
@@ -235,7 +227,7 @@
          true,
          0,
          true,
-         "6ee1e077"
+         "b3d71d3e"
       ],
       [
          "TF",

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 4k.",
    "droppedByMe": true,
-   "duration": 28,
+   "duration": 97,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=271&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: uFktgjM2touZ5ChIDdFG6g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Yww37ps6oQ1RtnLW1R2LWM0pbuo=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=271&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wJwZrRhwQ0GhepB5nO62Ww==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Hzc8GNzjTzP5Q6Gn8MdbcxyV55Y=\r\n\r\n",
    "id": "9.4.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,14 +40,14 @@
       "8": 1,
       "14": 1,
       "188": 1,
-      "13032": 1,
-      "23672": 1,
+      "14480": 1,
+      "21894": 1,
       "28960": 1,
-      "32640": 1,
-      "32768": 99,
-      "65536": 13
+      "32768": 1,
+      "32970": 1,
+      "65536": 62
    },
-   "started": "2023-02-19T10:22:24.030Z",
+   "started": "2023-02-24T01:34:21.809Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1024,
@@ -111,7 +111,7 @@
          "RO",
          [
             8,
-            "8882e90027dbeae8"
+            "888212d5b06f113d"
          ]
       ],
       [
@@ -124,7 +124,7 @@
          true,
          0,
          true,
-         "e90027db"
+         "12d5b06f"
       ]
    ]
 }

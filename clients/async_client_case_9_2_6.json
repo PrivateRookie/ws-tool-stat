@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 16 * 2**20 (16M).",
    "droppedByMe": true,
-   "duration": 175,
+   "duration": 710,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=258&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: CkfS10gLSOmP3jS0j+SWUw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: RK3Aid78+HifI8uIcl7Bu6LS8vU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=258&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: e55v6HOt3fIJ4H6JYY0DZg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: X2/iBRUfyJ1HFU7Ic3Ff53ay5iI=\r\n\r\n",
    "id": "9.2.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,15 +40,13 @@
       "8": 1,
       "14": 1,
       "188": 1,
-      "12752": 1,
-      "14480": 1,
-      "28960": 1,
-      "32640": 1,
-      "32768": 276,
-      "42240": 1,
-      "65536": 116
+      "32768": 1,
+      "34378": 1,
+      "64128": 1,
+      "65334": 1,
+      "65536": 253
    },
-   "started": "2023-02-19T10:22:23.329Z",
+   "started": "2023-02-24T01:34:18.315Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -110,7 +108,7 @@
          "RO",
          [
             8,
-            "8882dc582fe7dfb0"
+            "88827478813c7790"
          ]
       ],
       [
@@ -123,7 +121,7 @@
          true,
          0,
          true,
-         "dc582fe7"
+         "7478813c"
       ]
    ]
 }

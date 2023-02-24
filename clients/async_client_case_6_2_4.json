@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a valid UTF-8 text message in fragments of 1 octet, resulting in frames ending on positions which are not code point ends.<br><br>MESSAGE:<br>\u03ba\u1f79\u03c3\u03bc\u03b5<br>cebae1bdb9cf83cebcceb5",
    "droppedByMe": true,
-   "duration": 48,
+   "duration": 5,
    "expectation": "The message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=71&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: FNlHROGLQGCBKMn/PWjjDw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: jW1gqyz2e/Gl1qKimQQ/AWKRYCQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=71&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: xvSK04dTl9XCcNFhJGW1Uw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 0WEMpqxgkngxx6rpeIvurUKzaVw=\r\n\r\n",
    "id": "6.2.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -44,11 +44,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "36": 1,
+      "42": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:08.831Z",
+   "started": "2023-02-24T01:34:07.766Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 11,
@@ -353,15 +352,8 @@
       [
          "RO",
          [
-            6,
-            "88940cbf375a"
-         ]
-      ],
-      [
-         "RO",
-         [
-            36,
-            "0f505e347ade5b33689f422e6a920f7a78da4f2e828a8b8b72a7316acf1e4408bc1b453e"
+            42,
+            "8894e74167d3e4ae0ebd91200bba836112a7816c5ff393241fa7828a533e9389e9df2e309cbd5d359d8b"
          ]
       ],
       [
@@ -374,7 +366,7 @@
          true,
          0,
          true,
-         "0cbf375a"
+         "e74167d3"
       ],
       [
          "TF",

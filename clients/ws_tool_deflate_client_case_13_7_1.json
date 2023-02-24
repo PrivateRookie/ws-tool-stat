@@ -1,0 +1,83 @@
+{
+   "agent": "ws-tool-deflate-client",
+   "behavior": "FAILED",
+   "behaviorClose": "FAILED",
+   "case": 500,
+   "closedByMe": false,
+   "createStats": true,
+   "createWirelog": false,
+   "description": "Send 1000 compressed messages each of payload size 16, auto-fragment to 0 octets. Use permessage-deflate client offers (requestNoContextTakeover, requestMaxWindowBits): [(True, 9), (True, 0), (False, 0)]",
+   "droppedByMe": true,
+   "duration": 4,
+   "expectation": "Receive echo'ed messages (with payload as sent). Timeout case after 60 secs.",
+   "expected": {},
+   "expectedClose": {
+      "closeCode": [
+         1000
+      ],
+      "closedByMe": true,
+      "requireClean": true
+   },
+   "failedByMe": false,
+   "httpRequest": "GET /runCase?case=500&agent=ws-tool-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ol5G04NTGkpbJy3vuGSCEQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: taF+8k2EuDbr93CmiodjwFHsrso=\r\nSec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=9; client_no_context_takeover; client_max_window_bits=9\r\n\r\n",
+   "id": "13.7.1",
+   "isServer": true,
+   "localCloseCode": 1000,
+   "localCloseReason": null,
+   "received": [],
+   "remoteCloseCode": 1007,
+   "remoteCloseReason": "invalid utf-8 text",
+   "reportCompressionRatio": true,
+   "reportTime": true,
+   "result": "Case did not finish within 60 seconds.",
+   "resultClose": "The connection was failed by the wrong endpoint",
+   "rxFrameStats": {
+      "8": 1
+   },
+   "rxOctetStats": {
+      "26": 1,
+      "294": 1
+   },
+   "started": "2023-02-10T12:13:18.139Z",
+   "trafficStats": null,
+   "txFrameStats": {
+      "1": 1,
+      "8": 1
+   },
+   "txOctetStats": {
+      "4": 1,
+      "20": 1,
+      "332": 1
+   },
+   "wasClean": true,
+   "wasCloseHandshakeTimeout": false,
+   "wasNotCleanReason": null,
+   "wasOpenHandshakeTimeout": false,
+   "wasServerConnectionDropTimeout": false,
+   "wirelog": [
+      [
+         "RO",
+         [
+            294,
+            "474554202f72756e436173653f636173653d353030266167656e743d77732d746f6f6c2d6465666c6174652d636c69656e7420485454502f312e310d0a486f73 ..."
+         ]
+      ],
+      [
+         "TO",
+         [
+            332,
+            "485454502f312e312031303120537769746368696e672050726f746f636f6c730d0a5365727665723a204175746f6261686e5465737453756974652f302e382e ..."
+         ],
+         false
+      ],
+      [
+         "WLM",
+         false
+      ],
+      [
+         "TI",
+         60
+      ]
+   ]
+}

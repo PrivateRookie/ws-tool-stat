@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 1 * 2**20 (1M). Sent out data in chops of 64 octets.",
    "droppedByMe": true,
-   "duration": 208,
+   "duration": 690,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=283&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Iymi/HIn23U10CKLqrZQGg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: p7AzNeXu4aDv5CBnwdaN3o7S1ck=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=283&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 4Y8IoxngHKtJHQbstxeABw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: gPDrfzQGTNfE9ZcxSTEWXUh5uTI=\r\n\r\n",
    "id": "9.6.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,16 +40,12 @@
       "8": 1,
       "14": 1,
       "188": 1,
-      "13032": 1,
-      "24952": 1,
-      "27680": 1,
-      "32640": 1,
-      "32768": 22,
-      "43776": 1,
-      "54528": 1,
-      "65536": 2
+      "32768": 1,
+      "34176": 1,
+      "64128": 1,
+      "65536": 14
    },
-   "started": "2023-02-19T10:22:24.705Z",
+   "started": "2023-02-24T01:34:24.746Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -112,7 +108,7 @@
          "RO",
          [
             8,
-            "8882f9a29c61fa4a"
+            "8882a327782fa0cf"
          ]
       ],
       [
@@ -125,7 +121,7 @@
          true,
          0,
          true,
-         "f9a29c61"
+         "a327782f"
       ]
    ]
 }

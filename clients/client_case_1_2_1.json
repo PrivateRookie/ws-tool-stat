@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message with payload 0.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 7,
    "expectation": "Receive echo'ed binary message (with empty payload). Clean close with normal code.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=9&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Gh2eNMauXlR8OHoeG0jTwg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: dswWESJ3R3/UnqfgSuq0VbP9oSc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=9&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Awbtk37qQ9X0koH35gHaWA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: B1HKbwMDVaw7zSrywB66u1WJ1MY=\r\n\r\n",
    "id": "1.2.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "8": 1,
       "180": 1
    },
-   "started": "2023-02-19T10:13:18.567Z",
+   "started": "2023-02-24T01:25:07.225Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -117,7 +117,7 @@
          "RO",
          [
             6,
-            "8280b0af9fdf"
+            "82800ab4cc5d"
          ]
       ],
       [
@@ -130,7 +130,7 @@
          true,
          0,
          true,
-         "b0af9fdf"
+         "0ab4cc5d"
       ],
       [
          "TF",
@@ -158,7 +158,7 @@
          "RO",
          [
             8,
-            "8882b259b15bb1b1"
+            "8882e82e9c80ebc6"
          ]
       ],
       [
@@ -171,7 +171,7 @@
          true,
          0,
          true,
-         "b259b15b"
+         "e82e9c80"
       ]
    ]
 }

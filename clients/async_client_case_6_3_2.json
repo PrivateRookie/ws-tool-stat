@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send invalid UTF-8 text message in fragments of 1 octet, resulting in frames ending on positions which are not code point ends.<br><br>MESSAGE:<br>cebae1bdb9cf83cebcceb5eda080656469746564",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 8,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=73&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: kJK/v8NQySr9gssETC/XYw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: OdwZXo7oxWrKjaPJTsFZROvt3ps=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=73&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 4kgkXrETU2lOCAv7NtfgYQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: K7uU9ZuX4geiATIRP2SMdvzgTtQ=\r\n\r\n",
    "id": "6.3.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,11 +39,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "45": 1,
+      "51": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:08.930Z",
+   "started": "2023-02-24T01:34:07.786Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 20,
@@ -546,15 +545,8 @@
       [
          "RO",
          [
-            6,
-            "889420575771"
-         ]
-      ],
-      [
-         "RO",
-         [
-            45,
-            "23b83e1f56363b1844772205467a6f5154322f058293d1a9632b6b48de921e2aad971f1c8e8b51cc0742a5cc07"
+            51,
+            "88941afc84571913ed396c9de83e7edcf1237cd1bc776e99fc238293d8c3cd15622270ac174003a9167620b558a6a97caca6a9"
          ]
       ],
       [
@@ -567,7 +559,7 @@
          true,
          0,
          true,
-         "20575771"
+         "1afc8457"
       ],
       [
          "TF",

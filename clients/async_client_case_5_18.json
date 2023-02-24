@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, with both frame opcodes set to text, sent in one chop.",
    "droppedByMe": true,
-   "duration": 48,
+   "duration": 4,
    "expectation": "The connection is failed immediately, since all data frames after the initial data frame must have opcode 0.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=62&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: xksPyaTkUI6Z/sIqvcT0xg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 3hlNfrUSbRkzTtIw7JUKYYS12BI=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=62&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: aic5JtwUSvqCqkvxfrY7XQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: i34l4LlajJztxjw1R5H7bGVszyA=\r\n\r\n",
    "id": "5.18",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "48": 1,
+      "54": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:06.551Z",
+   "started": "2023-02-24T01:34:05.602Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -125,15 +124,8 @@
       [
          "RO",
          [
-            6,
-            "88b0a49e31e5"
-         ]
-      ],
-      [
-         "RO",
-         [
-            48,
-            "a7745f8ad0be528acaea588bd1fb1183d6ff5c8084ff5791c1ec118ccaf745c5c2ec5082c9fb5f91c1fa1183d6ff5c80"
+            54,
+            "88b0446807ac478269c3304864c32a1c6ec2310d27ca36096ac9640961d8211a27c52a01738c221a66cb290d69d8210c27ca36096ac9"
          ]
       ],
       [
@@ -146,7 +138,7 @@
          true,
          0,
          true,
-         "a49e31e5"
+         "446807ac"
       ],
       [
          "TF",

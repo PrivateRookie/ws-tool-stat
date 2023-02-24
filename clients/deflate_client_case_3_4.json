@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send again with <b>RSV = 4</b>, then send Ping. Octets are sent in octet-wise chops.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 14,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=31&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 9OxE52Ja5jWEUwcNauVd9g==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: UcBg5HvLoa5rb9K71RbTERcoYI0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=31&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 13ibUoZPz43qTdnCgmx/fQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Jdzfhhn/PSJNRy4X4TlGNzliZa0=\r\n\r\n",
    "id": "3.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -52,11 +52,11 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "21": 1,
+      "8": 1,
+      "19": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:53.628Z",
+   "started": "2023-02-24T01:27:58.533Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -64,8 +64,7 @@
       "9": 1
    },
    "txOctetStats": {
-      "1": 32,
-      "4": 1,
+      "1": 31,
       "206": 1
    },
    "wasClean": true,
@@ -296,6 +295,25 @@
          true
       ],
       [
+         "RO",
+         [
+            19,
+            "818d6cb1cc3a24d4a056039dec4d03c3a05e4d"
+         ]
+      ],
+      [
+         "RF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "6cb1cc3a"
+      ],
+      [
          "TO",
          [
             1,
@@ -386,36 +404,9 @@
       [
          "RO",
          [
-            6,
-            "818ddbb35ac7"
+            8,
+            "88829c7eab739f96"
          ]
-      ],
-      [
-         "TO",
-         [
-            1,
-            "00"
-         ],
-         true
-      ],
-      [
-         "RO",
-         [
-            21,
-            "93d636abb49f7ab0b4c136a3fa888282c86bba8120"
-         ]
-      ],
-      [
-         "RF",
-         [
-            13,
-            "Hello, world!"
-         ],
-         1,
-         true,
-         0,
-         true,
-         "dbb35ac7"
       ],
       [
          "RF",
@@ -427,7 +418,7 @@
          true,
          0,
          true,
-         "82c86bba"
+         "9c7eab73"
       ],
       [
          "TF",
@@ -441,14 +432,6 @@
          null,
          null,
          null,
-         false
-      ],
-      [
-         "TO",
-         [
-            4,
-            "880203e8"
-         ],
          false
       ]
    ]

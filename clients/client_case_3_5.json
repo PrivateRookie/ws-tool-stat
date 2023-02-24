@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small binary message with <b>RSV = 5</b>.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 6,
    "expectation": "The connection is failed immediately, since RSV must be 0.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=32&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: onA483j7EH9hgdAZimkYPw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7u7DkNrTw96hkjWwirvYhVCG5IA=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=32&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 8lsAOWJKMN3AjTke/1kkxQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: n+zGlG+cBD7IobEZ+b0J8Ylx9sM=\r\n\r\n",
    "id": "3.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "181": 1,
-      "13032": 1
+      "4956": 1
    },
-   "started": "2023-02-19T10:13:19.321Z",
+   "started": "2023-02-24T01:25:07.808Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -103,15 +102,8 @@
       [
          "RO",
          [
-            6,
-            "889bb8a039a6"
-         ]
-      ],
-      [
-         "RO",
-         [
-            13032,
-            "bb5050c8cec155cfdc8055c3d9c450c8df805bcfccd31997899008889b8853021c8ba36b72fe326e75ec736e79e9376b72ef736075fc20222db96333889bddd4 ..."
+            4956,
+            "889bfe98201cfd68497288f94c759ab84c799ffc497299b842758aeb002dcfa811889baedf0638ad2f6f56d8be6a51caff6a5dcfbb6f56c9ff6451daac26099f ..."
          ]
       ],
       [
@@ -124,7 +116,7 @@
          true,
          0,
          true,
-         "b8a039a6"
+         "fe98201c"
       ],
       [
          "TF",

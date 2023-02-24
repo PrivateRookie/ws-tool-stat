@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 1100",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 4,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=242&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: KwLJUucku4KdK+dBOfs7yA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: hqSPWHzYQ1fMnT7+3NCpnLKkzXw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=242&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: jWxMcuwNs43ZnFi119VTKg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: LvHqaFJGFWT/GjH+DPYTubIw9O0=\r\n\r\n",
    "id": "7.9.7",
    "isServer": true,
    "localCloseCode": 1100,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "25": 1,
+      "31": 1,
       "188": 1
    },
-   "started": "2023-02-19T10:22:22.590Z",
+   "started": "2023-02-24T01:34:16.117Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "8899c1e8893c"
-         ]
-      ],
-      [
-         "RO",
-         [
-            25,
-            "c202e052b789e555a5c8ea50ae9bec1ca287ed59e1d9b80cf1"
+            31,
+            "88997a19bd2079f3d44e0c78d1491e39de4c156ad8001976d9455a288c104a"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "c1e8893c"
+         "7a19bd20"
       ]
    ]
 }

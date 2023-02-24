@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented text message, 3 fragments each of length 0.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 7,
    "expectation": "A message is echo'ed back to us (with empty payload).",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=66&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: kswSQ8IWDCbcOpsBhl1bYQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Q4YUJe4DwOoybX2lAOcBtwK/1TA=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=66&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: pq6nX/x2BRoO7YPLl7buYg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: h+SLgaNzpH8UDLDvu60BXyu8+ok=\r\n\r\n",
    "id": "6.1.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -55,7 +55,7 @@
       "8": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:08.610Z",
+   "started": "2023-02-24T01:34:07.705Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 2,
@@ -162,7 +162,7 @@
          "RO",
          [
             6,
-            "8180d9df16c6"
+            "81805f6f8711"
          ]
       ],
       [
@@ -175,7 +175,7 @@
          true,
          0,
          true,
-         "d9df16c6"
+         "5f6f8711"
       ],
       [
          "TF",
@@ -203,7 +203,7 @@
          "RO",
          [
             8,
-            "88829ed9f01a9d31"
+            "8882934a37d890a2"
          ]
       ],
       [
@@ -216,7 +216,7 @@
          true,
          0,
          true,
-         "9ed9f01a"
+         "934a37d8"
       ]
    ]
 }

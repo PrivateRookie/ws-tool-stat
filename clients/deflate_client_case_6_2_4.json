@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a valid UTF-8 text message in fragments of 1 octet, resulting in frames ending on positions which are not code point ends.<br><br>MESSAGE:<br>\u03ba\u1f79\u03c3\u03bc\u03b5<br>cebae1bdb9cf83cebcceb5",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 6,
    "expectation": "The message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=71&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: UI/K7j+m351Ag8PzEUp1Jg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: VfoDA8kzi00sWazklGW69RDQdUU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=71&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Ku/aGHtIL8wvAlz+M1OEuA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: z1+KxmdcgCMYtjwI8t30dU+giKc=\r\n\r\n",
    "id": "6.2.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -44,11 +44,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "36": 1,
+      "42": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:56.757Z",
+   "started": "2023-02-24T01:28:01.248Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 11,
@@ -353,15 +352,8 @@
       [
          "RO",
          [
-            6,
-            "889417155a74"
-         ]
-      ],
-      [
-         "RO",
-         [
-            36,
-            "14fa331a6174361d73352f007138625463702200828afda41a254745a79c3227d4993311"
+            42,
+            "88948db23f308e5d565efbd35359e9924a44eb9f0710f9d74744828a0e5b2312b4ba9eabc1d8edaec0ee"
          ]
       ],
       [
@@ -374,7 +366,7 @@
          true,
          0,
          true,
-         "17155a74"
+         "8db23f30"
       ],
       [
          "TF",

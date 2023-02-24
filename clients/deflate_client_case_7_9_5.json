@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 1006",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 4,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=240&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: soYBc3RNzo9rZE6JmTmzXQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: +w2wbH/vTSM9wXb90Xs9iTt4vdU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=240&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: YSWwGNrwhuVROpTJ421/oQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: qXbUqYBIw7C7PDx4ZDabupN0H60=\r\n\r\n",
    "id": "7.9.5",
    "isServer": true,
    "localCloseCode": 1006,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "25": 1,
+      "31": 1,
       "286": 1
    },
-   "started": "2023-02-19T10:31:10.417Z",
+   "started": "2023-02-24T01:28:09.756Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "889973fba806"
-         ]
-      ],
-      [
-         "RO",
-         [
-            25,
-            "7011c168059ac46f17dbcb6a1c88cd261094cc6353ca983645"
+            31,
+            "88995d61ea2c5e8b83422b0086453941894032128f0c3e0e8e497d50da1c6b"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "73fba806"
+         "5d61ea2c"
       ]
    ]
 }

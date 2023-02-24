@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Ping fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 61,
+   "duration": 5,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=45&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 6FGd+6AU4Nu87EzPmIZfjw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Q4TM+Y0In8Oms913QJk2GlQZ8yk=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=45&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: RrB/9xm5muSkeqNV5HHoOQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 06FzfrSpqy1UeXfMZGxyf48athE=\r\n\r\n",
    "id": "5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "64": 1,
+      "70": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:53.705Z",
+   "started": "2023-02-24T01:27:58.803Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -126,15 +125,8 @@
       [
          "RO",
          [
-            6,
-            "889b1fa495b9"
-         ]
-      ],
-      [
-         "RO",
-         [
-            64,
-            "1c4ef3cb7ec3f8dc71d0f0dd3fc7fad76bd6fad53fc2e7d872c1b5889f1a606d38198a0051691304567d40045673144d5e68010a557f0e195d7e400b4a7b0d08 ..."
+            70,
+            "889bba22b3aeb9c8d5dcdb45decbd456d6ca9a41dcc0ce50dcc29a44c1cfd74793889ff67f7d1ff5951076850c1471915f14719f0b5d79841e1a729311097a92 ..."
          ]
       ],
       [
@@ -147,7 +139,7 @@
          true,
          0,
          true,
-         "1fa495b9"
+         "ba22b3ae"
       ],
       [
          "TF",

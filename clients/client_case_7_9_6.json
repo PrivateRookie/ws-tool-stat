@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 1016",
    "droppedByMe": true,
-   "duration": 47,
+   "duration": 5,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=241&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: FnEkSoHaokWLvLwetw6r+g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: G1cfluMYsXEDKi9kwDf54zS+pcg=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=241&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: NKoTrqjea/gvqJkd0PscwA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: +j9Hcl9Aqm2DI2mWXHaYRAdblP8=\r\n\r\n",
    "id": "7.9.6",
    "isServer": true,
    "localCloseCode": 1016,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "25": 1,
+      "31": 1,
       "182": 1
    },
-   "started": "2023-02-19T10:13:36.272Z",
+   "started": "2023-02-24T01:25:19.293Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "8899d280883e"
-         ]
-      ],
-      [
-         "RO",
-         [
-            25,
-            "d16ae150a4e1e457b6a0eb52bdf3ed1eb1efec5bf2b1b80fe4"
+            31,
+            "889902232c7e01c945107442401766034f126d50495e614c481b22121c4f34"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "d280883e"
+         "02232c7e"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 text messages of payload size 256 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": true,
-   "duration": 50348,
+   "duration": 994,
    "expectation": "Receive echo'ed text messages (with payload as sent). Timeout case after 120 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=292&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: tgTOWboCNZeUa58J1tWUgg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7QmYjny3/Gk84HYoO748DmGqIGM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=292&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: lpLSOVyEh7ChaP9p0mj0Ng==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: +hlC13M8i1K97Do+mLsJ+GzSw6M=\r\n\r\n",
    "id": "9.7.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,11 +37,12 @@
       "8": 1
    },
    "rxOctetStats": {
-      "8": 1001,
+      "8": 49,
       "182": 1,
-      "256": 1000
+      "256": 48,
+      "264": 952
    },
-   "started": "2023-02-19T10:15:20.154Z",
+   "started": "2023-02-24T01:25:35.060Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1000,
@@ -111,7 +112,7 @@
          "RO",
          [
             8,
-            "8882de687c52dd80"
+            "8882abcf2a3ba827"
          ]
       ],
       [
@@ -124,7 +125,7 @@
          true,
          0,
          true,
-         "de687c52"
+         "abcf2a3b"
       ]
    ]
 }

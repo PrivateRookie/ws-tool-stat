@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Pong fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 5,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=46&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wA7kH7z5j6gxFFCUhXo2ow==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: XZpanIxJcBavUyyDHrF4x4KJIDA=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=46&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: DdIxgsBARCRLf0QOz+Ntgw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: +/gbDGqVItGKNAAlodF4a4i/B6c=\r\n\r\n",
    "id": "5.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "64": 1,
+      "70": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:05.830Z",
+   "started": "2023-02-24T01:34:05.389Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -126,15 +125,8 @@
       [
          "RO",
          [
-            6,
-            "889bb79c9a0d"
-         ]
-      ],
-      [
-         "RO",
-         [
-            64,
-            "b476fc7fd6fbf768d9e8ff6997fff563c3eef56197fae86cdaf9ba889fd39ad13dd070bc54a0e9b853b4bab853baeef15ba1fbb650b6f4a558b7bab74fb2f7b4 ..."
+            70,
+            "889be531390ce6db5f7e845654698b455c68c552566291435660c5574b6d885419889f6ef9b2516d13df381d8adb3f09d9db3f078d92371c98d53c0b97c6340a ..."
          ]
       ],
       [
@@ -147,7 +139,7 @@
          true,
          0,
          true,
-         "b79c9a0d"
+         "e531390c"
       ],
       [
          "TF",

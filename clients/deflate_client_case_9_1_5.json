@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 8 * 2**20 (8M).",
    "droppedByMe": true,
-   "duration": 95,
+   "duration": 395,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=251&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: PjVIE8VxdaWZZ49C0Q2J0w==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 5ofbh2zd1zYYLAXyHPRTApysbx4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=251&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: TDGLuqHMReEDGhW7dIvz5w==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: TwkWwR53pge89nd9ty1KEHDoybI=\r\n\r\n",
    "id": "9.1.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,18 +37,15 @@
       "8": 1
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 1,
+      "8": 1,
       "14": 1,
       "286": 1,
-      "13032": 1,
-      "28960": 1,
-      "32640": 1,
-      "57920": 1,
-      "64056": 1,
-      "65536": 125
+      "1708": 1,
+      "64128": 1,
+      "65236": 1,
+      "65536": 126
    },
-   "started": "2023-02-19T10:31:10.908Z",
+   "started": "2023-02-24T01:28:10.098Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -109,15 +106,8 @@
       [
          "RO",
          [
-            6,
-            "8882140c313a"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "17e4"
+            8,
+            "88822368c28e2080"
          ]
       ],
       [
@@ -130,7 +120,7 @@
          true,
          0,
          true,
-         "140c313a"
+         "2368c28e"
       ]
    ]
 }

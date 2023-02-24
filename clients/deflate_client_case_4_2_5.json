@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved control <b>Opcode = 15</b> and non-empty payload, then send Ping.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 31,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=44&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: POoMJU2V6XMkeF6lnFGmTg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ZBBf0a9vviUvWdHEK0zdHkf+OEs=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=44&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: XLGbjuG5rap+xVBgRLMqqg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 3Mrk7x2vYSDtkU/n6xxiu6lHKZE=\r\n\r\n",
    "id": "4.2.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -52,12 +52,11 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "8": 1,
-      "13": 1,
+      "19": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:53.703Z",
+   "started": "2023-02-24T01:27:58.767Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -66,8 +65,7 @@
       "15": 1
    },
    "txOctetStats": {
-      "1": 32,
-      "4": 1,
+      "1": 31,
       "206": 1
    },
    "wasClean": true,
@@ -308,9 +306,21 @@
       [
          "RO",
          [
-            6,
-            "818d17d8e1a2"
+            19,
+            "818d6bbdacd123d8c0bd04918ca604cfc0b54a"
          ]
+      ],
+      [
+         "RF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "6bbdacd1"
       ],
       [
          "TO",
@@ -343,25 +353,6 @@
             "77"
          ],
          true
-      ],
-      [
-         "RO",
-         [
-            13,
-            "5fbd8dce78f4c1d578aa8dc636"
-         ]
-      ],
-      [
-         "RF",
-         [
-            13,
-            "Hello, world!"
-         ],
-         1,
-         true,
-         0,
-         true,
-         "17d8e1a2"
       ],
       [
          "TO",
@@ -412,18 +403,10 @@
          true
       ],
       [
-         "TO",
-         [
-            1,
-            "00"
-         ],
-         true
-      ],
-      [
          "RO",
          [
             8,
-            "8882a5e2e119a60a"
+            "88826131108062d9"
          ]
       ],
       [
@@ -436,7 +419,7 @@
          true,
          0,
          true,
-         "a5e2e119"
+         "61311080"
       ],
       [
          "TF",
@@ -450,14 +433,6 @@
          null,
          null,
          null,
-         false
-      ],
-      [
-         "TO",
-         [
-            4,
-            "880203e8"
-         ],
          false
       ]
    ]

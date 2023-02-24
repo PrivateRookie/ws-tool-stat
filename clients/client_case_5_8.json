@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, one ping with payload in-between. Octets are sent in octet-wise chops.",
    "droppedByMe": true,
-   "duration": 55,
+   "duration": 27,
    "expectation": "A pong is received, then the message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -31,8 +31,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=52&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: hzezH4Q7E565UxInyQCOIA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 82fVEhmIOc1KwOo9k/C0BDEzrBk=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=52&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: hF2MR3j7ZeUlYHhSKd115Q==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: OnldahHuYR+SLRzSLod6u6i78sM=\r\n\r\n",
    "id": "5.8",
    "isServer": true,
    "localCloseCode": 1000,
@@ -60,12 +60,12 @@
       "10": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "8": 1,
-      "18": 2,
+      "18": 1,
+      "24": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:19.763Z",
+   "started": "2023-02-24T01:25:08.113Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -362,6 +362,25 @@
          true
       ],
       [
+         "RO",
+         [
+            18,
+            "8a8c6932e150195b8f3749428029055d8034"
+         ]
+      ],
+      [
+         "RF",
+         [
+            12,
+            "ping payload"
+         ],
+         10,
+         true,
+         0,
+         true,
+         "6932e150"
+      ],
+      [
          "TO",
          [
             1,
@@ -376,25 +395,6 @@
             "72"
          ],
          true
-      ],
-      [
-         "RO",
-         [
-            18,
-            "8a8cc1488d74b121e313e138ec0dad27ec10"
-         ]
-      ],
-      [
-         "RF",
-         [
-            12,
-            "ping payload"
-         ],
-         10,
-         true,
-         0,
-         true,
-         "c1488d74"
       ],
       [
          "TO",
@@ -455,15 +455,8 @@
       [
          "RO",
          [
-            6,
-            "8192ea90f1c6"
-         ]
-      ],
-      [
-         "RO",
-         [
-            18,
-            "8ce290a187f59fb2dbf683a78dfd94a89ea2"
+            24,
+            "81926c5c42060a2e236101392c725d3a30670b312768186e"
          ]
       ],
       [
@@ -476,7 +469,7 @@
          true,
          0,
          true,
-         "ea90f1c6"
+         "6c5c4206"
       ],
       [
          "TF",
@@ -504,7 +497,7 @@
          "RO",
          [
             8,
-            "8882536181945089"
+            "8882072d50a604c5"
          ]
       ],
       [
@@ -517,7 +510,7 @@
          true,
          0,
          true,
-         "53618194"
+         "072d50a6"
       ]
    ]
 }

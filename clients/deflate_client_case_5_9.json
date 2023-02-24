@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in one chop.",
    "droppedByMe": true,
-   "duration": 47,
+   "duration": 5,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=53&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: sfh6U+XhTy8LfU6U6I2nOw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: orlyAqx+2IT03Yt+OdtfcmevroU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=53&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: YN5yZLq3eOe9Si68FDGRaQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ElsKrbUt+NDNRiHIcjTCida4NLo=\r\n\r\n",
    "id": "5.9",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "50": 1,
+      "56": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:54.119Z",
+   "started": "2023-02-24T01:27:58.918Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -127,15 +126,8 @@
       [
          "RO",
          [
-            6,
-            "889f5bf54b9c"
-         ]
-      ],
-      [
-         "RO",
-         [
-            50,
-            "581f26f5288622f23cd522f232816bfa29942cf13e9b3ff93fd52dee3a982e818de5c4c4aaada1a8c68ae8e4dd8ab6a8cec4"
+            56,
+            "889f9649d55395a3b83ae53abc3df169bc3dff3df535e428b23ef327a136f269b321f724b0818d6a089fda226df3b60524bfad057af3be4b"
          ]
       ],
       [
@@ -148,7 +140,7 @@
          true,
          0,
          true,
-         "5bf54b9c"
+         "9649d553"
       ],
       [
          "TF",

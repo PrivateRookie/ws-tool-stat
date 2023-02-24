@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xc020c120c220c320c420c520c620c720c820c920ca20cb20cc20cd20ce20cf20d020d120d220d320d420d520d620d720d820d920da20db20dc20dd20de20",
    "droppedByMe": true,
-   "duration": 48,
+   "duration": 5,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=120&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: YZjFZKKeE/J3XNszJkkN8g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ZjkicjinlS20HQh6NiC1nXxLLqw=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=120&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: szGDpqZyh6xt1Tp/7BfnUQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: l5y9UV19x+fr+qo3Xbwl7beU3hs=\r\n\r\n",
    "id": "6.13.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,11 +39,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "20": 1,
+      "26": 1,
       "182": 1
    },
-   "started": "2023-02-19T10:13:31.060Z",
+   "started": "2023-02-24T01:25:17.612Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -104,15 +103,8 @@
       [
          "RO",
          [
-            6,
-            "889418ef54c4"
-         ]
-      ],
-      [
-         "RO",
-         [
-            20,
-            "1b003daa6e8e38ad7ccf21b07ec26ce46c8a2cb0"
+            26,
+            "889431d4a9fa323bc09447b5c59355f4dc8e57f991da45b1d18e"
          ]
       ],
       [
@@ -125,7 +117,7 @@
          true,
          0,
          true,
-         "18ef54c4"
+         "31d4a9fa"
       ],
       [
          "TF",

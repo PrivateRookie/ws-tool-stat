@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Pong fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 4,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=46&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: hQsWCCVKh648soT1HxGigA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: F+A95jqVJEbxw/xZvtjNv077R3c=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=46&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: QOU5idut8GWgowvikragBQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: fdY+SpWeV/8cLw3bHyX0hEJ6dvg=\r\n\r\n",
    "id": "5.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "64": 1,
+      "70": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:53.767Z",
+   "started": "2023-02-24T01:27:58.814Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -126,15 +125,8 @@
       [
          "RO",
          [
-            6,
-            "889baf90a826"
-         ]
-      ],
-      [
-         "RO",
-         [
-            64,
-            "ac7ace54cef7c543c1e4cd428ff3c748dbe2c74a8ff6da47c2f588889fef5cb3cdecb6dea49c2fdaa3887cdaa3862893ab9d3dd4a08a32c7a88b7cd5bf8e31d6 ..."
+            70,
+            "889b7602754975e8133b1765182c1876102d56611a2702701a25566407281b6755889fe95a5621eab03b489a293f4f8e7a3f4f802e76479b3b314c8c3422448d ..."
          ]
       ],
       [
@@ -147,7 +139,7 @@
          true,
          0,
          true,
-         "af90a826"
+         "76027549"
       ],
       [
          "TF",

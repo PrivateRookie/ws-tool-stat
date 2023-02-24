@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with close code 65536",
    "droppedByMe": true,
-   "duration": 59,
+   "duration": 4,
    "expectation": "Actual events are undefined by the spec.",
    "expected": {
       "OK": []
@@ -23,8 +23,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=246&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: UdGy8AACsitoPrESN7xWgQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: J+3tdYcd+KsBS8HdiCGCUaMD4IE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=246&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: EvU17wxO2nhmTTzrQbFKrg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 52W7pnSaVZ1Gsg5ahDmd/u/c7sk=\r\n\r\n",
    "id": "7.13.2",
    "isServer": true,
    "localCloseCode": 65535,
@@ -40,11 +40,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "26": 1,
+      "32": 1,
       "292": 1
    },
-   "started": "2023-02-19T10:42:29.335Z",
+   "started": "2023-02-24T01:35:03.257Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -103,15 +102,8 @@
       [
          "RO",
          [
-            6,
-            "889af9cc6260"
-         ]
-      ],
-      [
-         "RO",
-         [
-            26,
-            "fa260b0e8fad0e099dec010c96bf07409aa30605d9fa5755caf9"
+            32,
+            "889a9981ba939a6bd3fdefe0d6fafda1d9fff6f2dfb3faeedef6b9b78fa6aab4"
          ]
       ],
       [
@@ -124,7 +116,7 @@
          true,
          0,
          true,
-         "f9cc6260"
+         "9981ba93"
       ]
    ]
 }

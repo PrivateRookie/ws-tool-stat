@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send again with <b>RSV = 3</b>, then send Ping. Octets are sent in frame-wise chops. Octets are sent in octet-wise chops.",
    "droppedByMe": true,
-   "duration": 1002,
+   "duration": 1035,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": true,
-   "httpRequest": "GET /runCase?case=30&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: J2IqDI7MrnOYZYH1gwsk3g==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 2FC9Pt68awvCetCMxu45FUPen6Q=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=30&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: mlhREVlmzfX62PvNg39LZA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: lYylsMi23WkmVG2S8Pggzm3XDLc=\r\n\r\n",
    "id": "3.3",
    "isServer": true,
    "localCloseCode": 1001,
@@ -62,12 +62,11 @@
       "10": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "8": 1,
-      "38": 1,
+      "44": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:52.625Z",
+   "started": "2023-02-24T01:27:57.485Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -174,15 +173,8 @@
       [
          "RO",
          [
-            6,
-            "818d84f75b62"
-         ]
-      ],
-      [
-         "RO",
-         [
-            38,
-            "cc92370eebdb7b15eb853706a5818d5d3cf8171559947b3210d860324e94737c8a80cc02ea01"
+            44,
+            "818ddc15e78494708be8b339c7f3b3678be0fd818d94f00c0ddc956061fbdc2c7afb826069b58a8099575208"
          ]
       ],
       [
@@ -195,7 +187,7 @@
          true,
          0,
          true,
-         "84f75b62"
+         "dc15e784"
       ],
       [
          "RF",
@@ -207,7 +199,7 @@
          true,
          0,
          true,
-         "5d3cf817"
+         "94f00c0d"
       ],
       [
          "RF",
@@ -219,7 +211,7 @@
          true,
          0,
          true,
-         "cc02ea01"
+         "99575208"
       ],
       [
          "KLE"
@@ -250,7 +242,7 @@
          "RO",
          [
             8,
-            "88820e200f860dc8"
+            "888299383f379ad0"
          ]
       ],
       [
@@ -263,7 +255,7 @@
          true,
          0,
          true,
-         "0e200f86"
+         "99383f37"
       ]
    ]
 }

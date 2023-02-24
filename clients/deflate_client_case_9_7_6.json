@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 text messages of payload size 4096 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": true,
-   "duration": 50299,
+   "duration": 1093,
    "expectation": "Receive echo'ed text messages (with payload as sent). Timeout case after 480 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=294&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 4uhcUr4eX8JZWJA+8sKieg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: x39RTAYWoYEj6tFUO17nZvKFgp0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=294&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: FQCs7iJaWxsRK5q2d5vWPg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: OU13EcMloubzx80ne59BZkZB8Es=\r\n\r\n",
    "id": "9.7.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,11 +37,12 @@
       "8": 1
    },
    "rxOctetStats": {
-      "8": 1001,
+      "8": 95,
       "286": 1,
-      "4096": 1000
+      "4096": 94,
+      "4104": 906
    },
-   "started": "2023-02-19T10:34:34.757Z",
+   "started": "2023-02-24T01:28:22.403Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1000,
@@ -111,7 +112,7 @@
          "RO",
          [
             8,
-            "8882cbfcece3c814"
+            "888213b986ba1051"
          ]
       ],
       [
@@ -124,7 +125,7 @@
          true,
          0,
          true,
-         "cbfcece3"
+         "13b986ba"
       ]
    ]
 }

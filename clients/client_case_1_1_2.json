@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 125.",
    "droppedByMe": true,
-   "duration": 47,
+   "duration": 8,
    "expectation": "Receive echo'ed text message (with payload as sent). Clean close with normal code.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=2&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: AsMolMkoc9dwAGMFHZxrBQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: tG3Y+OLS1LotueLJKz43lIb9sZs=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=2&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 6qmi7emLPJEIahaBosH/rA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 0w2nVW0U5SYuO0FQwWcjw8RZRvc=\r\n\r\n",
    "id": "1.1.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -51,12 +51,11 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "8": 1,
-      "125": 1,
+      "131": 1,
       "180": 1
    },
-   "started": "2023-02-19T10:13:18.332Z",
+   "started": "2023-02-24T01:25:07.065Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -117,15 +116,8 @@
       [
          "RO",
          [
-            6,
-            "81fd890bdf96"
-         ]
-      ],
-      [
-         "RO",
-         [
-            125,
-            "a321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bca321f5bc ..."
+            131,
+            "81fd0687ddd72cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cadf7fd2cad ..."
          ]
       ],
       [
@@ -138,7 +130,7 @@
          true,
          0,
          true,
-         "890bdf96"
+         "0687ddd7"
       ],
       [
          "TF",
@@ -166,7 +158,7 @@
          "RO",
          [
             8,
-            "8882c3add75ec045"
+            "88828a97785c897f"
          ]
       ],
       [
@@ -179,7 +171,7 @@
          true,
          0,
          true,
-         "c3add75e"
+         "8a97785c"
       ]
    ]
 }

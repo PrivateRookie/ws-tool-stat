@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 1 * 2**20 (1M). Sent out data in chops of 2048 octets.",
    "droppedByMe": true,
-   "duration": 14,
+   "duration": 71,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=288&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: CiYHuID5onRvY57qLTlVMw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: UDvGh8Oa3/S5I+Y4mIKCE818UrM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=288&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: kalImP6Lscxxk6hWC132Rw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: tg2M1uZ/0BP3NCpUnocOygF/Qp0=\r\n\r\n",
    "id": "9.6.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,16 +40,12 @@
       "8": 1,
       "14": 1,
       "182": 1,
-      "11008": 1,
-      "13032": 1,
-      "21760": 1,
-      "24952": 1,
-      "27680": 1,
-      "32640": 1,
-      "32768": 12,
-      "65536": 8
+      "14480": 1,
+      "22096": 1,
+      "28960": 1,
+      "65536": 15
    },
-   "started": "2023-02-19T10:13:39.226Z",
+   "started": "2023-02-24T01:25:31.391Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -112,7 +108,7 @@
          "RO",
          [
             8,
-            "8882ea269023e9ce"
+            "88822d7eb5d42e96"
          ]
       ],
       [
@@ -125,7 +121,7 @@
          true,
          0,
          true,
-         "ea269023"
+         "2d7eb5d4"
       ]
    ]
 }

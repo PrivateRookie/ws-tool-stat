@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a valid UTF-8 text message in two fragments, fragmented on UTF-8 code point boundary.<br><br>MESSAGE FRAGMENT 1:<br>Hello-\u00b5@\u00df\u00f6\u00e4<br>48656c6c6f2dc2b540c39fc3b6c3a4<br><br>MESSAGE FRAGMENT 2:<br>\u00fc\u00e0\u00e1-UTF-8!!<br>c3bcc3a0c3a12d5554462d382121",
    "droppedByMe": true,
-   "duration": 50,
+   "duration": 8,
    "expectation": "The message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=69&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Ff8ERawB6b3LrLhT+AC/Ig==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: u8/WNY5LFN903jh8kLl4LNvdyxc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=69&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: VLimNmcevon+zZf/MX9AHQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: jgSzff+sGokzTQn/TuYXnr1+op4=\r\n\r\n",
    "id": "6.2.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -51,12 +51,11 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "8": 1,
-      "29": 1,
+      "35": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:56.657Z",
+   "started": "2023-02-24T01:28:01.218Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -141,15 +140,8 @@
       [
          "RO",
          [
-            6,
-            "819d7182d56b"
-         ]
-      ],
-      [
-         "RO",
-         [
-            29,
-            "39e7b9071eaf17de31414aa8c74171a8cd4175a8d0af803f37afed4a50"
+            35,
+            "819db9d5baf3f1b0d69fd6f87846f91625300f161e3005161a3018f8efa7fff882d298"
          ]
       ],
       [
@@ -162,7 +154,7 @@
          true,
          0,
          true,
-         "7182d56b"
+         "b9d5baf3"
       ],
       [
          "TF",
@@ -190,7 +182,7 @@
          "RO",
          [
             8,
-            "8882715b864072b3"
+            "888284b5daef875d"
          ]
       ],
       [
@@ -203,7 +195,7 @@
          true,
          0,
          true,
-         "715b8640"
+         "84b5daef"
       ]
    ]
 }

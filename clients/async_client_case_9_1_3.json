@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 1 * 2**20 (1M).",
    "droppedByMe": true,
-   "duration": 11,
+   "duration": 87,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=249&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: bSrNQjH4GnYX01J6YodCiA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 2QhptfZfsT38WI6EswUURrpgalQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=249&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: EE6ybrLS5WBnKwAW9G1kkA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: C0/HyGd4mQjrKAINXAasTGal5cw=\r\n\r\n",
    "id": "9.1.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,16 +40,12 @@
       "8": 1,
       "14": 1,
       "188": 1,
-      "11008": 1,
-      "13032": 1,
-      "21760": 1,
-      "23672": 1,
+      "14480": 1,
+      "22096": 1,
       "28960": 1,
-      "32640": 1,
-      "32768": 6,
-      "65536": 11
+      "65536": 15
    },
-   "started": "2023-02-19T10:22:22.847Z",
+   "started": "2023-02-24T01:34:16.226Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -111,7 +107,7 @@
          "RO",
          [
             8,
-            "8882f50c32b0f6e4"
+            "8882194835f61aa0"
          ]
       ],
       [
@@ -124,7 +120,7 @@
          true,
          0,
          true,
-         "f50c32b0"
+         "194835f6"
       ]
    ]
 }

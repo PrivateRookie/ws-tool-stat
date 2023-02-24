@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 1k.",
    "droppedByMe": true,
-   "duration": 33,
+   "duration": 114,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=270&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: f3I3n8eQZvt/aCTk1JP9ew==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: AV80Dauu05yiZoc2nyMG70V5Cr0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=270&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: UbUwgwbaDKsDBtk8rEWieA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: pIViBkzGSCUbVZG9ykutz64Ihqw=\r\n\r\n",
    "id": "9.4.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,14 +40,14 @@
       "8": 1,
       "14": 1,
       "182": 1,
-      "13032": 1,
+      "14480": 1,
       "28960": 1,
-      "32640": 1,
-      "32768": 72,
-      "56440": 1,
-      "65536": 26
+      "31120": 1,
+      "57920": 1,
+      "64128": 1,
+      "65536": 61
    },
-   "started": "2023-02-19T10:13:37.973Z",
+   "started": "2023-02-24T01:25:26.128Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4096,
@@ -111,7 +111,7 @@
          "RO",
          [
             8,
-            "8882e76cdf76e484"
+            "888200b73b5f035f"
          ]
       ],
       [
@@ -124,7 +124,7 @@
          true,
          0,
          true,
-         "e76cdf76"
+         "00b73b5f"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Ping fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 50,
+   "duration": 5,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=45&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: WGYFhPqyvIVN1HkrypkvMg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: JdVJQpP1Lau07ScoZNOHWRYNFSM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=45&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: +R1CVm6JCKAfz0AHpXGkoA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Rulc0ZN+mYRZaBbuJ2pWo5/mMns=\r\n\r\n",
    "id": "5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "64": 1,
+      "70": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:05.779Z",
+   "started": "2023-02-24T01:34:05.378Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -126,15 +125,8 @@
       [
          "RO",
          [
-            6,
-            "889bf6f949d4"
-         ]
-      ],
-      [
-         "RO",
-         [
-            64,
-            "f5132fa6979e24b1988d2cb0d69a26ba828b26b8d69f3bb59b9c69889f858c78db866615b2f6ff11b5e2ac11b5ecf858bdf7ed1fb6e0e20cbee1ac1ea9e4e11d ..."
+            70,
+            "889b7dfedfc37e14b9b11c99b2a6138abaa75d9db0ad098cb0af5d98ada2109bff889f6c41d6766fabbb1f1f32bf180b61bf180535f6101e20b11b092fa21308 ..."
          ]
       ],
       [
@@ -147,7 +139,7 @@
          true,
          0,
          true,
-         "f6f949d4"
+         "7dfedfc3"
       ],
       [
          "TF",

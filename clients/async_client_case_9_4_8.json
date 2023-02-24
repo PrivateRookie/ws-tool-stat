@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 1M.",
    "droppedByMe": true,
-   "duration": 26,
+   "duration": 125,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=275&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: f8n3IGXhv8gqtKuHcp9EQA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: V/aPGYQNc7vr0QtfZr76DrkVoQQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=275&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: x7awYt0URr51+HsLbKhE8g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: v0PcOsJ1+qbAyvpBvTH4VkKS1EY=\r\n\r\n",
    "id": "9.4.8",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,14 +40,13 @@
       "8": 1,
       "14": 1,
       "188": 1,
-      "13032": 1,
+      "14480": 1,
       "28960": 1,
-      "32640": 1,
-      "32768": 88,
-      "56440": 1,
-      "65536": 18
+      "29712": 1,
+      "57920": 1,
+      "65536": 62
    },
-   "started": "2023-02-19T10:22:24.173Z",
+   "started": "2023-02-24T01:34:22.267Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -111,7 +110,7 @@
          "RO",
          [
             8,
-            "888252eeae885106"
+            "88821da76b5d1e4f"
          ]
       ],
       [
@@ -124,7 +123,7 @@
          true,
          0,
          true,
-         "52eeae88"
+         "1da76b5d"
       ]
    ]
 }

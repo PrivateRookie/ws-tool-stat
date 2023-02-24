@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 text messages of payload size 64 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": true,
-   "duration": 50299,
+   "duration": 722,
    "expectation": "Receive echo'ed text messages (with payload as sent). Timeout case after 60 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=291&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Ps81w+2LlOY3haUUc4OUNw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: AMYog4+wEUtO4JaBNT2bTnsUfaE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=291&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: vRfsoFSDkMwIGqbv6H2i5A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: nWm8AtpcIUTey26LlaMk9oiQEKw=\r\n\r\n",
    "id": "9.7.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,12 +37,13 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1000,
+      "6": 38,
       "8": 1,
-      "64": 1000,
+      "64": 38,
+      "70": 962,
       "182": 1
    },
-   "started": "2023-02-19T10:14:29.852Z",
+   "started": "2023-02-24T01:25:34.332Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1000,
@@ -112,7 +113,7 @@
          "RO",
          [
             8,
-            "888233f932063011"
+            "8882928e18ff9166"
          ]
       ],
       [
@@ -125,7 +126,7 @@
          true,
          0,
          true,
-         "33f93206"
+         "928e18ff"
       ]
    ]
 }

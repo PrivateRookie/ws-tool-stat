@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented text message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 1k.",
    "droppedByMe": true,
-   "duration": 37,
+   "duration": 187,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=261&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 2S1b6kjC1aDS46l8HmHh7w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 9DRGWbDsn1+DUbkrxt4Zui7KmAU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=261&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: AUc6UwS9tlwJkmw0tRRAYw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: u2ggKaIg5LMeNgi8dOe3nHJFen4=\r\n\r\n",
    "id": "9.3.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,15 +40,14 @@
       "8": 1,
       "14": 1,
       "182": 1,
-      "324": 1,
-      "13032": 1,
-      "23348": 1,
+      "14480": 1,
       "28960": 1,
-      "32640": 1,
-      "32768": 3,
+      "31280": 1,
+      "57760": 1,
+      "64128": 1,
       "65536": 61
    },
-   "started": "2023-02-19T10:13:37.563Z",
+   "started": "2023-02-24T01:25:24.348Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4096,
@@ -112,7 +111,7 @@
          "RO",
          [
             8,
-            "8882f79dc8b8f475"
+            "8882de89fe0fdd61"
          ]
       ],
       [
@@ -125,7 +124,7 @@
          true,
          0,
          true,
-         "f79dc8b8"
+         "de89fe0f"
       ]
    ]
 }

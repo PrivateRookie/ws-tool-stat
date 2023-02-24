@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="http://autobahn.ws/testsuite" title="Autobahn WebSocket Testsuite"><img src="http://autobahn.ws/static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="http://autobahn.ws"           title="Autobahn WebSocket">          <img src="http://autobahn.ws/static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_info">client - <span style="font-size: 1.3em;"><b>Case 7.13.1</b></span> : Informational - <span style="font-size: 0.9em;"><b>49</b> ms @ 2023-02-19T10:13:36.490Z</a></p>
+      <p class="case case_info">client - <span style="font-size: 1.3em;"><b>Case 7.13.1</b></span> : Informational - <span style="font-size: 0.9em;"><b>5</b> ms @ 2023-02-24T01:25:19.334Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send close with close code 5000</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Actual events are undefined by the spec.</p>
 
@@ -218,14 +218,14 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
 Host: localhost:9002
 Upgrade: websocket
 Connection: Upgrade
-Sec-Websocket-Key: XOzt0WnD/6KpxTdjWln4YQ==
+Sec-Websocket-Key: qa+ImD8BDf9m//P/aMRwmA==
 Sec-WebSocket-Version: 13</pre>
       <pre class="http_dump">HTTP/1.1 101 Switching Protocols
 Server: AutobahnTestSuite/0.8.2-0.10.9
 X-Powered-By: AutobahnPython/0.10.9
 Upgrade: WebSocket
 Connection: Upgrade
-Sec-WebSocket-Accept: fCEF/A7Kblz/5xiSp7xJtMsEwe4=</pre>
+Sec-WebSocket-Accept: NimjDaQ6jFv48IwrpP7prpeFg9M=</pre>
       <br/><hr/>
       <h2>Closing Behavior</h2>
       <table>
@@ -248,10 +248,9 @@ Sec-WebSocket-Accept: fCEF/A7Kblz/5xiSp7xJtMsEwe4=</pre>
       <h3>Octets Received by Chop Size</h3>
       <table>
          <tr class="stats_header"><td>Chop Size</td><td>Count</td><td>Octets</td></tr>
-         <tr class="stats_row"><td>6</td><td>1</td><td>6</td></tr>
-         <tr class="stats_row"><td>25</td><td>1</td><td>25</td></tr>
+         <tr class="stats_row"><td>31</td><td>1</td><td>31</td></tr>
          <tr class="stats_row"><td>182</td><td>1</td><td>182</td></tr>
-         <tr class="stats_total"><td>Total</td><td>3</td><td>213</td></tr>
+         <tr class="stats_total"><td>Total</td><td>2</td><td>213</td></tr>
       </table>
       <h3>Octets Transmitted by Chop Size</h3>
       <table>
@@ -283,11 +282,10 @@ Sec-WebSocket-Accept: fCEF/A7Kblz/5xiSp7xJtMsEwe4=</pre>
          <pre class="wirelog_tx_frame">               0x1388</pre>
          <pre class="wirelog_tx_octets">003 TX OCTETS: 88021388</pre>
          <pre class="wirelog_kill_after">004 FAIL CONNECTION AFTER 1.000000 sec</pre>
-         <pre class="wirelog_rx_octets">005 RX OCTETS: 8899e7158a63</pre>
-         <pre class="wirelog_rx_octets">006 RX OCTETS: e4ffe30d9174e60a8335e90f8866ef43847aee06c720ba53d7</pre>
-         <pre class="wirelog_rx_frame">007 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=25, MASKED=True, MASK=6537313538613633</pre>
+         <pre class="wirelog_rx_octets">005 RX OCTETS: 88997ed166377d3b0f5908b00a5e1af1055b11a203171dbe02525ee456074e</pre>
+         <pre class="wirelog_rx_frame">006 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=25, MASKED=True, MASK=3765643136363337</pre>
          <pre class="wirelog_rx_frame">               0x03ea696e76616c696420636c6f736520636f64652035303030</pre>
-         <pre class="wirelog_tcp_closed_by_me">008 TCP DROPPED BY ME</pre>
+         <pre class="wirelog_tcp_closed_by_me">007 TCP DROPPED BY ME</pre>
       </div>
       <br/><hr/>
    </body>

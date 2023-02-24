@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, with both frame opcodes set to text, sent in one chop.",
    "droppedByMe": true,
-   "duration": 59,
+   "duration": 6,
    "expectation": "The connection is failed immediately, since all data frames after the initial data frame must have opcode 0.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=62&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: LXAOwbN6IMMDfg02oXoddw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: SuBqIm6N+CFy60vkhyH8rG3o4Ss=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=62&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: m9WpSFvqvY6riTl/tqDz8A==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: H5WdK5oZjXlVwUpDW8lLKzOJoBs=\r\n\r\n",
    "id": "5.18",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "48": 1,
+      "54": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:54.487Z",
+   "started": "2023-02-24T01:27:59.021Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -125,15 +124,8 @@
       [
          "RO",
          [
-            6,
-            "88b0ae44a77b"
-         ]
-      ],
-      [
-         "RO",
-         [
-            48,
-            "adaec914da64c414c030ce15db21871ddc25ca1e8e25c10fcb368712c02dd35bc836c61cc321c90fcb20871ddc25ca1e"
+            54,
+            "88b06025abb763cfc5d81405c8d80e51c2d915408bd11244c6d24044cdc305578bde0e4cdf970657cad00d40c5c305418bd11244c6d2"
          ]
       ],
       [
@@ -146,7 +138,7 @@
          true,
          0,
          true,
-         "ae44a77b"
+         "6025abb7"
       ],
       [
          "TF",

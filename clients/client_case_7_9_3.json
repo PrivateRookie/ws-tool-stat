@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 1004",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 6,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=238&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 7oe8BSYktfmV7ewq+643MQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 7ExSi/NlPw87tDWbS/Ixnb0TXeI=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=238&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: JJXw7VOjwlb0+iDsHGHVag==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: L4xYHdDh9t3QSZ66RbSDVHI/+88=\r\n\r\n",
    "id": "7.9.3",
    "isServer": true,
    "localCloseCode": 1004,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "25": 1,
+      "31": 1,
       "182": 1
    },
-   "started": "2023-02-19T10:13:36.121Z",
+   "started": "2023-02-24T01:25:19.260Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "88995b8914d4"
-         ]
-      ],
-      [
-         "RO",
-         [
-            25,
-            "58637dba2de878bd3fa977b834fa71f438e670b17bb824e46f"
+            31,
+            "88991dbc4eb81e5627d66bdd22d1799c2dd472cf2b987ed32add3d8d7e8829"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "5b8914d4"
+         "1dbc4eb8"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send ping with binary payload of 126 octets.",
    "droppedByMe": true,
-   "duration": 47,
+   "duration": 5,
    "expectation": "Connection is failed immediately (1002/Protocol Error), since control frames are only allowed to have payload up to and including 125 octets..",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=21&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: DqaBqSFVHh3gb3ieHimaOQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 1wxh9FkkjjziVO3Rey6fw/kG78s=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=21&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Ou/2l5K9SzTeC3CvBPbcuA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: xA78LX2WBpMs5FF+T/jq+Y0Mk6Y=\r\n\r\n",
    "id": "2.5",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "30": 1,
+      "36": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:18.991Z",
+   "started": "2023-02-24T01:25:07.444Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -103,15 +102,8 @@
       [
          "RO",
          [
-            6,
-            "889e0693f540"
-         ]
-      ],
-      [
-         "RO",
-         [
-            30,
-            "0579962f68e7872f6ab3933267fe90606fe0d53469fcd5226ff4d57134a5"
+            36,
+            "889e2e817b592d6b183640f5093642a11d2b4fec1e7947f25b2d41ee5b3b47e65b681cb7"
          ]
       ],
       [
@@ -124,7 +116,7 @@
          true,
          0,
          true,
-         "0693f540"
+         "2e817b59"
       ],
       [
          "TF",

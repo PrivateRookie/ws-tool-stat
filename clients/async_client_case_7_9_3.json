@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 1004",
    "droppedByMe": true,
-   "duration": 59,
+   "duration": 4,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=238&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 0vb7HRhf2ml7VowvdRqVXw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: b8S3UKLx1W9MEb1Kj92QHmLZhj4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=238&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: iigLMAllLqAHxvbtET4F9g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 9fU9gS50eLLg9szHp8Le6apnqMY=\r\n\r\n",
    "id": "7.9.3",
    "isServer": true,
    "localCloseCode": 1004,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "25": 1,
+      "31": 1,
       "188": 1
    },
-   "started": "2023-02-19T10:22:22.380Z",
+   "started": "2023-02-24T01:34:16.083Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "8899aff09e58"
-         ]
-      ],
-      [
-         "RO",
-         [
-            25,
-            "ac1af736d991f231cbd0fd34c083fb78cc9ffa3d8fc1ae689b"
+            31,
+            "8899e3f70f5fe01d66319596633687d76c338c846a7f80986b3ac3c63f6fd7"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "aff09e58"
+         "e3f70f5f"
       ]
    ]
 }

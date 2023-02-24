@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 text messages of payload size 4096 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": true,
-   "duration": 50168,
+   "duration": 1372,
    "expectation": "Receive echo'ed text messages (with payload as sent). Timeout case after 480 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=294&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: zBV93B3KL3TijZrzbbFG0Q==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: zzrWZmUQGlDH0n0ayYoxTkik+t0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=294&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: G2WS92FUcQGwUPIpovrCdA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 6sQu5ZmfQ16xg+3pzWlPMjSmfi4=\r\n\r\n",
    "id": "9.7.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,13 +37,12 @@
       "8": 1
    },
    "rxOctetStats": {
-      "8": 1001,
+      "8": 98,
       "182": 1,
-      "1200": 1,
-      "2896": 1,
-      "4096": 999
+      "4096": 97,
+      "4104": 903
    },
-   "started": "2023-02-19T10:17:00.842Z",
+   "started": "2023-02-24T01:25:36.997Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1000,
@@ -113,7 +112,7 @@
          "RO",
          [
             8,
-            "888275e54da0760d"
+            "8882db24bd8ad8cc"
          ]
       ],
       [
@@ -126,7 +125,7 @@
          true,
          0,
          true,
-         "75e54da0"
+         "db24bd8a"
       ]
    ]
 }

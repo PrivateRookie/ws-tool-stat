@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 2000",
    "droppedByMe": true,
-   "duration": 47,
+   "duration": 3,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=243&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: LpJyLTbgwa62q/8iDRov5w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: jyBru83X0jsP76rWYny6+7NUdXg=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=243&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: EzOj6J308W/nRDFKaY0WBw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: oDRojTqLW3YpYW+lrPY/HDwRx48=\r\n\r\n",
    "id": "7.9.8",
    "isServer": true,
    "localCloseCode": 2000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "25": 1,
+      "31": 1,
       "188": 1
    },
-   "started": "2023-02-19T10:22:22.640Z",
+   "started": "2023-02-24T01:34:16.126Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "8899069a6586"
-         ]
-      ],
-      [
-         "RO",
-         [
-            25,
-            "05700ce870fb09ef62ba06ea69e900a665f501e326a855b636"
+            31,
+            "889925bc6ef32656079d53dd029a419c0d9f4acf0bd346d30a96058e5ec315"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "069a6586"
+         "25bc6ef3"
       ]
    ]
 }

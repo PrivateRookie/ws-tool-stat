@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text Message fragmented into 2 fragments, then Continuation Frame with FIN = false where there is nothing to continue, then unfragmented Text Message, all sent in one chop.",
    "droppedByMe": true,
-   "duration": 45,
+   "duration": 10,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=59&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: GjRpaa8UzofJUhJq1KpXoA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: CABepJRGuMLYSm+8fEMlKS9TiBU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=59&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: R6VXDnQzzxkx7BQ+aGRDRw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: NNdfC+XKRSXx09XoV+tUWj82Y0g=\r\n\r\n",
    "id": "5.15",
    "isServer": true,
    "localCloseCode": 1000,
@@ -52,11 +52,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "70": 1,
+      "76": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:06.403Z",
+   "started": "2023-02-24T01:34:05.557Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 2,
@@ -184,15 +183,8 @@
       [
          "RO",
          [
-            6,
-            "8192bae196a0"
-         ]
-      ],
-      [
-         "RO",
-         [
-            70,
-            "dc93f7c7d784f8d48b87e4c1dd8cf3ceced3889f91fb98579211f53ee288f139f6dbf139f88fb831e39aff3af495ec32f5dbfe25f096fd81899d62a073fb10c1 ..."
+            76,
+            "8192a8d6539ccea432fbc5b33de899b021fdcfbb36f2dce4889f81eeb6d88204dbb1f29ddfb6e6cedfb6e89a96bef38fd1b5e480c2bde5ced0aae083d3818945 ..."
          ]
       ],
       [
@@ -205,7 +197,7 @@
          true,
          0,
          true,
-         "bae196a0"
+         "a8d6539c"
       ],
       [
          "RF",
@@ -217,7 +209,7 @@
          true,
          0,
          true,
-         "91fb9857"
+         "81eeb6d8"
       ],
       [
          "TF",

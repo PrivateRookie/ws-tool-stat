@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with close code 5000",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 5,
    "expectation": "Actual events are undefined by the spec.",
    "expected": {
       "OK": []
@@ -23,8 +23,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=245&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: XOzt0WnD/6KpxTdjWln4YQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: fCEF/A7Kblz/5xiSp7xJtMsEwe4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=245&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: qa+ImD8BDf9m//P/aMRwmA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: NimjDaQ6jFv48IwrpP7prpeFg9M=\r\n\r\n",
    "id": "7.13.1",
    "isServer": true,
    "localCloseCode": 5000,
@@ -40,11 +40,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "25": 1,
+      "31": 1,
       "182": 1
    },
-   "started": "2023-02-19T10:13:36.490Z",
+   "started": "2023-02-24T01:25:19.334Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -103,15 +102,8 @@
       [
          "RO",
          [
-            6,
-            "8899e7158a63"
-         ]
-      ],
-      [
-         "RO",
-         [
-            25,
-            "e4ffe30d9174e60a8335e90f8866ef43847aee06c720ba53d7"
+            31,
+            "88997ed166377d3b0f5908b00a5e1af1055b11a203171dbe02525ee456074e"
          ]
       ],
       [
@@ -124,7 +116,7 @@
          true,
          0,
          true,
-         "e7158a63"
+         "7ed16637"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 0",
    "droppedByMe": true,
-   "duration": 43,
+   "duration": 4,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=236&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: nxfmKW/DBAlSuzPjHpP1Jg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: iUvKOTpr3KXAeGImX+xySudi/Mc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=236&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: PjXNqYBEkWmsOrWdfqqfSA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: w16LQ2wQjtWu3pQlnju/kreCfrA=\r\n\r\n",
    "id": "7.9.1",
    "isServer": true,
    "localCloseCode": 0,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "22": 1,
+      "28": 1,
       "182": 1
    },
-   "started": "2023-02-19T10:13:36.025Z",
+   "started": "2023-02-24T01:25:19.237Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "8896f707e1de"
-         ]
-      ],
-      [
-         "RO",
-         [
-            22,
-            "f4ed88b081668db7932782b2987484fe946885bbd737"
+            28,
+            "8896002c368a03c65fe4764d5ae3640c55e66f5f53aa634352ef201c"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "f707e1de"
+         "002c368a"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message, then send again with <b>RSV = 3</b>, then send Ping. Octets are sent in frame-wise chops. Octets are sent in octet-wise chops.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 9,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=30&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wXa0Wd2HNWhLBAZvC/UtVw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Kg7ieaEIDcG8+uKkUwMWa2842lE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=30&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: pNW9GPDrgz7B+jI8VLJQ8g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: BlBwzKpCknt76yGYotM3THpf/g4=\r\n\r\n",
    "id": "3.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -53,9 +53,9 @@
    },
    "rxOctetStats": {
       "181": 1,
-      "1873": 1
+      "6625": 1
    },
-   "started": "2023-02-19T10:13:19.308Z",
+   "started": "2023-02-24T01:25:07.770Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -162,8 +162,8 @@
       [
          "RO",
          [
-            1873,
-            "818d91b8eb76d9dd871afe94cb01feca8712b0889b4f9fa43a4c6fcd5439fec8532bbfc85f2efbcd5428bfc6533bec840b7fae95889b7203e2c371f38bad0462 ..."
+            6625,
+            "818ddd4363e795260f8bb26f4390b2310f83fc889b5c66971b5f96fe752a07fb723846fb7e3d02fe753b46f5722815b72a6c57a6889b00020daf03f264c17663 ..."
          ]
       ],
       [
@@ -176,7 +176,7 @@
          true,
          0,
          true,
-         "91b8eb76"
+         "dd4363e7"
       ],
       [
          "RF",
@@ -188,7 +188,7 @@
          true,
          0,
          true,
-         "4f9fa43a"
+         "5c66971b"
       ],
       [
          "TF",

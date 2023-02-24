@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send small text message with <b>RSV = 1</b>.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 10,
    "expectation": "The connection is failed immediately (1002/protocol error), since RSV must be 0, when no extension defining RSV meaning has been negotiated.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=28&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: hVt3DN2sHlzIadGuNPtsyA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: SrpGwOKSYytJvQcHVlxwwm62u8s=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=28&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: hRX+06gHGJlZsgcWbMl2Tg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: KBDv4FW3+i+HtK7X9BWucDlKnBA=\r\n\r\n",
    "id": "3.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "187": 1,
-      "13032": 1
+      "2310": 1
    },
-   "started": "2023-02-19T10:22:05.711Z",
+   "started": "2023-02-24T01:34:05.165Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -103,15 +102,8 @@
       [
          "RO",
          [
-            6,
-            "889b415eb4ef"
-         ]
-      ],
-      [
-         "RO",
-         [
-            13032,
-            "42aedd81373fd886257ed88a203add81267ed686352d94de716e85889b18655ffd1b9536936e0433947c453398790136937f453d946c167fcc28556e889b8ecb ..."
+            2310,
+            "889bc58e1890c67e71feb3ef74f9a1ae74f5a4ea71fea2ae7af9b1fd38a1f5be29889b8f60a2b38c90cbddf901cedaeb40ced6ee04cbdde840c0dafb138282bf ..."
          ]
       ],
       [
@@ -124,7 +116,7 @@
          true,
          0,
          true,
-         "415eb4ef"
+         "c58e1890"
       ],
       [
          "TF",

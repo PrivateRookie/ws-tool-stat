@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with payload length 1",
    "droppedByMe": true,
-   "duration": 44,
+   "duration": 4,
    "expectation": "Clean close with protocol error or drop TCP.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=217&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: BDicAFvDi+2pZp7diw4l4w==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: r6Y8qNmY7ueoU7uEAvV5a8BcQuU=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=217&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wGFFWUYVrNFi5ImwwiUXuw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 1E062ORneox6NxOV+GI9J9lC1VU=\r\n\r\n",
    "id": "7.3.2",
    "isServer": true,
    "localCloseCode": null,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "49": 1,
+      "55": 1,
       "286": 1
    },
-   "started": "2023-02-19T10:31:10.023Z",
+   "started": "2023-02-24T01:28:09.515Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "88b1a63cbd9d"
-         ]
-      ],
-      [
-         "RO",
-         [
-            49,
-            "a5d6d4f3d05dd1f4c21cdef1c94fd8bdc04edcf0c31ccdfcdf50d2fcc21cd1f8c8109df8de4cd8fed21c8db1860280bd94"
+            55,
+            "88b1a67e897ba594e015d01fe512c25eea17c90dec5bc00ce816c35ef91adf12e61ac25ee51ec852a91ede0eec18d25eb9578640b45b94"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "a63cbd9d"
+         "a67e897b"
       ]
    ]
 }

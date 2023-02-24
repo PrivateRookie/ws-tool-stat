@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message after sending a close frame.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 5,
    "expectation": "Clean close with normal code. Text message ignored.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=213&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: LdYwZWOwuM5yfCFUPdIktw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: OVnnEiPJJt8MnSxWdRscYo3RRR8=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=213&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: qgUyZYh/2irSU/ut9JO3zA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Q3lCRfPfwGAcXfwmpALI8c3p7Wc=\r\n\r\n",
    "id": "7.1.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 1,
+      "8": 1,
       "292": 1
    },
-   "started": "2023-02-19T10:42:28.660Z",
+   "started": "2023-02-24T01:35:02.858Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -125,15 +124,8 @@
       [
          "RO",
          [
-            6,
-            "88821b410a7c"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "18a9"
+            8,
+            "888255a20360564a"
          ]
       ],
       [
@@ -146,7 +138,7 @@
          true,
          0,
          true,
-         "1b410a7c"
+         "55a20360"
       ]
    ]
 }

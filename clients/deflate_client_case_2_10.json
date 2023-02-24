@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 10 Pings with payload.",
    "droppedByMe": true,
-   "duration": 48,
+   "duration": 17,
    "expectation": "Pongs for our Pings with all the payloads. Note: This is not required by the Spec .. but we check for this behaviour anyway. Clean close with normal code.",
    "expected": {
       "OK": [
@@ -62,8 +62,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=26&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: WPBqiOMksuBRVyzeACLbYw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: qEldId/ZUbJUnAy1AmSU3BfItIQ=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=26&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: jhRliAvfFxh+8zl+Qdn0gw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 3xUKHBW8CfVRnEv3k3MCvc1gQG8=\r\n\r\n",
    "id": "2.10",
    "isServer": true,
    "localCloseCode": 1000,
@@ -121,12 +121,11 @@
       "10": 10
    },
    "rxOctetStats": {
-      "6": 1,
       "8": 1,
-      "144": 1,
+      "150": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:50.519Z",
+   "started": "2023-02-24T01:27:55.317Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -385,15 +384,8 @@
       [
          "RO",
          [
-            6,
-            "8a8938e07f6e"
-         ]
-      ],
-      [
-         "RO",
-         [
-            144,
-            "4881060257811b43088a899f8a17e5efeb6e89f0eb73c8ae8a8914df72f064be0b9c7bbe16dd268a89295893215939ea4d4639f70c1a8a892253f6f652328f9a ..."
+            150,
+            "8a8950fb70d0209a09bc3f9a14fd608a893969fa304908835c56089e1d088a8920f29f1c5093e6704f93fb31128a89b890c4e3c8f1bd8fd7f1a0ce8b8a8985e1 ..."
          ]
       ],
       [
@@ -406,7 +398,7 @@
          true,
          0,
          true,
-         "38e07f6e"
+         "50fb70d0"
       ],
       [
          "RF",
@@ -418,7 +410,7 @@
          true,
          0,
          true,
-         "9f8a17e5"
+         "3969fa30"
       ],
       [
          "RF",
@@ -430,7 +422,7 @@
          true,
          0,
          true,
-         "14df72f0"
+         "20f29f1c"
       ],
       [
          "RF",
@@ -442,7 +434,7 @@
          true,
          0,
          true,
-         "29589321"
+         "b890c4e3"
       ],
       [
          "RF",
@@ -454,7 +446,7 @@
          true,
          0,
          true,
-         "2253f6f6"
+         "85e1ddda"
       ],
       [
          "RF",
@@ -466,7 +458,7 @@
          true,
          0,
          true,
-         "690be594"
+         "cca209df"
       ],
       [
          "RF",
@@ -478,7 +470,7 @@
          true,
          0,
          true,
-         "c2945a4c"
+         "98885acb"
       ],
       [
          "RF",
@@ -490,7 +482,7 @@
          true,
          0,
          true,
-         "3ecd0dc5"
+         "6df05032"
       ],
       [
          "RF",
@@ -502,7 +494,7 @@
          true,
          0,
          true,
-         "d009f494"
+         "aaca866b"
       ],
       [
          "RF",
@@ -514,7 +506,7 @@
          true,
          0,
          true,
-         "d75d573b"
+         "43fd31ba"
       ],
       [
          "TF",
@@ -542,7 +534,7 @@
          "RO",
          [
             8,
-            "88820c5f973e0fb7"
+            "888227742e16249c"
          ]
       ],
       [
@@ -555,7 +547,7 @@
          true,
          0,
          true,
-         "0c5f973e"
+         "27742e16"
       ]
    ]
 }

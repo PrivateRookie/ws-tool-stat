@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 1 * 2**20 (1M). Sent out data in chops of 512 octets.",
    "droppedByMe": true,
-   "duration": 34,
+   "duration": 179,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=286&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: a0jyU60oiQETsvPFdbNYyg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: mQR99c7KKhEXasB1QgEWxdzV1M0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=286&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wqXKqShWsPMqMnbGx8qApg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: GQmtM/f+5Xh2hdRPL9NNI5vZA4Y=\r\n\r\n",
    "id": "9.6.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,18 +38,15 @@
    },
    "rxOctetStats": {
       "8": 1,
-      "14": 1,
       "182": 1,
-      "11008": 1,
-      "13032": 1,
-      "21760": 1,
-      "23672": 1,
+      "13046": 1,
+      "23348": 1,
       "28960": 1,
-      "32640": 1,
-      "32768": 20,
-      "65536": 4
+      "32768": 1,
+      "32964": 1,
+      "65536": 14
    },
-   "started": "2023-02-19T10:13:39.167Z",
+   "started": "2023-02-24T01:25:31.116Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -112,7 +109,7 @@
          "RO",
          [
             8,
-            "8882ad2889dbaec0"
+            "8882a9d359abaa3b"
          ]
       ],
       [
@@ -125,7 +122,7 @@
          true,
          0,
          true,
-         "ad2889db"
+         "a9d359ab"
       ]
    ]
 }

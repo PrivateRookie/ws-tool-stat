@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send fragmented binary message message with message payload of length 4 * 2**20 (4M). Sent out in fragments of 64k.",
    "droppedByMe": true,
-   "duration": 31,
+   "duration": 116,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=273&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: vM9fiCR1vkjmwmuJSenPYQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: XYb7F3OuCJ4secU5qxqb1+VmsAo=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=273&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: cHwC5VzdJi5jySt4J2+MTw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: xQssFNg7LplCrfKka5U/OTYcRqQ=\r\n\r\n",
    "id": "9.4.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,16 +40,14 @@
       "8": 1,
       "14": 1,
       "182": 1,
-      "13032": 1,
-      "23672": 1,
+      "14480": 1,
+      "21900": 1,
       "28960": 1,
-      "32640": 1,
-      "32768": 104,
-      "43776": 1,
-      "54528": 1,
-      "65536": 9
+      "32768": 3,
+      "32964": 1,
+      "65536": 61
    },
-   "started": "2023-02-19T10:13:38.076Z",
+   "started": "2023-02-24T01:25:26.528Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 64,
@@ -113,7 +111,7 @@
          "RO",
          [
             8,
-            "88820355199800bd"
+            "8882dfe97357dc01"
          ]
       ],
       [
@@ -126,7 +124,7 @@
          true,
          0,
          true,
-         "03551998"
+         "dfe97357"
       ]
    ]
 }

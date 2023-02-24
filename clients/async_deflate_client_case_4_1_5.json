@@ -1,14 +1,14 @@
 {
    "agent": "async-deflate-client",
    "behavior": "OK",
-   "behaviorClose": "OK",
+   "behaviorClose": "WRONG CODE",
    "case": 39,
    "closedByMe": false,
    "createStats": true,
    "createWirelog": true,
    "description": "Send small text message, then send frame with reserved non-control <b>Opcode = 7</b> and non-empty payload, then send Ping.",
-   "droppedByMe": false,
-   "duration": 2,
+   "droppedByMe": true,
+   "duration": 6,
    "expectation": "Echo for first message is received, but then connection is failed immediately, since reserved opcode frame is used. A Pong is not received.",
    "expected": {
       "NON-STRICT": [],
@@ -28,11 +28,11 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=39&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: hCFGu46S/Sak+ke+Tu5oaw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: RkhOlXFEKE/s+Y16cqN/T/J6y/g=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=39&agent=async-deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 4we5MIlJO/n1nensaFkvBg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: PXw7KsTrWm9wjG7fESePbkXuPRA=\r\n\r\n",
    "id": "4.1.5",
    "isServer": true,
-   "localCloseCode": null,
+   "localCloseCode": 1000,
    "localCloseReason": null,
    "received": [
       [
@@ -41,34 +41,37 @@
          false
       ]
    ],
-   "remoteCloseCode": null,
+   "remoteCloseCode": 1000,
    "remoteCloseReason": null,
    "reportCompressionRatio": false,
    "reportTime": false,
    "result": "Actual events match at least one expected.",
-   "resultClose": "Connection was properly closed",
+   "resultClose": "The close code should have been 1002 or empty",
    "rxFrameStats": {
-      "1": 1
+      "1": 1,
+      "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
+      "8": 1,
       "19": 1,
       "291": 1
    },
-   "started": "2023-02-19T10:42:12.366Z",
+   "started": "2023-02-24T01:34:52.619Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
       "7": 1,
+      "8": 1,
       "9": 1
    },
    "txOctetStats": {
       "1": 32,
+      "4": 1,
       "206": 1
    },
-   "wasClean": false,
+   "wasClean": true,
    "wasCloseHandshakeTimeout": false,
-   "wasNotCleanReason": "peer dropped the TCP connection without previous WebSocket closing handshake",
+   "wasNotCleanReason": null,
    "wasOpenHandshakeTimeout": false,
    "wasServerConnectionDropTimeout": false,
    "wirelog": [
@@ -374,6 +377,25 @@
          true
       ],
       [
+         "RO",
+         [
+            19,
+            "818d046a9b684c0ff7046b46bb1f6b18f70c25"
+         ]
+      ],
+      [
+         "RF",
+         [
+            13,
+            "Hello, world!"
+         ],
+         1,
+         true,
+         0,
+         true,
+         "046a9b68"
+      ],
+      [
          "TO",
          [
             1,
@@ -392,28 +414,43 @@
       [
          "RO",
          [
-            19,
-            "818de4d86986acbd05ea8bf449f18baa05e2c5"
+            8,
+            "888287fd0bdf8415"
          ]
       ],
       [
          "RF",
          [
-            13,
-            "Hello, world!"
+            2,
+            "0x03e8"
          ],
-         1,
+         8,
          true,
          0,
          true,
-         "e4d86986"
+         "87fd0bdf"
       ],
       [
-         "RO",
+         "TF",
          [
-            6,
-            "8882f067afc7"
-         ]
+            2,
+            "0x03e8"
+         ],
+         8,
+         true,
+         0,
+         null,
+         null,
+         null,
+         false
+      ],
+      [
+         "TO",
+         [
+            4,
+            "880203e8"
+         ],
+         false
       ]
    ]
 }

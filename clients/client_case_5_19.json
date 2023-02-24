@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "A fragmented text message is sent in multiple frames. After\n   sending the first 2 frames of the text message, a Ping is sent. Then we wait 1s,\n   then we send 2 more text fragments, another Ping and then the final text fragment.\n   Everything is legal.",
    "droppedByMe": true,
-   "duration": 1002,
+   "duration": 1073,
    "expectation": "The peer immediately answers the first Ping before\n   it has received the last text message fragment. The peer pong's back the Ping's\n   payload exactly, and echo's the payload of the fragmented message back to us.",
    "expected": {
       "OK": [
@@ -35,8 +35,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=63&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 7fgkNiUQexnig2SC/FUhMA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: viUs8vcJi/OE9+yuu44h5iZkUic=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=63&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 89WhglIS/NZ/YS8mJJOOBA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: IGjfZMeFMWqjPs7L06R2+KREBI0=\r\n\r\n",
    "id": "5.19",
    "isServer": true,
    "localCloseCode": 1000,
@@ -68,13 +68,12 @@
       "10": 2
    },
    "rxOctetStats": {
-      "6": 1,
       "8": 1,
-      "9": 1,
+      "15": 1,
       "66": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:20.250Z",
+   "started": "2023-02-24T01:25:08.508Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -182,15 +181,8 @@
       [
          "RO",
          [
-            6,
-            "8a890cf9dd66"
-         ]
-      ],
-      [
-         "RO",
-         [
-            9,
-            "7c96b301619cfd572d"
+            15,
+            "8a89b057cc7bc038a21cdd32ec4a91"
          ]
       ],
       [
@@ -203,7 +195,7 @@
          true,
          0,
          true,
-         "0cf9dd66"
+         "b057cc7b"
       ],
       [
          "CTE",
@@ -305,7 +297,7 @@
          "RO",
          [
             66,
-            "8a89d885ff31a8ea9156b5e0df03f981ad63e6b7530594d6340e83d9275280c532048bd23d17d4d1210281da360d9284351187d03e0688c3670594d6340e83d9 ..."
+            "8a89a2a525b3d2ca4bd4cfc005818381ada0df28abc6ad49cccdba46df91b95acac7b24dc5d4ed4ed9c1b845ceceab1bcdd2be4fc6c5b15c9fc6ad49cccdba46 ..."
          ]
       ],
       [
@@ -318,7 +310,7 @@
          true,
          0,
          true,
-         "d885ff31"
+         "a2a525b3"
       ],
       [
          "RF",
@@ -330,7 +322,7 @@
          true,
          0,
          true,
-         "63e6b753"
+         "a0df28ab"
       ],
       [
          "TF",
@@ -358,7 +350,7 @@
          "RO",
          [
             8,
-            "8882fda2c7b8fe4a"
+            "888201374da602df"
          ]
       ],
       [
@@ -371,7 +363,7 @@
          true,
          0,
          true,
-         "fda2c7b8"
+         "01374da6"
       ]
    ]
 }

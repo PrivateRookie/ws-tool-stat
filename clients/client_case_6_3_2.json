@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send invalid UTF-8 text message in fragments of 1 octet, resulting in frames ending on positions which are not code point ends.<br><br>MESSAGE:<br>cebae1bdb9cf83cebcceb5eda080656469746564",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 8,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=73&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: EcTKEZFTFT8OhPssT3+pRg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: bEE68xnV+OkxLblN/9nQacGZ0bY=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=73&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wkxCPZbbn8Yews+eqMSDTA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 4aHpwGcOgLv3pw8Szm+8tpc3AxY=\r\n\r\n",
    "id": "6.3.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,11 +39,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "45": 1,
+      "51": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:22.620Z",
+   "started": "2023-02-24T01:25:10.763Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 20,
@@ -546,15 +545,8 @@
       [
          "RO",
          [
-            6,
-            "889490746bb3"
-         ]
-      ],
-      [
-         "RO",
-         [
-            45,
-            "939b02dde61507daf4541ec7f6595393e41113c7829323d41e449935a3fdec57d0f8ed61f3e4a3b17a2d57b17a"
+            51,
+            "8894ae7d1c68ad927506d81c7001ca5d691cc8502448da18641c8293172bd813adca65aad8a816afd99e35b3974ebc7a634ebc"
          ]
       ],
       [
@@ -567,7 +559,7 @@
          true,
          0,
          true,
-         "90746bb3"
+         "ae7d1c68"
       ],
       [
          "TF",

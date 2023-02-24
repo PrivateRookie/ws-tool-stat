@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xfbbfbfbf",
    "droppedByMe": true,
-   "duration": 58,
+   "duration": 5,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=133&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: CEeMDiNPzgEgKf59kafeMw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: qbCnBXC1BY2nV6fw7BOLW+bPcwM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=133&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: EHrfMo01LhQFPmblAxW/iA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Rv8nhsCiYyhN418iZ/IaH104HK8=\r\n\r\n",
    "id": "6.14.9",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,11 +39,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "20": 1,
+      "26": 1,
       "182": 1
    },
-   "started": "2023-02-19T10:13:31.720Z",
+   "started": "2023-02-24T01:25:17.746Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -104,15 +103,8 @@
       [
          "RO",
          [
-            6,
-            "889419c1ca87"
-         ]
-      ],
-      [
-         "RO",
-         [
-            20,
-            "1a2ea3e96fa0a6ee7de1bff37fecf2a76da4b2f3"
+            26,
+            "889496a00963954f600de0c1650af2807c17f08d3143e2c57117"
          ]
       ],
       [
@@ -125,7 +117,7 @@
          true,
          0,
          true,
-         "19c1ca87"
+         "96a00963"
       ],
       [
          "TF",

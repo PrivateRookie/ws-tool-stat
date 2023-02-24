@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a close frame with payload length 1",
    "droppedByMe": true,
-   "duration": 61,
+   "duration": 4,
    "expectation": "Clean close with protocol error or drop TCP.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=217&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: /Vq1+LKF0Y9AD5x07bh65w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ECGeCqynZQ/WLLspABDyE95QOyM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=217&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ZhHsHWTp274fQZby7PytJg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Ym2+QHeWqlZ/oAxY9s2wrBev/QU=\r\n\r\n",
    "id": "7.3.2",
    "isServer": true,
    "localCloseCode": null,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "49": 1,
+      "55": 1,
       "182": 1
    },
-   "started": "2023-02-19T10:13:35.818Z",
+   "started": "2023-02-24T01:25:19.021Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "88b10a2f0486"
-         ]
-      ],
-      [
-         "RO",
-         [
-            49,
-            "09c56de87c4e68ef6e0f67ea655c61a66c5d65eb6f0f74e773436be76e0f68e3640324e3725f61e57e0f34aa2a1139a638"
+            55,
+            "88b13b72a1093898c8674d13cd605f52c2655401c4295d00c0645e52d168421ece685f52cd6c555e816c4302c46a4f5291251b4c9c2909"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "0a2f0486"
+         "3b72a109"
       ]
    ]
 }

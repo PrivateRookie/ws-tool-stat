@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Close with <b>RSV = 7</b>.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 5,
    "expectation": "The connection is failed immediately, since RSV must be 0.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=34&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: +lEfUeHNgQx3XdAVxgcmFg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 1GIvdhJzelzhkfcI2GeLWu/ezWE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=34&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 9XL61ij/EG7qXTyamCDphA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 4ZtTZl9pGfTwn729TmZeXG17qMg=\r\n\r\n",
    "id": "3.7",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "181": 1,
-      "13032": 1
+      "2877": 1
    },
-   "started": "2023-02-19T10:13:19.330Z",
+   "started": "2023-02-24T01:25:07.830Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 2
@@ -102,15 +101,8 @@
       [
          "RO",
          [
-            6,
-            "889b4808b141"
-         ]
-      ],
-      [
-         "RO",
-         [
-            13032,
-            "4bf8d82f3e69dd282c28dd24296cd82f2f28d3283c7b9170793980889b97171a0794e77369e176766ef3377662f6737369f037786ee3643a36a6262b889b1dbe ..."
+            2877,
+            "889b877082868480ebe8f111eeefe350eee3e614ebe8e050e0eff303a2b7b641b3889be50bf5cae6fb9ca4936a99a3812b99af846f9ca4822b97a39178d5fbd4 ..."
          ]
       ],
       [
@@ -123,7 +115,7 @@
          true,
          0,
          true,
-         "4808b141"
+         "87708286"
       ],
       [
          "TF",

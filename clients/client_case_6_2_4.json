@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a valid UTF-8 text message in fragments of 1 octet, resulting in frames ending on positions which are not code point ends.<br><br>MESSAGE:<br>\u03ba\u1f79\u03c3\u03bc\u03b5<br>cebae1bdb9cf83cebcceb5",
    "droppedByMe": true,
-   "duration": 57,
+   "duration": 6,
    "expectation": "The message is echo'ed back to us.",
    "expected": {
       "OK": [
@@ -27,8 +27,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=71&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: LkN8wrhTlseZvMcFbp6iyw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Id2UjKlUo99zZQEMuYmkGR4xsDc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=71&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: XyizeQDIIqsSQPlS1n1yNA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: dyevugRPI1JFjLwUKiTEHSyQ0a8=\r\n\r\n",
    "id": "6.2.4",
    "isServer": true,
    "localCloseCode": 1000,
@@ -44,11 +44,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "36": 1,
+      "42": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:22.511Z",
+   "started": "2023-02-24T01:25:10.738Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 11,
@@ -353,15 +352,8 @@
       [
          "RO",
          [
-            6,
-            "88949ac8bd87"
-         ]
-      ],
-      [
-         "RO",
-         [
-            36,
-            "9927d4e9eca9d1eefee8c8f3fce585a7eeadc5f3828a7b9d859bc17c3822b41e4b27b528"
+            42,
+            "8894c43aa1b8c7d5c8d6b25bcdd1a01ad4cca2179998b05fd9cc828a25acca879f4d773eea2f043beb19"
          ]
       ],
       [
@@ -374,7 +366,7 @@
          true,
          0,
          true,
-         "9ac8bd87"
+         "c43aa1b8"
       ],
       [
          "TF",

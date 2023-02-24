@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Ping with <b>RSV = 6</b>.",
    "droppedByMe": true,
-   "duration": 3,
+   "duration": 4,
    "expectation": "The connection is failed immediately, since RSV must be 0.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=33&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: cWabKbW26l+ENefMW/REVA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Q3UvsXYDnR59/VX/KcfJxVHs1iE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=33&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: JBjqkvnQSg+2luMsWuWe5A==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: uRF/DG9ZgHrTdrMzliKWXHKF0WI=\r\n\r\n",
    "id": "3.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "187": 1,
-      "13032": 1
+      "1122": 1
    },
-   "started": "2023-02-19T10:22:05.738Z",
+   "started": "2023-02-24T01:34:05.242Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -103,15 +102,8 @@
       [
          "RO",
          [
-            6,
-            "889b8592ec1e"
-         ]
-      ],
-      [
-         "RO",
-         [
-            13032,
-            "86628570f3f38077e1b2807be4f68570e2b28e77f1e1cc2fb4a3dc889b04d4f66307249f0d72b59a0a60f49a0665b09f0d63f4940a70a7d65235e5c6889bfe29 ..."
+            1122,
+            "889bcf19239ecce94af0b9784ff7ab394ffbae7d4af0a83941f7bb6a03affe2813889b09aba29a0a5bcbf47fcacef36d8bceff68cfcbf46e8bc0f37dd882ab38 ..."
          ]
       ],
       [
@@ -124,7 +116,7 @@
          true,
          0,
          true,
-         "8592ec1e"
+         "cf19239e"
       ],
       [
          "TF",

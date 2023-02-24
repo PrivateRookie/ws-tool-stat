@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 1 * 2**20 (1M). Sent out data in chops of 128 octets.",
    "droppedByMe": true,
-   "duration": 113,
+   "duration": 348,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=284&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: SZOvMD+ITiJn+Qfb3/051g==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: QZGq717aZSym1yQukjH+XyA5JdY=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=284&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: waWNWGLNpK7t8E11DcjhoQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 2ezKk5ATjt+pBJAUcxTmaoWqwRc=\r\n\r\n",
    "id": "9.6.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,15 +40,11 @@
       "8": 1,
       "14": 1,
       "286": 1,
-      "13032": 1,
-      "28960": 1,
-      "32640": 1,
-      "32768": 21,
-      "42240": 1,
-      "46968": 1,
-      "65536": 3
+      "16512": 1,
+      "49024": 1,
+      "65536": 15
    },
-   "started": "2023-02-19T10:31:13.079Z",
+   "started": "2023-02-24T01:28:18.605Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -111,7 +107,7 @@
          "RO",
          [
             8,
-            "88820c86923d0f6e"
+            "8882adc5af14ae2d"
          ]
       ],
       [
@@ -124,7 +120,7 @@
          true,
          0,
          true,
-         "0c86923d"
+         "adc5af14"
       ]
    ]
 }

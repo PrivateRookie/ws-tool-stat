@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send ping without payload.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 6,
    "expectation": "Pong (with empty payload) is sent in reply to Ping. Clean close with normal code.",
    "expected": {
       "OK": [
@@ -26,8 +26,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=17&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: VC4kKOd72m/239jmx3Pseg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 1s94S55awX1ikaQzmWBlNwTTKiM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=17&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: rvsEgKO3XdaYOwD3DjPZow==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: PXzWGcUH7O6Sa6/ZPoPREIVZF+U=\r\n\r\n",
    "id": "2.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -53,7 +53,7 @@
       "8": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:18.838Z",
+   "started": "2023-02-24T01:25:07.395Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1,
@@ -115,7 +115,7 @@
          "RO",
          [
             6,
-            "8a80f90d437f"
+            "8a807e22e811"
          ]
       ],
       [
@@ -128,7 +128,7 @@
          true,
          0,
          true,
-         "f90d437f"
+         "7e22e811"
       ],
       [
          "TF",
@@ -156,7 +156,7 @@
          "RO",
          [
             8,
-            "88822ff2a3452c1a"
+            "88825511f49856f9"
          ]
       ],
       [
@@ -169,7 +169,7 @@
          true,
          0,
          true,
-         "2ff2a345"
+         "5511f498"
       ]
    ]
 }

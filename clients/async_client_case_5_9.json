@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in one chop.",
    "droppedByMe": true,
-   "duration": 48,
+   "duration": 4,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=53&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 5YvsLskmVAmQHGHp1uom9g==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: iE+2foHnFbbahCougG+FBiKAxi4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=53&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: /bsK6hboBiJwKSzdYW6g0w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 6o11bOxKrwsOdrPqBnYflI7ZxAk=\r\n\r\n",
    "id": "5.9",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "50": 1,
+      "56": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:06.191Z",
+   "started": "2023-02-24T01:34:05.488Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -127,15 +126,8 @@
       [
          "RO",
          [
-            6,
-            "889f097c7e55"
-         ]
-      ],
-      [
-         "RO",
-         [
-            50,
-            "0a96133c7a0f173b6e5c173b60085e337b1d19386c120a306d5c182768111b818d1a53718c52361de0757f51fb75211de83b"
+            56,
+            "889f33a1fddd304b90b440d294b3548194b35ad5ddbb41c09ab056cf89b857819baf52cc98818d19a9103e51cc7c527685304976db7c5a38"
          ]
       ],
       [
@@ -148,7 +140,7 @@
          true,
          0,
          true,
-         "097c7e55"
+         "33a1fddd"
       ],
       [
          "TF",

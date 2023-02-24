@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xfc8480808080",
    "droppedByMe": true,
-   "duration": 59,
+   "duration": 4,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=99&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: OONRSb2bJQ6+IoHK6RLG3A==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: IFgYbxCAZpvXwpLlCTESIl8SgPg=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=99&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 2Uq/KTtvG84c99P5xCItzA==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 6JktlcOJAwbnmKC+FXa40Dc//BI=\r\n\r\n",
    "id": "6.8.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,11 +39,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "20": 1,
+      "26": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:31:04.176Z",
+   "started": "2023-02-24T01:28:07.744Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -104,15 +103,8 @@
       [
          "RO",
          [
-            6,
-            "889495f5db65"
-         ]
-      ],
-      [
-         "RO",
-         [
-            20,
-            "961ab20be394b70cf1d5ae11f3d8e345e190a311"
+            26,
+            "889418c7bb711b28d21f6ea6d7187ce7ce057eea83516ca2c305"
          ]
       ],
       [
@@ -125,7 +117,7 @@
          true,
          0,
          true,
-         "95f5db65"
+         "18c7bb71"
       ],
       [
          "TF",

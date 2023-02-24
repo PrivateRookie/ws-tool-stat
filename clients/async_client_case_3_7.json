@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Close with <b>RSV = 7</b>.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 6,
    "expectation": "The connection is failed immediately, since RSV must be 0.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=34&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: opj5D+dBDAtVAvuXxwzn6w==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: DdBgAg/yobA7pzCSRHhU4co6ft4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=34&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: /vKKWSrBMrRiZFZozNlkZQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: dBeKKtRn/KZQ9LNYzL32N5u1kmA=\r\n\r\n",
    "id": "3.7",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
       "187": 1,
-      "13032": 1
+      "2184": 1
    },
-   "started": "2023-02-19T10:22:05.743Z",
+   "started": "2023-02-24T01:34:05.254Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 2
@@ -102,15 +101,8 @@
       [
          "RO",
          [
-            6,
-            "889b874eb38a"
-         ]
-      ],
-      [
-         "RO",
-         [
-            13032,
-            "84bedae4f12fdfe3e36edfefe62adae4e06ed1e3f33d93bbb67f82889bc4e57d39c7151457b2841150a0c5115ca5811457a3c51f50b0965d08f5d44c889bed1c ..."
+            2184,
+            "889b6361226b60914b0515004e0207414e0e02054b05044140021712025a525013889b64fed05e670eb930129fbc3700debc3b059ab93003deb237108df06f55 ..."
          ]
       ],
       [
@@ -123,7 +115,7 @@
          true,
          0,
          true,
-         "874eb38a"
+         "6361226b"
       ],
       [
          "TF",

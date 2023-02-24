@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send a text message with payload which is not valid UTF-8 in one fragment.<br><br>Payload: 0xcebae1bdb9cf83cebcce",
    "droppedByMe": true,
-   "duration": 50,
+   "duration": 4,
    "expectation": "The connection is failed immediately, since the payload is not valid UTF-8.",
    "expected": {
       "OK": []
@@ -22,8 +22,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=92&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: VJzOM74TUiwIz2MIjeg5BQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: iHDhOa0c07cJHBCjgwKpaCmeToM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=92&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: l8h5i5VhvgEkoOMGYig4fg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Si9FLYGoEXKBv/LfMXcR9VdQJYU=\r\n\r\n",
    "id": "6.6.10",
    "isServer": true,
    "localCloseCode": 1000,
@@ -39,11 +39,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "20": 1,
+      "26": 1,
       "187": 1
    },
-   "started": "2023-02-19T10:22:15.910Z",
+   "started": "2023-02-24T01:34:14.153Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -104,15 +103,8 @@
       [
          "RO",
          [
-            6,
-            "8894d1ac526b"
-         ]
-      ],
-      [
-         "RO",
-         [
-            20,
-            "d2433b05a7cd3e02b58c271fb7816a4ba5c92a1f"
+            26,
+            "8894540c210057e3486e226d4d69302c54743221192020695974"
          ]
       ],
       [
@@ -125,7 +117,7 @@
          true,
          0,
          true,
-         "d1ac526b"
+         "540c2100"
       ],
       [
          "TF",

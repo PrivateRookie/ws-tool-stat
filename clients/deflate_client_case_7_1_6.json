@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 256K message followed by close then a ping",
    "droppedByMe": true,
-   "duration": 13,
+   "duration": 39,
    "expectation": "Case outcome depends on implementation defined close behavior. Message and close frame are sent back to back. If the close frame is processed before the text message write is complete (as can happen in asynchronous processing models) the close frame is processed first and the text message may not be received or may only be partially recieved.",
    "expected": {
       "NON-STRICT": [],
@@ -28,8 +28,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=215&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: zLTfNPreFHrzOqaHa9G8fQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: +BIzT0lYNokA/bCK+R1ZEGyn9bE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=215&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: wOaKvGPWB+QOP0VfPbsupw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: eFICNH+utRmXrZd49Jz8nojJ1vM=\r\n\r\n",
    "id": "7.1.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -59,12 +59,13 @@
    "rxOctetStats": {
       "14": 1,
       "286": 1,
-      "13032": 1,
-      "23570": 1,
+      "14480": 1,
+      "28594": 1,
       "28960": 1,
-      "65536": 3
+      "59064": 1,
+      "65536": 2
    },
-   "started": "2023-02-19T10:31:10.009Z",
+   "started": "2023-02-24T01:28:09.471Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 2,
@@ -195,49 +196,49 @@
          "RO",
          [
             14,
-            "81ff0000000000040000bb10c69c"
+            "81ff0000000000040000430a1c7d"
          ]
       ],
       [
          "RO",
          [
-            13032,
-            "f951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f8 ..."
+            14480,
+            "014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19 ..."
          ]
       ],
       [
          "RO",
          [
             28960,
-            "c874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1ba ..."
+            "014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19 ..."
+         ]
+      ],
+      [
+         "RO",
+         [
+            59064,
+            "014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19 ..."
          ]
       ],
       [
          "RO",
          [
             65536,
-            "c874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1ba ..."
+            "742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c7615 ..."
          ]
       ],
       [
          "RO",
          [
             65536,
-            "892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384dd ..."
+            "014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19 ..."
          ]
       ],
       [
          "RO",
          [
-            65536,
-            "8c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4 ..."
-         ]
-      ],
-      [
-         "RO",
-         [
-            23570,
-            "f951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f88c36acf4892384ddc874f1bad178f4aff951b5f8 ..."
+            28594,
+            "29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e014b6f19742c761571395e3c306e2b5b29622e4e ..."
          ]
       ],
       [
@@ -250,7 +251,7 @@
          true,
          0,
          true,
-         "bb10c69c"
+         "430a1c7d"
       ],
       [
          "RF",
@@ -262,7 +263,7 @@
          true,
          0,
          true,
-         "afa0972c"
+         "ac294939"
       ],
       [
          "RF",
@@ -274,7 +275,7 @@
          true,
          0,
          true,
-         "0ad2f5fc"
+         "5fab81dc"
       ]
    ]
 }

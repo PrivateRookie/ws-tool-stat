@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 text messages of payload size 0 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": true,
-   "duration": 191,
+   "duration": 537,
    "expectation": "Receive echo'ed text messages (with payload as sent). Timeout case after 60 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=289&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: fVneTwyv5ha34HRV0VXYOQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 3RlUTgzvXwfFTofpD7PH9zCeOsk=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=289&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: w6BoRxx07MR4N76CuAichw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: msA44QoELKP75r5EjqkjHYpTQsQ=\r\n\r\n",
    "id": "9.7.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,11 +37,11 @@
       "8": 1
    },
    "rxOctetStats": {
-      "2": 1,
-      "6": 1001,
+      "6": 1000,
+      "8": 1,
       "286": 1
    },
-   "started": "2023-02-19T10:31:13.322Z",
+   "started": "2023-02-24T01:28:19.462Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1000,
@@ -110,15 +110,8 @@
       [
          "RO",
          [
-            6,
-            "8882d5e5ccdf"
-         ]
-      ],
-      [
-         "RO",
-         [
-            2,
-            "d60d"
+            8,
+            "8882f8f9f887fb11"
          ]
       ],
       [
@@ -131,7 +124,7 @@
          true,
          0,
          true,
-         "d5e5ccdf"
+         "f8f9f887"
       ]
    ]
 }

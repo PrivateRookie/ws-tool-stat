@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = false, where there is nothing to continue, sent in per-frame chops.",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 5,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=57&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 4vZoxJpFwMRgXmIJgqyIsg==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 0SjB1XokT02H5khlpdFwPac+z+E=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=57&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ekwL/WQbHhmSNEpHh59YzQ==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: sYOawzPCU3DeaLHP9JEIvuGmwdo=\r\n\r\n",
    "id": "5.13",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "50": 1,
+      "56": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:54.277Z",
+   "started": "2023-02-24T01:27:58.963Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -127,15 +126,8 @@
       [
          "RO",
          [
-            6,
-            "889f709c530f"
-         ]
-      ],
-      [
-         "RO",
-         [
-            50,
-            "73763e6603ef3a6117bc3a6119e8736902fd346215f2276a14bc357d11f136818d0aa57fab42c013c765895fdc65d713cf2b"
+            56,
+            "889f876da9788487c411f41ec016e04dc016ee19891ef50cce15e203dd1de34dcf0ae600cc818da91194fae174f896c63db48dc663f89e88"
          ]
       ],
       [
@@ -148,7 +140,7 @@
          true,
          0,
          true,
-         "709c530f"
+         "876da978"
       ],
       [
          "TF",

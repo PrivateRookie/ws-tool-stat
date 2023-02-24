@@ -202,7 +202,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
       <center><a href="http://autobahn.ws/testsuite" title="Autobahn WebSocket Testsuite"><img src="http://autobahn.ws/static/img/ws_protocol_test_report.png"          border="0" width="820" height="46" alt="Autobahn WebSocket Testsuite Report"></img></a></center>
       <center><a href="http://autobahn.ws"           title="Autobahn WebSocket">          <img src="http://autobahn.ws/static/img/ws_protocol_test_report_autobahn.png" border="0" width="300" height="68" alt="Autobahn WebSocket">                 </img></a></center>
       <br/>
-      <p class="case case_failed">deflate-client - <span style="font-size: 1.3em;"><b>Case 3.2</b></span> : Fail - <span style="font-size: 0.9em;"><b>1002</b> ms @ 2023-02-19T10:30:51.622Z</a></p>
+      <p class="case case_failed">deflate-client - <span style="font-size: 1.3em;"><b>Case 3.2</b></span> : Fail - <span style="font-size: 0.9em;"><b>1038</b> ms @ 2023-02-24T01:27:56.432Z</a></p>
       <p class="case_text_block case_desc"><b>Case Description</b><br/><br/>Send small text message, then send again with <b>RSV = 2</b>, then send Ping.</p>
       <p class="case_text_block case_expect"><b>Case Expectation</b><br/><br/>Echo for first message is received, but then connection is failed immediately, since RSV must be 0, when no extension defining RSV meaning has been negotiated. The Pong is not received.</p>
 
@@ -218,7 +218,7 @@ pre.wirelog_tcp_closed_by_peer {color: #fff; margin: 0; background-color: #000; 
 Host: localhost:9002
 Upgrade: websocket
 Connection: Upgrade
-Sec-Websocket-Key: dDOs3e4IzPocHJTJDjuzBA==
+Sec-Websocket-Key: 1LlwNRsNQkNEyrpNntvudA==
 Sec-WebSocket-Version: 13
 Sec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9</pre>
       <pre class="http_dump">HTTP/1.1 101 Switching Protocols
@@ -226,7 +226,7 @@ Server: AutobahnTestSuite/0.8.2-0.10.9
 X-Powered-By: AutobahnPython/0.10.9
 Upgrade: WebSocket
 Connection: Upgrade
-Sec-WebSocket-Accept: FvWoF2wHDIpHrbgTiERBKG6BSCY=</pre>
+Sec-WebSocket-Accept: 8UOaReIt6lqGdT9vc/aIYFA1Ty8=</pre>
       <br/><hr/>
       <h2>Closing Behavior</h2>
       <table>
@@ -249,11 +249,10 @@ Sec-WebSocket-Accept: FvWoF2wHDIpHrbgTiERBKG6BSCY=</pre>
       <h3>Octets Received by Chop Size</h3>
       <table>
          <tr class="stats_header"><td>Chop Size</td><td>Count</td><td>Octets</td></tr>
-         <tr class="stats_row"><td>6</td><td>1</td><td>6</td></tr>
          <tr class="stats_row"><td>8</td><td>1</td><td>8</td></tr>
-         <tr class="stats_row"><td>38</td><td>1</td><td>38</td></tr>
+         <tr class="stats_row"><td>44</td><td>1</td><td>44</td></tr>
          <tr class="stats_row"><td>285</td><td>1</td><td>285</td></tr>
-         <tr class="stats_total"><td>Total</td><td>4</td><td>337</td></tr>
+         <tr class="stats_total"><td>Total</td><td>3</td><td>337</td></tr>
       </table>
       <h3>Octets Transmitted by Chop Size</h3>
       <table>
@@ -296,21 +295,20 @@ Sec-WebSocket-Accept: FvWoF2wHDIpHrbgTiERBKG6BSCY=</pre>
          <pre class="wirelog_tx_frame">006 TX FRAME : OPCODE=9, FIN=True, RSV=0, PAYLOAD-LEN=0, MASK=None, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_octets">007 TX OCTETS: 8900</pre>
          <pre class="wirelog_kill_after">008 FAIL CONNECTION AFTER 1.000000 sec</pre>
-         <pre class="wirelog_rx_octets">009 RX OCTETS: 818d5d8bc5c2</pre>
-         <pre class="wirelog_rx_octets">010 RX OCTETS: 15eea9ae32a7e5b532f9a9a67c818d1b39a272535cce1e74158205744bce163a8a80908a37d3</pre>
-         <pre class="wirelog_rx_frame">011 RX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASKED=True, MASK=3564386263356332</pre>
+         <pre class="wirelog_rx_octets">009 RX OCTETS: 818da4c051f6eca53d9acbec7181cbb23d9285818d7add698532b805e915f149f215af05e15b8a8069169495</pre>
+         <pre class="wirelog_rx_frame">010 RX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASKED=True, MASK=6134633035316636</pre>
          <pre class="wirelog_rx_frame">               Hello, world!</pre>
-         <pre class="wirelog_rx_frame">012 RX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASKED=True, MASK=3162333961323732</pre>
+         <pre class="wirelog_rx_frame">011 RX FRAME : OPCODE=1, FIN=True, RSV=0, PAYLOAD-LEN=13, MASKED=True, MASK=3761646436393835</pre>
          <pre class="wirelog_rx_frame">               Hello, world!</pre>
-         <pre class="wirelog_rx_frame">013 RX FRAME : OPCODE=10, FIN=True, RSV=0, PAYLOAD-LEN=0, MASKED=True, MASK=3930386133376433</pre>
-         <pre class="wirelog_kill_after">014 FAILING CONNECTION</pre>
-         <pre class="wirelog_tx_frame">015 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=12, MASK=None, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
+         <pre class="wirelog_rx_frame">012 RX FRAME : OPCODE=10, FIN=True, RSV=0, PAYLOAD-LEN=0, MASKED=True, MASK=3639313639343935</pre>
+         <pre class="wirelog_kill_after">013 FAILING CONNECTION</pre>
+         <pre class="wirelog_tx_frame">014 TX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=12, MASK=None, PAYLOAD-REPEAT-LEN=None, CHOPSIZE=None, SYNC=False</pre>
          <pre class="wirelog_tx_frame">               0x03e9476f696e672041776179</pre>
-         <pre class="wirelog_tx_octets">016 TX OCTETS: 880c03e9476f696e672041776179</pre>
-         <pre class="wirelog_rx_octets">017 RX OCTETS: 8882f4040b1ff7ec</pre>
-         <pre class="wirelog_rx_frame">018 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASKED=True, MASK=6634303430623166</pre>
+         <pre class="wirelog_tx_octets">015 TX OCTETS: 880c03e9476f696e672041776179</pre>
+         <pre class="wirelog_rx_octets">016 RX OCTETS: 888219402c4c1aa8</pre>
+         <pre class="wirelog_rx_frame">017 RX FRAME : OPCODE=8, FIN=True, RSV=0, PAYLOAD-LEN=2, MASKED=True, MASK=3139343032633463</pre>
          <pre class="wirelog_rx_frame">               0x03e8</pre>
-         <pre class="wirelog_tcp_closed_by_me">019 TCP DROPPED BY ME</pre>
+         <pre class="wirelog_tcp_closed_by_me">018 TCP DROPPED BY ME</pre>
       </div>
       <br/><hr/>
    </body>

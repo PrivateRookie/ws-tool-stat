@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Repeated 2x: Continuation Frame with FIN = true (where there is nothing to continue), then text Message fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 57,
+   "duration": 6,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=61&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: /g8W0lCQZMbF1S3cbC+OWA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: GnxaYr7X6BNkmibmpoZj29Ig5w8=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=61&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: xVurHrezIb6RFNvdo39Njw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: JTPr+MTiFAxH1wJmMf8ls0N5htQ=\r\n\r\n",
    "id": "5.17",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "116": 1,
+      "122": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:20.141Z",
+   "started": "2023-02-24T01:25:08.420Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 4,
@@ -214,15 +213,8 @@
       [
          "RO",
          [
-            6,
-            "889f46774201"
-         ]
-      ],
-      [
-         "RO",
-         [
-            116,
-            "459d2f6835042b6f21572b6f2f0362673416256c2319366422572473271a2781925c8e3e7a3afc5f1d31eb500e6ee84c1b3be35b1428bd889f8441f6df87ab9b ..."
+            122,
+            "889f9dadd49b9e47b9f2eedebdf5fa8dbdf5f4d9f4fdefccb3f6f8c3a0fef98db2e9fcc0b1819227c9b1b241bbd0d54aacdfc615afc3d340a4d4dc53fa889f6d ..."
          ]
       ],
       [
@@ -235,7 +227,7 @@
          true,
          0,
          true,
-         "46774201"
+         "9dadd49b"
       ],
       [
          "TF",

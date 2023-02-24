@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send 1000 binary messages of payload size 4096 to measure implementation/network RTT (round trip time) / latency.",
    "droppedByMe": true,
-   "duration": 50218,
+   "duration": 1319,
    "expectation": "Receive echo'ed binary messages (with payload as sent). Timeout case after 480 secs.",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=300&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: GQP8p3DAG/k+yjl5BpvscQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: SCImHbCLSkfwpS16qwxXPgaddXo=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=300&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: 8+8Qz7YbDZTw65DSuvINuA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: xIWT5Yw+iCmp9Q6El/aFkblT4nA=\r\n\r\n",
    "id": "9.8.6",
    "isServer": true,
    "localCloseCode": 1000,
@@ -37,11 +37,12 @@
       "8": 1
    },
    "rxOctetStats": {
-      "8": 1001,
+      "8": 110,
       "182": 1,
-      "4096": 1000
+      "4096": 109,
+      "4104": 891
    },
-   "started": "2023-02-19T10:21:12.582Z",
+   "started": "2023-02-24T01:25:42.961Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1000,
@@ -111,7 +112,7 @@
          "RO",
          [
             8,
-            "888271f83e487210"
+            "8882a1b3bac0a25b"
          ]
       ],
       [
@@ -124,7 +125,7 @@
          true,
          0,
          true,
-         "71f83e48"
+         "a1b3bac0"
       ]
    ]
 }

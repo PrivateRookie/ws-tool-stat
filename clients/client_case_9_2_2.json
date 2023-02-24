@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send binary message message with payload of length 256 * 2**10 (256k).",
    "droppedByMe": true,
-   "duration": 7,
+   "duration": 21,
    "expectation": "Receive echo'ed binary message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=254&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: tKcgrZkek0ibArJ7ajhLWA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: 6XX+rA083A9UCxapSIMoBIPjcy0=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=254&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: YoTJHYB1AMmtN/dEix2VdQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: d0uv6gq1XQNhwuNMCrCYZ0UgJkc=\r\n\r\n",
    "id": "9.2.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,14 +40,13 @@
       "8": 1,
       "14": 1,
       "182": 1,
-      "10880": 1,
-      "13032": 1,
-      "27680": 1,
-      "32768": 3,
-      "46712": 1,
-      "65536": 1
+      "14480": 1,
+      "28960": 1,
+      "29712": 1,
+      "57920": 1,
+      "65536": 2
    },
-   "started": "2023-02-19T10:13:37.053Z",
+   "started": "2023-02-24T01:25:21.472Z",
    "trafficStats": null,
    "txFrameStats": {
       "2": 1,
@@ -109,7 +108,7 @@
          "RO",
          [
             8,
-            "88820b0cf24108e4"
+            "88825feb09f95c03"
          ]
       ],
       [
@@ -122,7 +121,7 @@
          true,
          0,
          true,
-         "0b0cf241"
+         "5feb09f9"
       ]
    ]
 }

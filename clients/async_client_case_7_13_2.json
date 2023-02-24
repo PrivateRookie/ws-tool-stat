@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with close code 65536",
    "droppedByMe": true,
-   "duration": 49,
+   "duration": 3,
    "expectation": "Actual events are undefined by the spec.",
    "expected": {
       "OK": []
@@ -23,8 +23,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=246&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ciwYuTnnVh2HysWx+T1vpg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: t0nHzjlv26Yrh6IXcr0RdfoFHeM=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=246&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: PRC5xW7V8tFjojnZk7fQZg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: qroIwxbfxzPm1XyDeCOGXTk35go=\r\n\r\n",
    "id": "7.13.2",
    "isServer": true,
    "localCloseCode": 65535,
@@ -40,11 +40,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "26": 1,
+      "32": 1,
       "188": 1
    },
-   "started": "2023-02-19T10:22:22.790Z",
+   "started": "2023-02-24T01:34:16.151Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -103,15 +102,8 @@
       [
          "RO",
          [
-            6,
-            "889a0b21c5b1"
-         ]
-      ],
-      [
-         "RO",
-         [
-            26,
-            "08cbacdf7d40a9d86f01a6dd6452a091684ea1d42b17f0843814"
+            32,
+            "889a1945780d1aaf11636f2414647d651b6176361d2d7a2a1c6839734d382a70"
          ]
       ],
       [
@@ -124,7 +116,7 @@
          true,
          0,
          true,
-         "0b21c5b1"
+         "1945780d"
       ]
    ]
 }

@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 1 * 2**20 (1M).",
    "droppedByMe": true,
-   "duration": 23,
+   "duration": 58,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=249&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: Ho7GsaOiyfu68XJdfkq1Nw==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: mnwlLQVvObPbFDWUeRqjZE7lbcc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=249&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: mjIHoLth7l9zugHYONlRSA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: jH7xtE34BobYBjBh3L1C0YkbIpc=\r\n\r\n",
    "id": "9.1.3",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,17 +38,13 @@
    },
    "rxOctetStats": {
       "8": 1,
-      "14": 1,
       "182": 1,
-      "8856": 1,
-      "13032": 1,
-      "32768": 9,
-      "33092": 1,
-      "43452": 1,
-      "65408": 1,
-      "65536": 9
+      "13046": 1,
+      "24224": 1,
+      "28280": 1,
+      "65536": 15
    },
-   "started": "2023-02-19T10:13:36.613Z",
+   "started": "2023-02-24T01:25:19.397Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -110,7 +106,7 @@
          "RO",
          [
             8,
-            "8882228abbe02162"
+            "8882266920cf2581"
          ]
       ],
       [
@@ -123,7 +119,7 @@
          true,
          0,
          true,
-         "228abbe0"
+         "266920cf"
       ]
    ]
 }

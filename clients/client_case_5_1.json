@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send Ping fragmented into 2 fragments.",
    "droppedByMe": true,
-   "duration": 56,
+   "duration": 3,
    "expectation": "Connection is failed immediately, since control message MUST NOT be fragmented.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=45&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: gl19SzFZP7c4I0gN2i18vg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: YEAOj2mkmYrTmRcsm6MNnGEMRQI=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=45&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: yPe1k4qKkUFc1NplWV8aCA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: SuvcZGH4ioVZSFihleMeFEjAUOU=\r\n\r\n",
    "id": "5.1",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "64": 1,
+      "70": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:19.382Z",
+   "started": "2023-02-24T01:25:08.004Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -126,15 +125,8 @@
       [
          "RO",
          [
-            6,
-            "889ba84b5b4c"
-         ]
-      ],
-      [
-         "RO",
-         [
-            64,
-            "aba13d3ec92c3629c63f3e2888283422dc393420882d292dc52e7b889f6a969fe9697cf28019e5f6870db6f68703e2bf8f18f7f8840ff8eb8c0eb6f99b0bfbfa ..."
+            70,
+            "889b282d343f2bc7524d494a595a4659515b084e5b515c5f5b53084b465e454814889ff5b43323f65e5e4a86c75a4d92945a4d9cc0134587d5544e90da474691 ..."
          ]
       ],
       [
@@ -147,7 +139,7 @@
          true,
          0,
          true,
-         "a84b5b4c"
+         "282d343f"
       ],
       [
          "TF",

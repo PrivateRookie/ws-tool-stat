@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send text message message with payload of length 1 * 2**20 (1M). Sent out data in chops of 128 octets.",
    "droppedByMe": true,
-   "duration": 109,
+   "duration": 476,
    "expectation": "Receive echo'ed text message (with payload as sent).",
    "expected": {},
    "expectedClose": {
@@ -19,8 +19,8 @@
       "requireClean": true
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=278&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: O8tWIqgZg4/DS2jKApPyWg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: Iow1mcD6kwOlmHNStBQ5iSVWZEc=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=278&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: W+HS+RiX2kmEi5t3YRS9Ww==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: zo+gJRt5tUXzfKpBumqlMA7ba+U=\r\n\r\n",
    "id": "9.5.2",
    "isServer": true,
    "localCloseCode": 1000,
@@ -40,15 +40,11 @@
       "8": 1,
       "14": 1,
       "188": 1,
-      "8856": 1,
-      "13032": 1,
-      "28960": 1,
-      "32640": 1,
-      "32768": 4,
-      "47584": 1,
-      "65536": 12
+      "13952": 1,
+      "51584": 1,
+      "65536": 15
    },
-   "started": "2023-02-19T10:22:24.462Z",
+   "started": "2023-02-24T01:34:23.778Z",
    "trafficStats": null,
    "txFrameStats": {
       "1": 1,
@@ -111,7 +107,7 @@
          "RO",
          [
             8,
-            "88829880d7dd9b68"
+            "888220bbdfd02353"
          ]
       ],
       [
@@ -124,7 +120,7 @@
          true,
          0,
          true,
-         "9880d7dd"
+         "20bbdfd0"
       ]
    ]
 }

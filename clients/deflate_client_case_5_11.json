@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in octet-wise chops.",
    "droppedByMe": true,
-   "duration": 1,
+   "duration": 8,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=55&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ljZd6NXUvbyjFAZcpqbUuw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: UHkVdn3aKPwYDU0nx7iM4o0O1X4=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=55&agent=deflate-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: OnkexfcWb4yvsTTfFJDlFw==\r\nSec-WebSocket-Version: 13\r\nSec-WebSocket-Extensions: permessage-deflate;client_max_window_bits=9;server_max_window_bits=9\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: KkAGfSFqKSSROoubezXiUIvafAU=\r\n\r\n",
    "id": "5.11",
    "isServer": true,
    "localCloseCode": 1000,
@@ -41,7 +41,7 @@
       "37": 1,
       "285": 1
    },
-   "started": "2023-02-19T10:30:54.226Z",
+   "started": "2023-02-24T01:27:58.938Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -49,8 +49,7 @@
       "8": 1
    },
    "txOctetStats": {
-      "1": 41,
-      "4": 1,
+      "1": 31,
       "206": 1
    },
    "wasClean": true,
@@ -355,90 +354,10 @@
          true
       ],
       [
-         "TO",
-         [
-            1,
-            "6c"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "6f"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "2c"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "20"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "77"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "6f"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "72"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "6c"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "64"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "21"
-         ],
-         true
-      ],
-      [
          "RO",
          [
             37,
-            "889fec9802bdef726fd49feb6bd38bb86bd385ec22db9ef965d089f676d888b864cf8df567"
+            "889f893d5c608ad73109fa4e350eee1d350ee0497c06fb5c3b0dec532805ed1d3a12e85039"
          ]
       ],
       [
@@ -451,7 +370,7 @@
          true,
          0,
          true,
-         "ec9802bd"
+         "893d5c60"
       ],
       [
          "TF",
@@ -465,14 +384,6 @@
          null,
          null,
          null,
-         false
-      ],
-      [
-         "TO",
-         [
-            4,
-            "880203e8"
-         ],
          false
       ]
    ]

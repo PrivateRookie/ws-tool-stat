@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send close with invalid close code 0",
    "droppedByMe": true,
-   "duration": 50,
+   "duration": 4,
    "expectation": "Clean close with protocol error code or drop TCP",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=236&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: ahBDxBaSm55G5e7bqOZ4hg==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: P8CE+WftxCJyO08jp+4CvrK0O/k=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=236&agent=async-client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: BulOWtWbyJ4lVl70Y2seAQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: pXF/92sMs9cyT1IF3hrr+/iUsOQ=\r\n\r\n",
    "id": "7.9.1",
    "isServer": true,
    "localCloseCode": 0,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "22": 1,
+      "28": 1,
       "188": 1
    },
-   "started": "2023-02-19T10:22:22.279Z",
+   "started": "2023-02-24T01:34:16.065Z",
    "trafficStats": null,
    "txFrameStats": {
       "8": 1
@@ -101,15 +100,8 @@
       [
          "RO",
          [
-            6,
-            "8896c02004b7"
-         ]
-      ],
-      [
-         "RO",
-         [
-            22,
-            "c3ca6dd9b64168dea40067dbaf536197a34f60d2e010"
+            28,
+            "88969c673e0b9f8d5765ea065262f8475d67f3145b2bff085a6ebc57"
          ]
       ],
       [
@@ -122,7 +114,7 @@
          true,
          0,
          true,
-         "c02004b7"
+         "9c673e0b"
       ]
    ]
 }

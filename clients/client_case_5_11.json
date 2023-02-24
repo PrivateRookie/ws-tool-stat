@@ -8,7 +8,7 @@
    "createWirelog": true,
    "description": "Send unfragmented Text Message after Continuation Frame with FIN = true, where there is nothing to continue, sent in octet-wise chops.",
    "droppedByMe": true,
-   "duration": 2,
+   "duration": 18,
    "expectation": "The connection is failed immediately, since there is no message to continue.",
    "expected": {
       "OK": []
@@ -21,8 +21,8 @@
       "requireClean": false
    },
    "failedByMe": false,
-   "httpRequest": "GET /runCase?case=55&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: nTIhAK82eAokOLgzE4P5tQ==\r\nSec-WebSocket-Version: 13\r\n\r\n",
-   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: KTsj+Huq/KG15zLQazfmBcfZTOE=\r\n\r\n",
+   "httpRequest": "GET /runCase?case=55&agent=client HTTP/1.1\r\nHost: localhost:9002\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-Websocket-Key: fO1ZYdks6VkNp0s7NUevFA==\r\nSec-WebSocket-Version: 13\r\n\r\n",
+   "httpResponse": "HTTP/1.1 101 Switching Protocols\r\nServer: AutobahnTestSuite/0.8.2-0.10.9\r\nX-Powered-By: AutobahnPython/0.10.9\r\nUpgrade: WebSocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: j7FVrooQ2Aa2S/Oz4xlCGlpWBfM=\r\n\r\n",
    "id": "5.11",
    "isServer": true,
    "localCloseCode": 1000,
@@ -38,11 +38,10 @@
       "8": 1
    },
    "rxOctetStats": {
-      "6": 1,
-      "31": 1,
+      "37": 1,
       "181": 1
    },
-   "started": "2023-02-19T10:13:19.930Z",
+   "started": "2023-02-24T01:25:08.170Z",
    "trafficStats": null,
    "txFrameStats": {
       "0": 1,
@@ -50,7 +49,7 @@
       "8": 1
    },
    "txOctetStats": {
-      "1": 38,
+      "1": 27,
       "206": 1
    },
    "wasClean": true,
@@ -323,105 +322,10 @@
          true
       ],
       [
-         "TO",
-         [
-            1,
-            "0d"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "48"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "65"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "6c"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "6c"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "6f"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "2c"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "20"
-         ],
-         true
-      ],
-      [
          "RO",
          [
-            6,
-            "889f12c2ba6b"
-         ]
-      ],
-      [
-         "TO",
-         [
-            1,
-            "77"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "6f"
-         ],
-         true
-      ],
-      [
-         "TO",
-         [
-            1,
-            "72"
-         ],
-         true
-      ],
-      [
-         "RO",
-         [
-            31,
-            "1128d70261b1d30575e2d3057bb69a0d60a3dd0677acce0e76e2dc1973afdf"
+            37,
+            "889fdb9f1914d875747da8ec707abcbf707ab2eb3972a9fe7e79bef16d71bfbf7f66baf27c"
          ]
       ],
       [
@@ -434,7 +338,7 @@
          true,
          0,
          true,
-         "12c2ba6b"
+         "db9f1914"
       ],
       [
          "TF",
